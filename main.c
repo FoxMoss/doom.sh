@@ -3,6 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 void _start() {
-  puts("\033[1Ddetected!!\n ");
+  puts("this is from puts()\n");
   exit(1);
 }

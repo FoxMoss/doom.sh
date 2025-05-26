@@ -1,4 +1,3 @@
-
 declare -a MEMORY
 declare -a REGS
 REGS=()
@@ -578,11 +577,17 @@ function step {
                         sleep REGS[11]
                         ;;
                     93)
-                        echo "exit called! exit code ${REGS[10]}"
+                        if [[ ${REGS[10]} != 0 ]]; then                          
+                          echo "exit called! exit code ${REGS[10]}"
+                          printf "$1 ⁉️ test ${REGS[3]}: failed\n" >> log
+                        else 
+                          echo "exit called! but im going to ignore it exit code ${REGS[10]}"
+                          printf "$1 ✅ test ${REGS[3]}: passed\n" >> log
+                        fi
                         exit 0
                         ;;
                     *)
-                        echo "unknown syscall $syscall_id"
+                      echo "unknown syscall ${REGS[17]}"
                         ;;
                 esac
             else

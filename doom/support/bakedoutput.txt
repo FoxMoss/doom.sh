@@ -532,517 +532,517 @@ ACCESS_LUMP 0 26
 
 ACCESS_LUMP 1 26
 WARNING: FILE NOT FOUND: TEXTURE2
-MALLOC: 500 1 (nil) @ r_data.c:381 -> 500 ->0x62be1558
-MALLOC: 500 1 (nil) @ r_data.c:382 -> 1000 ->0x62be1764
-MALLOC: 500 1 (nil) @ r_data.c:383 -> 1500 ->0x62be1970
-MALLOC: 500 1 (nil) @ r_data.c:384 -> 2000 ->0x62be1b7c
-MALLOC: 500 1 (nil) @ r_data.c:385 -> 2500 ->0x62be1d88
-MALLOC: 500 1 (nil) @ r_data.c:386 -> 3000 ->0x62be1f94
-MALLOC: 500 1 (nil) @ r_data.c:387 -> 3500 ->0x62be21a0
+MALLOC: 500 1 (nil) @ r_data.c:381 -> 500 ->0x64208558
+MALLOC: 500 1 (nil) @ r_data.c:382 -> 1000 ->0x64208764
+MALLOC: 500 1 (nil) @ r_data.c:383 -> 1500 ->0x64208970
+MALLOC: 500 1 (nil) @ r_data.c:384 -> 2000 ->0x64208b7c
+MALLOC: 500 1 (nil) @ r_data.c:385 -> 2500 ->0x64208d88
+MALLOC: 500 1 (nil) @ r_data.c:386 -> 3000 ->0x64208f94
+MALLOC: 500 1 (nil) @ r_data.c:387 -> 3500 ->0x642091a0
 
 ACCESS_LUMP 0 473
 
 ACCESS_LUMP 0 957
 [          		 ]Texture: 0 / AASTINKY
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 3540 ->0x62be23ac
-MALLOC: 48 1 (nil) @ r_data.c:447 -> 3588 ->0x62be23ec
-MALLOC: 48 1 (nil) @ r_data.c:448 -> 3636 ->0x62be2434
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 3540 ->0x642093ac
+MALLOC: 48 1 (nil) @ r_data.c:447 -> 3588 ->0x642093ec
+MALLOC: 48 1 (nil) @ r_data.c:448 -> 3636 ->0x64209434
 Texture: 1 / BIGDOOR1
-MALLOC: 76 1 (nil) @ r_data.c:419 -> 3712 ->0x62be247c
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 3968 ->0x62be24e0
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 4224 ->0x62be25f8
+MALLOC: 76 1 (nil) @ r_data.c:419 -> 3712 ->0x6420947c
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 3968 ->0x642094e0
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 4224 ->0x642095f8
 Texture: 2 / BIGDOOR2
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 4252 ->0x62be2710
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 4508 ->0x62be2744
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 4764 ->0x62be285c
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 4252 ->0x64209710
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 4508 ->0x64209744
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 4764 ->0x6420985c
 Texture: 3 / BIGDOOR4
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 4792 ->0x62be2974
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 5048 ->0x62be29a8
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 5304 ->0x62be2ac0
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 4792 ->0x64209974
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 5048 ->0x642099a8
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 5304 ->0x64209ac0
 Texture: 4 / BRNBIGC
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 5332 ->0x62be2bd8
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 5588 ->0x62be2c0c
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 5844 ->0x62be2d24
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 5332 ->0x64209bd8
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 5588 ->0x64209c0c
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 5844 ->0x64209d24
 Texture: 5 / BRNBIGL
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 5872 ->0x62be2e3c
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 5936 ->0x62be2e70
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 6000 ->0x62be2ec8
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 5872 ->0x64209e3c
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 5936 ->0x64209e70
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 6000 ->0x64209ec8
 Texture: 6 / BRNBIGR
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 6028 ->0x62be2f20
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 6092 ->0x62be2f54
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 6156 ->0x62be2fac
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 6028 ->0x64209f20
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 6092 ->0x64209f54
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 6156 ->0x64209fac
 Texture: 7 / BRNPOIS
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 6196 ->0x62be3004
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 6324 ->0x62be3044
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 6452 ->0x62be30dc
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 6196 ->0x6420a004
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 6324 ->0x6420a044
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 6452 ->0x6420a0dc
 Texture: 8 / BRNPOIS2
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 6492 ->0x62be3174
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 6620 ->0x62be31b4
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 6748 ->0x62be324c
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 6492 ->0x6420a174
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 6620 ->0x6420a1b4
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 6748 ->0x6420a24c
 Texture: 9 / BRNSMAL1
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 6776 ->0x62be32e4
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 6904 ->0x62be3318
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 7032 ->0x62be33b0
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 6776 ->0x6420a2e4
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 6904 ->0x6420a318
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 7032 ->0x6420a3b0
 Texture: 10 / BRNSMAL2
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 7060 ->0x62be3448
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 7188 ->0x62be347c
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 7316 ->0x62be3514
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 7060 ->0x6420a448
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 7188 ->0x6420a47c
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 7316 ->0x6420a514
 Texture: 11 / BRNSMALC
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 7344 ->0x62be35ac
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 7472 ->0x62be35e0
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 7600 ->0x62be3678
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 7344 ->0x6420a5ac
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 7472 ->0x6420a5e0
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 7600 ->0x6420a678
 Texture: 12 / BRNSMALL
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 7628 ->0x62be3710
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 7692 ->0x62be3744
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 7756 ->0x62be379c
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 7628 ->0x6420a710
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 7692 ->0x6420a744
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 7756 ->0x6420a79c
 Texture: 13 / BRNSMALR
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 7784 ->0x62be37f4
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 7848 ->0x62be3828
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 7912 ->0x62be3880
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 7784 ->0x6420a7f4
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 7848 ->0x6420a828
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 7912 ->0x6420a880
 Texture: 14 / BROWN1
-MALLOC: 88 1 (nil) @ r_data.c:419 -> 8000 ->0x62be38d8
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 8256 ->0x62be3948
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 8512 ->0x62be3a60
+MALLOC: 88 1 (nil) @ r_data.c:419 -> 8000 ->0x6420a8d8
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 8256 ->0x6420a948
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 8512 ->0x6420aa60
 Texture: 15 / BROWN144
-MALLOC: 112 1 (nil) @ r_data.c:419 -> 8624 ->0x62be3b78
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 8880 ->0x62be3c00
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 9136 ->0x62be3d18
+MALLOC: 112 1 (nil) @ r_data.c:419 -> 8624 ->0x6420ab78
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 8880 ->0x6420ac00
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 9136 ->0x6420ad18
 Texture: 16 / BROWN96
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 9164 ->0x62be3e30
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 9420 ->0x62be3e64
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 9676 ->0x62be3f7c
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 9164 ->0x6420ae30
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 9420 ->0x6420ae64
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 9676 ->0x6420af7c
 Texture: 17 / BROWNGRN
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 9704 ->0x62be4094
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 9832 ->0x62be40c8
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 9960 ->0x62be4160
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 9704 ->0x6420b094
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 9832 ->0x6420b0c8
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 9960 ->0x6420b160
 Texture: 18 / BROWNHUG
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 10000 ->0x62be41f8
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 10128 ->0x62be4238
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 10256 ->0x62be42d0
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 10000 ->0x6420b1f8
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 10128 ->0x6420b238
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 10256 ->0x6420b2d0
 Texture: 19 / BROWNPIP
-MALLOC: 148 1 (nil) @ r_data.c:419 -> 10404 ->0x62be4368
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 10660 ->0x62be4414
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 10916 ->0x62be452c
+MALLOC: 148 1 (nil) @ r_data.c:419 -> 10404 ->0x6420b368
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 10660 ->0x6420b414
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 10916 ->0x6420b52c
 Texture: 20 / COMP2
-MALLOC: 304 1 (nil) @ r_data.c:419 -> 11220 ->0x62be4644
-MALLOC: 512 1 (nil) @ r_data.c:447 -> 11732 ->0x62be478c
-MALLOC: 512 1 (nil) @ r_data.c:448 -> 12244 ->0x62be49a4
+MALLOC: 304 1 (nil) @ r_data.c:419 -> 11220 ->0x6420b644
+MALLOC: 512 1 (nil) @ r_data.c:447 -> 11732 ->0x6420b78c
+MALLOC: 512 1 (nil) @ r_data.c:448 -> 12244 ->0x6420b9a4
 Texture: 21 / COMPSPAN
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 12284 ->0x62be4bbc
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 12348 ->0x62be4bfc
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 12412 ->0x62be4c54
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 12284 ->0x6420bbbc
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 12348 ->0x6420bbfc
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 12412 ->0x6420bc54
 Texture: 22 / COMPSTA1
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 12464 ->0x62be4cac
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 12720 ->0x62be4cf8
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 12976 ->0x62be4e10
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 12464 ->0x6420bcac
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 12720 ->0x6420bcf8
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 12976 ->0x6420be10
 Texture: 23 / COMPSTA2
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 13028 ->0x62be4f28
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 13284 ->0x62be4f74
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 13540 ->0x62be508c
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 13028 ->0x6420bf28
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 13284 ->0x6420bf74
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 13540 ->0x6420c08c
 Texture: 24 / COMPTALL
-MALLOC: 124 1 (nil) @ r_data.c:419 -> 13664 ->0x62be51a4
-MALLOC: 512 1 (nil) @ r_data.c:447 -> 14176 ->0x62be5238
-MALLOC: 512 1 (nil) @ r_data.c:448 -> 14688 ->0x62be5450
+MALLOC: 124 1 (nil) @ r_data.c:419 -> 13664 ->0x6420c1a4
+MALLOC: 512 1 (nil) @ r_data.c:447 -> 14176 ->0x6420c238
+MALLOC: 512 1 (nil) @ r_data.c:448 -> 14688 ->0x6420c450
 Texture: 25 / COMPTILE
-MALLOC: 88 1 (nil) @ r_data.c:419 -> 14776 ->0x62be5668
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 15032 ->0x62be56d8
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 15288 ->0x62be57f0
+MALLOC: 88 1 (nil) @ r_data.c:419 -> 14776 ->0x6420c668
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 15032 ->0x6420c6d8
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 15288 ->0x6420c7f0
 Texture: 26 / COMPUTE1
-MALLOC: 136 1 (nil) @ r_data.c:419 -> 15424 ->0x62be5908
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 15680 ->0x62be59a8
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 15936 ->0x62be5ac0
+MALLOC: 136 1 (nil) @ r_data.c:419 -> 15424 ->0x6420c908
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 15680 ->0x6420c9a8
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 15936 ->0x6420cac0
 Texture: 27 / COMPUTE2
-MALLOC: 64 1 (nil) @ r_data.c:419 -> 16000 ->0x62be5bd8
-MALLOC: 512 1 (nil) @ r_data.c:447 -> 16512 ->0x62be5c30
-MALLOC: 512 1 (nil) @ r_data.c:448 -> 17024 ->0x62be5e48
+MALLOC: 64 1 (nil) @ r_data.c:419 -> 16000 ->0x6420cbd8
+MALLOC: 512 1 (nil) @ r_data.c:447 -> 16512 ->0x6420cc30
+MALLOC: 512 1 (nil) @ r_data.c:448 -> 17024 ->0x6420ce48
 Texture: 28 / COMPUTE3
-MALLOC: 136 1 (nil) @ r_data.c:419 -> 17160 ->0x62be6060
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 17416 ->0x62be6100
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 17672 ->0x62be6218
+MALLOC: 136 1 (nil) @ r_data.c:419 -> 17160 ->0x6420d060
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 17416 ->0x6420d100
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 17672 ->0x6420d218
 Texture: 29 / DOOR1
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 17700 ->0x62be6330
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 17828 ->0x62be6364
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 17956 ->0x62be63fc
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 17700 ->0x6420d330
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 17828 ->0x6420d364
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 17956 ->0x6420d3fc
 Texture: 30 / DOOR3
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 17984 ->0x62be6494
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 18112 ->0x62be64c8
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 18240 ->0x62be6560
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 17984 ->0x6420d494
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 18112 ->0x6420d4c8
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 18240 ->0x6420d560
 Texture: 31 / DOORBLU
-MALLOC: 112 1 (nil) @ r_data.c:419 -> 18352 ->0x62be65f8
-MALLOC: 16 1 (nil) @ r_data.c:447 -> 18368 ->0x62be6680
-MALLOC: 16 1 (nil) @ r_data.c:448 -> 18384 ->0x62be66a8
+MALLOC: 112 1 (nil) @ r_data.c:419 -> 18352 ->0x6420d5f8
+MALLOC: 16 1 (nil) @ r_data.c:447 -> 18368 ->0x6420d680
+MALLOC: 16 1 (nil) @ r_data.c:448 -> 18384 ->0x6420d6a8
 Texture: 32 / DOORRED
-MALLOC: 112 1 (nil) @ r_data.c:419 -> 18496 ->0x62be66d0
-MALLOC: 16 1 (nil) @ r_data.c:447 -> 18512 ->0x62be6758
-MALLOC: 16 1 (nil) @ r_data.c:448 -> 18528 ->0x62be6780
+MALLOC: 112 1 (nil) @ r_data.c:419 -> 18496 ->0x6420d6d0
+MALLOC: 16 1 (nil) @ r_data.c:447 -> 18512 ->0x6420d758
+MALLOC: 16 1 (nil) @ r_data.c:448 -> 18528 ->0x6420d780
 Texture: 33 / DOORSTOP
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 18556 ->0x62be67a8
-MALLOC: 16 1 (nil) @ r_data.c:447 -> 18572 ->0x62be67dc
-MALLOC: 16 1 (nil) @ r_data.c:448 -> 18588 ->0x62be6804
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 18556 ->0x6420d7a8
+MALLOC: 16 1 (nil) @ r_data.c:447 -> 18572 ->0x6420d7dc
+MALLOC: 16 1 (nil) @ r_data.c:448 -> 18588 ->0x6420d804
 Texture: 34 / DOORTRAK
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 18616 ->0x62be682c
-MALLOC: 16 1 (nil) @ r_data.c:447 -> 18632 ->0x62be6860
-MALLOC: 16 1 (nil) @ r_data.c:448 -> 18648 ->0x62be6888
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 18616 ->0x6420d82c
+MALLOC: 16 1 (nil) @ r_data.c:447 -> 18632 ->0x6420d860
+MALLOC: 16 1 (nil) @ r_data.c:448 -> 18648 ->0x6420d888
 Texture: 35 / DOORYEL
-MALLOC: 112 1 (nil) @ r_data.c:419 -> 18760 ->0x62be68b0
-MALLOC: 16 1 (nil) @ r_data.c:447 -> 18776 ->0x62be6938
-MALLOC: 16 1 (nil) @ r_data.c:448 -> 18792 ->0x62be6960
+MALLOC: 112 1 (nil) @ r_data.c:419 -> 18760 ->0x6420d8b0
+MALLOC: 16 1 (nil) @ r_data.c:447 -> 18776 ->0x6420d938
+MALLOC: 16 1 (nil) @ r_data.c:448 -> 18792 ->0x6420d960
 Texture: 36 / EXITDOOR
-MALLOC: 64 1 (nil) @ r_data.c:419 -> 18856 ->0x62be6988
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 19112 ->0x62be69e0
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 19368 ->0x62be6af8
+MALLOC: 64 1 (nil) @ r_data.c:419 -> 18856 ->0x6420d988
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 19112 ->0x6420d9e0
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 19368 ->0x6420daf8
 Texture: 37 / EXITSIGN
-MALLOC: 76 1 (nil) @ r_data.c:419 -> 19444 ->0x62be6c10
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 19572 ->0x62be6c74
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 19700 ->0x62be6d0c
+MALLOC: 76 1 (nil) @ r_data.c:419 -> 19444 ->0x6420dc10
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 19572 ->0x6420dc74
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 19700 ->0x6420dd0c
 Texture: 38 / GRAY4
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 19740 ->0x62be6da4
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 19868 ->0x62be6de4
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 19996 ->0x62be6e7c
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 19740 ->0x6420dda4
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 19868 ->0x6420dde4
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 19996 ->0x6420de7c
 Texture: 39 / GRAY5
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 20048 ->0x62be6f14
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 20176 ->0x62be6f60
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 20304 ->0x62be6ff8
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 20048 ->0x6420df14
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 20176 ->0x6420df60
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 20304 ->0x6420dff8
 Texture: 40 / GRAY7
-MALLOC: 160 1 (nil) @ r_data.c:419 -> 20464 ->0x62be7090
-MALLOC: 512 1 (nil) @ r_data.c:447 -> 20976 ->0x62be7148
-MALLOC: 512 1 (nil) @ r_data.c:448 -> 21488 ->0x62be7360
+MALLOC: 160 1 (nil) @ r_data.c:419 -> 20464 ->0x6420e090
+MALLOC: 512 1 (nil) @ r_data.c:447 -> 20976 ->0x6420e148
+MALLOC: 512 1 (nil) @ r_data.c:448 -> 21488 ->0x6420e360
 Texture: 41 / GRAYTALL
-MALLOC: 64 1 (nil) @ r_data.c:419 -> 21552 ->0x62be7578
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 21808 ->0x62be75d0
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 22064 ->0x62be76e8
+MALLOC: 64 1 (nil) @ r_data.c:419 -> 21552 ->0x6420e578
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 21808 ->0x6420e5d0
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 22064 ->0x6420e6e8
 Texture: 42 / LITE2
-MALLOC: 64 1 (nil) @ r_data.c:419 -> 22128 ->0x62be7800
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 22256 ->0x62be7858
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 22384 ->0x62be78f0
+MALLOC: 64 1 (nil) @ r_data.c:419 -> 22128 ->0x6420e800
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 22256 ->0x6420e858
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 22384 ->0x6420e8f0
 Texture: 43 / LITE3
-MALLOC: 784 1 (nil) @ r_data.c:419 -> 23168 ->0x62be7988
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 23232 ->0x62be7cb0
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 23296 ->0x62be7d08
+MALLOC: 784 1 (nil) @ r_data.c:419 -> 23168 ->0x6420e988
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 23232 ->0x6420ecb0
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 23296 ->0x6420ed08
 Texture: 44 / LITE4
-MALLOC: 196 1 (nil) @ r_data.c:419 -> 23492 ->0x62be7d60
-MALLOC: 32 1 (nil) @ r_data.c:447 -> 23524 ->0x62be7e3c
-MALLOC: 32 1 (nil) @ r_data.c:448 -> 23556 ->0x62be7e74
+MALLOC: 196 1 (nil) @ r_data.c:419 -> 23492 ->0x6420ed60
+MALLOC: 32 1 (nil) @ r_data.c:447 -> 23524 ->0x6420ee3c
+MALLOC: 32 1 (nil) @ r_data.c:448 -> 23556 ->0x6420ee74
 Texture: 45 / LITE5
-MALLOC: 400 1 (nil) @ r_data.c:419 -> 23956 ->0x62be7eac
-MALLOC: 32 1 (nil) @ r_data.c:447 -> 23988 ->0x62be8054
-MALLOC: 32 1 (nil) @ r_data.c:448 -> 24020 ->0x62be808c
+MALLOC: 400 1 (nil) @ r_data.c:419 -> 23956 ->0x6420eeac
+MALLOC: 32 1 (nil) @ r_data.c:447 -> 23988 ->0x6420f054
+MALLOC: 32 1 (nil) @ r_data.c:448 -> 24020 ->0x6420f08c
 Texture: 46 / LITEBLU1
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 24048 ->0x62be80c4
-MALLOC: 16 1 (nil) @ r_data.c:447 -> 24064 ->0x62be80f8
-MALLOC: 16 1 (nil) @ r_data.c:448 -> 24080 ->0x62be8120
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 24048 ->0x6420f0c4
+MALLOC: 16 1 (nil) @ r_data.c:447 -> 24064 ->0x6420f0f8
+MALLOC: 16 1 (nil) @ r_data.c:448 -> 24080 ->0x6420f120
 Texture: 47 / LITEBLU2
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 24108 ->0x62be8148
-MALLOC: 32 1 (nil) @ r_data.c:447 -> 24140 ->0x62be817c
-MALLOC: 32 1 (nil) @ r_data.c:448 -> 24172 ->0x62be81b4
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 24108 ->0x6420f148
+MALLOC: 32 1 (nil) @ r_data.c:447 -> 24140 ->0x6420f17c
+MALLOC: 32 1 (nil) @ r_data.c:448 -> 24172 ->0x6420f1b4
 Texture: 48 / LITEBLU3
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 24212 ->0x62be81ec
-MALLOC: 32 1 (nil) @ r_data.c:447 -> 24244 ->0x62be822c
-MALLOC: 32 1 (nil) @ r_data.c:448 -> 24276 ->0x62be8264
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 24212 ->0x6420f1ec
+MALLOC: 32 1 (nil) @ r_data.c:447 -> 24244 ->0x6420f22c
+MALLOC: 32 1 (nil) @ r_data.c:448 -> 24276 ->0x6420f264
 Texture: 49 / LITEBLU4
-MALLOC: 412 1 (nil) @ r_data.c:419 -> 24688 ->0x62be829c
-MALLOC: 32 1 (nil) @ r_data.c:447 -> 24720 ->0x62be8450
-MALLOC: 32 1 (nil) @ r_data.c:448 -> 24752 ->0x62be8488
+MALLOC: 412 1 (nil) @ r_data.c:419 -> 24688 ->0x6420f29c
+MALLOC: 32 1 (nil) @ r_data.c:447 -> 24720 ->0x6420f450
+MALLOC: 32 1 (nil) @ r_data.c:448 -> 24752 ->0x6420f488
 Texture: 50 / METAL1
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 24792 ->0x62be84c0
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 24920 ->0x62be8500
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 25048 ->0x62be8598
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 24792 ->0x6420f4c0
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 24920 ->0x6420f500
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 25048 ->0x6420f598
 Texture: 51 / NUKE24
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 25076 ->0x62be8630
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 25204 ->0x62be8664
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 25332 ->0x62be86fc
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 25076 ->0x6420f630
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 25204 ->0x6420f664
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 25332 ->0x6420f6fc
 Texture: 52 / NUKEDGE1
-MALLOC: 232 1 (nil) @ r_data.c:419 -> 25564 ->0x62be8794
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 25820 ->0x62be8894
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 26076 ->0x62be89ac
+MALLOC: 232 1 (nil) @ r_data.c:419 -> 25564 ->0x6420f794
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 25820 ->0x6420f894
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 26076 ->0x6420f9ac
 Texture: 53 / NUKESLAD
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 26104 ->0x62be8ac4
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 26232 ->0x62be8af8
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 26360 ->0x62be8b90
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 26104 ->0x6420fac4
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 26232 ->0x6420faf8
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 26360 ->0x6420fb90
 Texture: 54 / PIPE2
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 26400 ->0x62be8c28
-MALLOC: 512 1 (nil) @ r_data.c:447 -> 26912 ->0x62be8c68
-MALLOC: 512 1 (nil) @ r_data.c:448 -> 27424 ->0x62be8e80
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 26400 ->0x6420fc28
+MALLOC: 512 1 (nil) @ r_data.c:447 -> 26912 ->0x6420fc68
+MALLOC: 512 1 (nil) @ r_data.c:448 -> 27424 ->0x6420fe80
 Texture: 55 / PLANET1
-MALLOC: 136 1 (nil) @ r_data.c:419 -> 27560 ->0x62be9098
-MALLOC: 512 1 (nil) @ r_data.c:447 -> 28072 ->0x62be9138
-MALLOC: 512 1 (nil) @ r_data.c:448 -> 28584 ->0x62be9350
+MALLOC: 136 1 (nil) @ r_data.c:419 -> 27560 ->0x64210098
+MALLOC: 512 1 (nil) @ r_data.c:447 -> 28072 ->0x64210138
+MALLOC: 512 1 (nil) @ r_data.c:448 -> 28584 ->0x64210350
 Texture: 56 / PLAT1
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 28612 ->0x62be9568
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 28868 ->0x62be959c
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 29124 ->0x62be96b4
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 28612 ->0x64210568
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 28868 ->0x6421059c
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 29124 ->0x642106b4
 Texture: 57 / REDWALL1
-MALLOC: 64 1 (nil) @ r_data.c:419 -> 29188 ->0x62be97cc
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 29444 ->0x62be9824
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 29700 ->0x62be993c
+MALLOC: 64 1 (nil) @ r_data.c:419 -> 29188 ->0x642107cc
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 29444 ->0x64210824
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 29700 ->0x6421093c
 Texture: 58 / SHAWN2
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 29728 ->0x62be9a54
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 29856 ->0x62be9a88
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 29984 ->0x62be9b20
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 29728 ->0x64210a54
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 29856 ->0x64210a88
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 29984 ->0x64210b20
 Texture: 59 / SKY1
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 30012 ->0x62be9bb8
-MALLOC: 512 1 (nil) @ r_data.c:447 -> 30524 ->0x62be9bec
-MALLOC: 512 1 (nil) @ r_data.c:448 -> 31036 ->0x62be9e04
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 30012 ->0x64210bb8
+MALLOC: 512 1 (nil) @ r_data.c:447 -> 30524 ->0x64210bec
+MALLOC: 512 1 (nil) @ r_data.c:448 -> 31036 ->0x64210e04
 Texture: 60 / SLADPOIS
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 31076 ->0x62bea01c
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 31204 ->0x62bea05c
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 31332 ->0x62bea0f4
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 31076 ->0x6421101c
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 31204 ->0x6421105c
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 31332 ->0x642110f4
 Texture: 61 / SLADRIP1
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 31360 ->0x62bea18c
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 31488 ->0x62bea1c0
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 31616 ->0x62bea258
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 31360 ->0x6421118c
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 31488 ->0x642111c0
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 31616 ->0x64211258
 Texture: 62 / SLADRIP2
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 31644 ->0x62bea2f0
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 31772 ->0x62bea324
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 31900 ->0x62bea3bc
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 31644 ->0x642112f0
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 31772 ->0x64211324
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 31900 ->0x642113bc
 Texture: 63 / SLADRIP3
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 31928 ->0x62bea454
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 32056 ->0x62bea488
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 32184 ->0x62bea520
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 31928 ->0x64211454
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 32056 ->0x64211488
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 32184 ->0x64211520
 Texture: 64 / SLADWALL
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 32212 ->0x62bea5b8
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 32340 ->0x62bea5ec
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 32468 ->0x62bea684
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 32212 ->0x642115b8
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 32340 ->0x642115ec
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 32468 ->0x64211684
 Texture: 65 / STARG1
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 32508 ->0x62bea71c
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 32636 ->0x62bea75c
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 32764 ->0x62bea7f4
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 32508 ->0x6421171c
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 32636 ->0x6421175c
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 32764 ->0x642117f4
 Texture: 66 / STARG3
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 32804 ->0x62bea88c
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 33060 ->0x62bea8cc
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 33316 ->0x62bea9e4
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 32804 ->0x6421188c
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 33060 ->0x642118cc
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 33316 ->0x642119e4
 Texture: 67 / STARGR1
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 33356 ->0x62beaafc
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 33484 ->0x62beab3c
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 33612 ->0x62beabd4
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 33356 ->0x64211afc
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 33484 ->0x64211b3c
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 33612 ->0x64211bd4
 Texture: 68 / STARTAN1
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 33652 ->0x62beac6c
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 33780 ->0x62beacac
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 33908 ->0x62bead44
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 33652 ->0x64211c6c
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 33780 ->0x64211cac
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 33908 ->0x64211d44
 Texture: 69 / STARTAN2
-MALLOC: 64 1 (nil) @ r_data.c:419 -> 33972 ->0x62beaddc
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 34228 ->0x62beae34
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 34484 ->0x62beaf4c
+MALLOC: 64 1 (nil) @ r_data.c:419 -> 33972 ->0x64211ddc
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 34228 ->0x64211e34
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 34484 ->0x64211f4c
 Texture: 70 / STARTAN3
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 34524 ->0x62beb064
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 34780 ->0x62beb0a4
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 35036 ->0x62beb1bc
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 34524 ->0x64212064
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 34780 ->0x642120a4
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 35036 ->0x642121bc
 Texture: 71 / STEP1
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 35064 ->0x62beb2d4
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 35128 ->0x62beb308
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 35192 ->0x62beb360
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 35064 ->0x642122d4
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 35128 ->0x64212308
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 35192 ->0x64212360
 Texture: 72 / STEP2
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 35220 ->0x62beb3b8
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 35284 ->0x62beb3ec
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 35348 ->0x62beb444
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 35220 ->0x642123b8
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 35284 ->0x642123ec
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 35348 ->0x64212444
 Texture: 73 / STEP3
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 35376 ->0x62beb49c
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 35440 ->0x62beb4d0
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 35504 ->0x62beb528
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 35376 ->0x6421249c
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 35440 ->0x642124d0
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 35504 ->0x64212528
 Texture: 74 / STEP4
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 35544 ->0x62beb580
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 35608 ->0x62beb5c0
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 35672 ->0x62beb618
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 35544 ->0x64212580
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 35608 ->0x642125c0
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 35672 ->0x64212618
 Texture: 75 / STEP5
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 35712 ->0x62beb670
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 35776 ->0x62beb6b0
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 35840 ->0x62beb708
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 35712 ->0x64212670
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 35776 ->0x642126b0
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 35840 ->0x64212708
 Texture: 76 / STEP6
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 35880 ->0x62beb760
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 35944 ->0x62beb7a0
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 36008 ->0x62beb7f8
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 35880 ->0x64212760
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 35944 ->0x642127a0
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 36008 ->0x642127f8
 Texture: 77 / STONE
-MALLOC: 496 1 (nil) @ r_data.c:419 -> 36504 ->0x62beb850
-MALLOC: 512 1 (nil) @ r_data.c:447 -> 37016 ->0x62beba58
-MALLOC: 512 1 (nil) @ r_data.c:448 -> 37528 ->0x62bebc70
+MALLOC: 496 1 (nil) @ r_data.c:419 -> 36504 ->0x64212850
+MALLOC: 512 1 (nil) @ r_data.c:447 -> 37016 ->0x64212a58
+MALLOC: 512 1 (nil) @ r_data.c:448 -> 37528 ->0x64212c70
 Texture: 78 / STONE2
-MALLOC: 64 1 (nil) @ r_data.c:419 -> 37592 ->0x62bebe88
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 37848 ->0x62bebee0
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 38104 ->0x62bebff8
+MALLOC: 64 1 (nil) @ r_data.c:419 -> 37592 ->0x64212e88
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 37848 ->0x64212ee0
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 38104 ->0x64212ff8
 Texture: 79 / STONE3
-MALLOC: 64 1 (nil) @ r_data.c:419 -> 38168 ->0x62bec110
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 38424 ->0x62bec168
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 38680 ->0x62bec280
+MALLOC: 64 1 (nil) @ r_data.c:419 -> 38168 ->0x64213110
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 38424 ->0x64213168
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 38680 ->0x64213280
 Texture: 80 / STONPOIS
-MALLOC: 148 1 (nil) @ r_data.c:419 -> 38828 ->0x62bec398
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 38956 ->0x62bec444
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 39084 ->0x62bec4dc
+MALLOC: 148 1 (nil) @ r_data.c:419 -> 38828 ->0x64213398
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 38956 ->0x64213444
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 39084 ->0x642134dc
 Texture: 81 / SUPPORT2
-MALLOC: 88 1 (nil) @ r_data.c:419 -> 39172 ->0x62bec574
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 39300 ->0x62bec5e4
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 39428 ->0x62bec67c
+MALLOC: 88 1 (nil) @ r_data.c:419 -> 39172 ->0x64213574
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 39300 ->0x642135e4
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 39428 ->0x6421367c
 Texture: 82 / SW1BRCOM
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 39468 ->0x62bec714
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 39724 ->0x62bec754
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 39980 ->0x62bec86c
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 39468 ->0x64213714
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 39724 ->0x64213754
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 39980 ->0x6421386c
 Texture: 83 / SW1BRN1
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 40032 ->0x62bec984
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 40160 ->0x62bec9d0
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 40288 ->0x62beca68
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 40032 ->0x64213984
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 40160 ->0x642139d0
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 40288 ->0x64213a68
 Texture: 84 / SW1BRN2
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 40340 ->0x62becb00
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 40468 ->0x62becb4c
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 40596 ->0x62becbe4
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 40340 ->0x64213b00
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 40468 ->0x64213b4c
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 40596 ->0x64213be4
 Texture: 85 / SW1BRNGN
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 40636 ->0x62becc7c
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 40764 ->0x62beccbc
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 40892 ->0x62becd54
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 40636 ->0x64213c7c
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 40764 ->0x64213cbc
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 40892 ->0x64213d54
 Texture: 86 / SW1BROWN
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 40932 ->0x62becdec
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 41188 ->0x62bece2c
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 41444 ->0x62becf44
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 40932 ->0x64213dec
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 41188 ->0x64213e2c
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 41444 ->0x64213f44
 Texture: 87 / SW1COMM
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 41484 ->0x62bed05c
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 41612 ->0x62bed09c
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 41740 ->0x62bed134
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 41484 ->0x6421405c
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 41612 ->0x6421409c
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 41740 ->0x64214134
 Texture: 88 / SW1COMP
-MALLOC: 64 1 (nil) @ r_data.c:419 -> 41804 ->0x62bed1cc
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 41932 ->0x62bed224
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 42060 ->0x62bed2bc
+MALLOC: 64 1 (nil) @ r_data.c:419 -> 41804 ->0x642141cc
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 41932 ->0x64214224
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 42060 ->0x642142bc
 Texture: 89 / SW1DIRT
-MALLOC: 76 1 (nil) @ r_data.c:419 -> 42136 ->0x62bed354
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 42264 ->0x62bed3b8
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 42392 ->0x62bed450
+MALLOC: 76 1 (nil) @ r_data.c:419 -> 42136 ->0x64214354
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 42264 ->0x642143b8
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 42392 ->0x64214450
 Texture: 90 / SW1EXIT
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 42444 ->0x62bed4e8
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 42508 ->0x62bed534
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 42572 ->0x62bed58c
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 42444 ->0x642144e8
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 42508 ->0x64214534
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 42572 ->0x6421458c
 Texture: 91 / SW1GRAY
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 42624 ->0x62bed5e4
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 42752 ->0x62bed630
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 42880 ->0x62bed6c8
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 42624 ->0x642145e4
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 42752 ->0x64214630
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 42880 ->0x642146c8
 Texture: 92 / SW1GRAY1
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 42932 ->0x62bed760
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 43060 ->0x62bed7ac
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 43188 ->0x62bed844
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 42932 ->0x64214760
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 43060 ->0x642147ac
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 43188 ->0x64214844
 Texture: 93 / SW1METAL
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 43240 ->0x62bed8dc
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 43368 ->0x62bed928
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 43496 ->0x62bed9c0
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 43240 ->0x642148dc
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 43368 ->0x64214928
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 43496 ->0x642149c0
 Texture: 94 / SW1PIPE
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 43536 ->0x62beda58
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 43792 ->0x62beda98
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 44048 ->0x62bedbb0
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 43536 ->0x64214a58
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 43792 ->0x64214a98
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 44048 ->0x64214bb0
 Texture: 95 / SW1SLAD
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 44088 ->0x62bedcc8
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 44216 ->0x62bedd08
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 44344 ->0x62bedda0
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 44088 ->0x64214cc8
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 44216 ->0x64214d08
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 44344 ->0x64214da0
 Texture: 96 / SW1STARG
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 44396 ->0x62bede38
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 44652 ->0x62bede84
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 44908 ->0x62bedf9c
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 44396 ->0x64214e38
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 44652 ->0x64214e84
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 44908 ->0x64214f9c
 Texture: 97 / SW1STON1
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 44960 ->0x62bee0b4
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 45088 ->0x62bee100
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 45216 ->0x62bee198
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 44960 ->0x642150b4
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 45088 ->0x64215100
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 45216 ->0x64215198
 Texture: 98 / SW1STON2
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 45268 ->0x62bee230
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 45396 ->0x62bee27c
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 45524 ->0x62bee314
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 45268 ->0x64215230
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 45396 ->0x6421527c
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 45524 ->0x64215314
 Texture: 99 / SW1STONE
-MALLOC: 148 1 (nil) @ r_data.c:419 -> 45672 ->0x62bee3ac
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 45800 ->0x62bee458
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 45928 ->0x62bee4f0
+MALLOC: 148 1 (nil) @ r_data.c:419 -> 45672 ->0x642153ac
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 45800 ->0x64215458
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 45928 ->0x642154f0
 Texture: 100 / SW1STRTN
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 45980 ->0x62bee588
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 46108 ->0x62bee5d4
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 46236 ->0x62bee66c
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 45980 ->0x64215588
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 46108 ->0x642155d4
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 46236 ->0x6421566c
 Texture: 101 / SW2BRCOM
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 46276 ->0x62bee704
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 46532 ->0x62bee744
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 46788 ->0x62bee85c
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 46276 ->0x64215704
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 46532 ->0x64215744
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 46788 ->0x6421585c
 Texture: 102 / SW2BRN1
-MALLOC: 76 1 (nil) @ r_data.c:419 -> 46864 ->0x62bee974
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 46992 ->0x62bee9d8
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 47120 ->0x62beea70
+MALLOC: 76 1 (nil) @ r_data.c:419 -> 46864 ->0x64215974
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 46992 ->0x642159d8
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 47120 ->0x64215a70
 Texture: 103 / SW2BRN2
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 47172 ->0x62beeb08
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 47300 ->0x62beeb54
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 47428 ->0x62beebec
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 47172 ->0x64215b08
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 47300 ->0x64215b54
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 47428 ->0x64215bec
 Texture: 104 / SW2BRNGN
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 47468 ->0x62beec84
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 47596 ->0x62beecc4
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 47724 ->0x62beed5c
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 47468 ->0x64215c84
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 47596 ->0x64215cc4
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 47724 ->0x64215d5c
 Texture: 105 / SW2BROWN
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 47764 ->0x62beedf4
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 48020 ->0x62beee34
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 48276 ->0x62beef4c
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 47764 ->0x64215df4
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 48020 ->0x64215e34
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 48276 ->0x64215f4c
 Texture: 106 / SW2COMM
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 48316 ->0x62bef064
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 48444 ->0x62bef0a4
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 48572 ->0x62bef13c
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 48316 ->0x64216064
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 48444 ->0x642160a4
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 48572 ->0x6421613c
 Texture: 107 / SW2COMP
-MALLOC: 64 1 (nil) @ r_data.c:419 -> 48636 ->0x62bef1d4
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 48764 ->0x62bef22c
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 48892 ->0x62bef2c4
+MALLOC: 64 1 (nil) @ r_data.c:419 -> 48636 ->0x642161d4
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 48764 ->0x6421622c
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 48892 ->0x642162c4
 Texture: 108 / SW2DIRT
-MALLOC: 76 1 (nil) @ r_data.c:419 -> 48968 ->0x62bef35c
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 49096 ->0x62bef3c0
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 49224 ->0x62bef458
+MALLOC: 76 1 (nil) @ r_data.c:419 -> 48968 ->0x6421635c
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 49096 ->0x642163c0
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 49224 ->0x64216458
 Texture: 109 / SW2EXIT
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 49276 ->0x62bef4f0
-MALLOC: 64 1 (nil) @ r_data.c:447 -> 49340 ->0x62bef53c
-MALLOC: 64 1 (nil) @ r_data.c:448 -> 49404 ->0x62bef594
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 49276 ->0x642164f0
+MALLOC: 64 1 (nil) @ r_data.c:447 -> 49340 ->0x6421653c
+MALLOC: 64 1 (nil) @ r_data.c:448 -> 49404 ->0x64216594
 Texture: 110 / SW2GRAY
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 49456 ->0x62bef5ec
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 49584 ->0x62bef638
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 49712 ->0x62bef6d0
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 49456 ->0x642165ec
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 49584 ->0x64216638
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 49712 ->0x642166d0
 Texture: 111 / SW2GRAY1
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 49764 ->0x62bef768
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 49892 ->0x62bef7b4
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 50020 ->0x62bef84c
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 49764 ->0x64216768
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 49892 ->0x642167b4
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 50020 ->0x6421684c
 Texture: 112 / SW2METAL
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 50072 ->0x62bef8e4
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 50200 ->0x62bef930
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 50328 ->0x62bef9c8
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 50072 ->0x642168e4
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 50200 ->0x64216930
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 50328 ->0x642169c8
 Texture: 113 / SW2PIPE
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 50368 ->0x62befa60
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 50624 ->0x62befaa0
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 50880 ->0x62befbb8
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 50368 ->0x64216a60
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 50624 ->0x64216aa0
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 50880 ->0x64216bb8
 Texture: 114 / SW2SLAD
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 50920 ->0x62befcd0
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 51048 ->0x62befd10
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 51176 ->0x62befda8
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 50920 ->0x64216cd0
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 51048 ->0x64216d10
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 51176 ->0x64216da8
 Texture: 115 / SW2STARG
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 51228 ->0x62befe40
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 51484 ->0x62befe8c
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 51740 ->0x62beffa4
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 51228 ->0x64216e40
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 51484 ->0x64216e8c
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 51740 ->0x64216fa4
 Texture: 116 / SW2STON1
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 51792 ->0x62bf00bc
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 51920 ->0x62bf0108
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 52048 ->0x62bf01a0
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 51792 ->0x642170bc
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 51920 ->0x64217108
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 52048 ->0x642171a0
 Texture: 117 / SW2STON2
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 52100 ->0x62bf0238
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 52228 ->0x62bf0284
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 52356 ->0x62bf031c
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 52100 ->0x64217238
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 52228 ->0x64217284
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 52356 ->0x6421731c
 Texture: 118 / SW2STONE
-MALLOC: 148 1 (nil) @ r_data.c:419 -> 52504 ->0x62bf03b4
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 52632 ->0x62bf0460
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 52760 ->0x62bf04f8
+MALLOC: 148 1 (nil) @ r_data.c:419 -> 52504 ->0x642173b4
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 52632 ->0x64217460
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 52760 ->0x642174f8
 Texture: 119 / SW2STRTN
-MALLOC: 52 1 (nil) @ r_data.c:419 -> 52812 ->0x62bf0590
-MALLOC: 128 1 (nil) @ r_data.c:447 -> 52940 ->0x62bf05dc
-MALLOC: 128 1 (nil) @ r_data.c:448 -> 53068 ->0x62bf0674
+MALLOC: 52 1 (nil) @ r_data.c:419 -> 52812 ->0x64217590
+MALLOC: 128 1 (nil) @ r_data.c:447 -> 52940 ->0x642175dc
+MALLOC: 128 1 (nil) @ r_data.c:448 -> 53068 ->0x64217674
 Texture: 120 / TEKWALL1
-MALLOC: 40 1 (nil) @ r_data.c:419 -> 53108 ->0x62bf070c
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 53364 ->0x62bf074c
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 53620 ->0x62bf0864
+MALLOC: 40 1 (nil) @ r_data.c:419 -> 53108 ->0x6421770c
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 53364 ->0x6421774c
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 53620 ->0x64217864
 Texture: 121 / TEKWALL2
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 53648 ->0x62bf097c
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 53904 ->0x62bf09b0
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 54160 ->0x62bf0ac8
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 53648 ->0x6421797c
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 53904 ->0x642179b0
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 54160 ->0x64217ac8
 Texture: 122 / TEKWALL3
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 54188 ->0x62bf0be0
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 54444 ->0x62bf0c14
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 54700 ->0x62bf0d2c
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 54188 ->0x64217be0
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 54444 ->0x64217c14
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 54700 ->0x64217d2c
 Texture: 123 / TEKWALL4
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 54728 ->0x62bf0e44
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 54984 ->0x62bf0e78
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 55240 ->0x62bf0f90
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 54728 ->0x64217e44
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 54984 ->0x64217e78
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 55240 ->0x64217f90
 Texture: 124 / TEKWALL5
-MALLOC: 28 1 (nil) @ r_data.c:419 -> 55268 ->0x62bf10a8
-MALLOC: 256 1 (nil) @ r_data.c:447 -> 55524 ->0x62bf10dc
-MALLOC: 256 1 (nil) @ r_data.c:448 -> 55780 ->0x62bf11f4
+MALLOC: 28 1 (nil) @ r_data.c:419 -> 55268 ->0x642180a8
+MALLOC: 256 1 (nil) @ r_data.c:447 -> 55524 ->0x642180dc
+MALLOC: 256 1 (nil) @ r_data.c:448 -> 55780 ->0x642181f4
 
 ACCESS_LUMP 3 962
 
@@ -2239,22 +2239,22 @@ ACCESS_LUMP 3 996
 ACCESS_LUMP 3 1017
 
 ACCESS_LUMP 3 997
-MALLOC: 504 1 (nil) @ r_data.c:474 -> 56284 ->0x62bf130c
+MALLOC: 504 1 (nil) @ r_data.c:474 -> 56284 ->0x6421830c
 
 InitTextures
 ACCESS_LUMP 0 1127
 
 ACCESS_LUMP 0 1184
-MALLOC: 228 1 (nil) @ r_data.c:491 -> 56512 ->0x62bf151c
+MALLOC: 228 1 (nil) @ r_data.c:491 -> 56512 ->0x6421851c
 
 InitFlatsINIT_SPRITE_LUMPS
 
 ACCESS_LUMP 0 473
 
 ACCESS_LUMP 0 957
-MALLOC: 1932 1 (nil) @ r_data.c:514 -> 58444 ->0x62bf1618
-MALLOC: 1932 1 (nil) @ r_data.c:515 -> 60376 ->0x62bf1dbc
-MALLOC: 1932 1 (nil) @ r_data.c:516 -> 62308 ->0x62bf2560
+MALLOC: 1932 1 (nil) @ r_data.c:514 -> 58444 ->0x64218618
+MALLOC: 1932 1 (nil) @ r_data.c:515 -> 60376 ->0x64218dbc
+MALLOC: 1932 1 (nil) @ r_data.c:516 -> 62308 ->0x64219560
 .
 ACCESS_LUMP 3 474
 
@@ -3226,7 +3226,7 @@ InitSprites
 ACCESS_LUMP 0 1
 
 ACCESS_LUMP 1 1
-MALLOC: 8959 1 (nil) @ r_data.c:546 -> 71267 ->0x62bf2d04
+MALLOC: 8959 1 (nil) @ r_data.c:546 -> 71267 ->0x64219d04
 
 ACCESS_LUMP 2 1
 
@@ -3236,7 +3236,7 @@ R_InitPointToAngle
 R_InitTables
 R_InitPlanes
 R_InitLightTables
-R_InitSkyMapMALLOC: 1023 1 (nil) @ r_draw.c:468 -> 72290 ->0x62bf501c
+R_InitSkyMapMALLOC: 1023 1 (nil) @ r_draw.c:468 -> 72290 ->0x6421c01c
 
 R_InitTranslationsTables
 P_Init: Init Playloop state.
@@ -3254,7 +3254,7 @@ WARNING: FILE NOT FOUND: RROCK05
 WARNING: FILE NOT FOUND: SLIME01
 WARNING: FILE NOT FOUND: SLIME05
 WARNING: FILE NOT FOUND: SLIME09
-MALLOC: 1104 1 (nil) @ r_things.c:200 -> 73394 ->0x62bf5434
+MALLOC: 1104 1 (nil) @ r_things.c:200 -> 73394 ->0x6421c434
 
 ACCESS_LUMP 5 623
 
@@ -3467,7 +3467,7 @@ ACCESS_LUMP 5 674
 ACCESS_LUMP 5 675
 
 ACCESS_LUMP 5 675
-MALLOC: 588 1 (nil) @ r_things.c:287 -> 73982 ->0x62bf589c
+MALLOC: 588 1 (nil) @ r_things.c:287 -> 73982 ->0x6421c89c
 
 ACCESS_LUMP 5 559
 
@@ -3484,7 +3484,7 @@ ACCESS_LUMP 5 561
 ACCESS_LUMP 5 562
 
 ACCESS_LUMP 5 562
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 74094 ->0x62bf5b00
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 74094 ->0x6421cb00
 
 ACCESS_LUMP 5 544
 
@@ -3501,7 +3501,7 @@ ACCESS_LUMP 5 546
 ACCESS_LUMP 5 547
 
 ACCESS_LUMP 5 547
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 74206 ->0x62bf5b88
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 74206 ->0x6421cb88
 
 ACCESS_LUMP 5 482
 
@@ -3522,12 +3522,12 @@ ACCESS_LUMP 5 485
 ACCESS_LUMP 5 486
 
 ACCESS_LUMP 5 486
-MALLOC: 140 1 (nil) @ r_things.c:287 -> 74346 ->0x62bf5c10
+MALLOC: 140 1 (nil) @ r_things.c:287 -> 74346 ->0x6421cc10
 
 ACCESS_LUMP 5 487
 
 ACCESS_LUMP 5 487
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 74374 ->0x62bf5cb4
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 74374 ->0x6421ccb4
 
 ACCESS_LUMP 5 563
 
@@ -3536,7 +3536,7 @@ ACCESS_LUMP 5 563
 ACCESS_LUMP 5 564
 
 ACCESS_LUMP 5 564
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 74430 ->0x62bf5ce8
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 74430 ->0x6421cce8
 
 ACCESS_LUMP 5 474
 
@@ -3545,7 +3545,7 @@ ACCESS_LUMP 5 474
 ACCESS_LUMP 5 475
 
 ACCESS_LUMP 5 475
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 74486 ->0x62bf5d38
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 74486 ->0x6421cd38
 
 ACCESS_LUMP 5 476
 
@@ -3554,7 +3554,7 @@ ACCESS_LUMP 5 476
 ACCESS_LUMP 5 477
 
 ACCESS_LUMP 5 477
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 74542 ->0x62bf5d88
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 74542 ->0x6421cd88
 
 ACCESS_LUMP 5 548
 
@@ -3563,7 +3563,7 @@ ACCESS_LUMP 5 548
 ACCESS_LUMP 5 549
 
 ACCESS_LUMP 5 549
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 74598 ->0x62bf5dd8
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 74598 ->0x6421cdd8
 
 ACCESS_LUMP 5 550
 
@@ -3580,7 +3580,7 @@ ACCESS_LUMP 5 552
 ACCESS_LUMP 5 553
 
 ACCESS_LUMP 5 553
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 74710 ->0x62bf5e28
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 74710 ->0x6421ce28
 
 ACCESS_LUMP 5 478
 
@@ -3597,7 +3597,7 @@ ACCESS_LUMP 5 480
 ACCESS_LUMP 5 481
 
 ACCESS_LUMP 5 481
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 74822 ->0x62bf5eb0
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 74822 ->0x6421ceb0
 
 ACCESS_LUMP 5 497
 
@@ -3610,7 +3610,7 @@ ACCESS_LUMP 5 498
 ACCESS_LUMP 5 499
 
 ACCESS_LUMP 5 499
-MALLOC: 84 1 (nil) @ r_things.c:287 -> 74906 ->0x62bf5f38
+MALLOC: 84 1 (nil) @ r_things.c:287 -> 74906 ->0x6421cf38
 
 ACCESS_LUMP 5 493
 
@@ -3627,7 +3627,7 @@ ACCESS_LUMP 5 495
 ACCESS_LUMP 5 496
 
 ACCESS_LUMP 5 496
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 75018 ->0x62bf5fa4
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 75018 ->0x6421cfa4
 
 ACCESS_LUMP 5 488
 
@@ -3648,7 +3648,7 @@ ACCESS_LUMP 5 491
 ACCESS_LUMP 5 492
 
 ACCESS_LUMP 5 492
-MALLOC: 140 1 (nil) @ r_things.c:287 -> 75158 ->0x62bf602c
+MALLOC: 140 1 (nil) @ r_things.c:287 -> 75158 ->0x6421d02c
 
 ACCESS_LUMP 5 500
 
@@ -3669,7 +3669,7 @@ ACCESS_LUMP 5 503
 ACCESS_LUMP 5 504
 
 ACCESS_LUMP 5 504
-MALLOC: 140 1 (nil) @ r_things.c:287 -> 75298 ->0x62bf60d0
+MALLOC: 140 1 (nil) @ r_things.c:287 -> 75298 ->0x6421d0d0
 
 ACCESS_LUMP 5 505
 
@@ -3702,7 +3702,7 @@ ACCESS_LUMP 5 557
 ACCESS_LUMP 5 558
 
 ACCESS_LUMP 5 558
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 75410 ->0x62bf6174
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 75410 ->0x6421d174
 
 ACCESS_LUMP 5 508
 
@@ -3743,7 +3743,7 @@ ACCESS_LUMP 5 516
 ACCESS_LUMP 5 517
 
 ACCESS_LUMP 5 517
-MALLOC: 280 1 (nil) @ r_things.c:287 -> 75690 ->0x62bf61fc
+MALLOC: 280 1 (nil) @ r_things.c:287 -> 75690 ->0x6421d1fc
 
 ACCESS_LUMP 5 518
 
@@ -3764,7 +3764,7 @@ ACCESS_LUMP 5 521
 ACCESS_LUMP 5 522
 
 ACCESS_LUMP 5 522
-MALLOC: 140 1 (nil) @ r_things.c:287 -> 75830 ->0x62bf632c
+MALLOC: 140 1 (nil) @ r_things.c:287 -> 75830 ->0x6421d32c
 
 ACCESS_LUMP 5 746
 
@@ -3969,7 +3969,7 @@ ACCESS_LUMP 5 795
 ACCESS_LUMP 5 796
 
 ACCESS_LUMP 5 796
-MALLOC: 644 1 (nil) @ r_things.c:287 -> 76474 ->0x62bf63d0
+MALLOC: 644 1 (nil) @ r_things.c:287 -> 76474 ->0x6421d3d0
 
 ACCESS_LUMP 5 797
 
@@ -4166,7 +4166,7 @@ ACCESS_LUMP 5 844
 ACCESS_LUMP 5 845
 
 ACCESS_LUMP 5 845
-MALLOC: 588 1 (nil) @ r_things.c:287 -> 77062 ->0x62bf666c
+MALLOC: 588 1 (nil) @ r_things.c:287 -> 77062 ->0x6421d66c
 
 ACCESS_LUMP 5 846
 
@@ -4363,7 +4363,7 @@ ACCESS_LUMP 5 893
 ACCESS_LUMP 5 894
 
 ACCESS_LUMP 5 894
-MALLOC: 588 1 (nil) @ r_things.c:287 -> 77650 ->0x62bf68d0
+MALLOC: 588 1 (nil) @ r_things.c:287 -> 77650 ->0x6421d8d0
 
 ACCESS_LUMP 5 530
 
@@ -4404,7 +4404,7 @@ ACCESS_LUMP 5 538
 ACCESS_LUMP 5 539
 
 ACCESS_LUMP 5 539
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 77706 ->0x62bf6b34
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 77706 ->0x6421db34
 
 ACCESS_LUMP 5 565
 
@@ -4637,7 +4637,7 @@ ACCESS_LUMP 5 621
 ACCESS_LUMP 5 622
 
 ACCESS_LUMP 5 622
-MALLOC: 392 1 (nil) @ r_things.c:287 -> 78098 ->0x62bf6b84
+MALLOC: 392 1 (nil) @ r_things.c:287 -> 78098 ->0x6421db84
 
 ACCESS_LUMP 5 735
 
@@ -4682,7 +4682,7 @@ ACCESS_LUMP 5 744
 ACCESS_LUMP 5 745
 
 ACCESS_LUMP 5 745
-MALLOC: 140 1 (nil) @ r_things.c:287 -> 78238 ->0x62bf6d24
+MALLOC: 140 1 (nil) @ r_things.c:287 -> 78238 ->0x6421dd24
 
 ACCESS_LUMP 5 676
 
@@ -4919,7 +4919,7 @@ ACCESS_LUMP 5 733
 ACCESS_LUMP 5 734
 
 ACCESS_LUMP 5 734
-MALLOC: 420 1 (nil) @ r_things.c:287 -> 78658 ->0x62bf6dc8
+MALLOC: 420 1 (nil) @ r_things.c:287 -> 78658 ->0x6421ddc8
 
 ACCESS_LUMP 5 523
 
@@ -4928,7 +4928,7 @@ ACCESS_LUMP 5 523
 ACCESS_LUMP 5 524
 
 ACCESS_LUMP 5 524
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 78714 ->0x62bf6f84
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 78714 ->0x6421df84
 
 ACCESS_LUMP 5 525
 
@@ -4949,7 +4949,7 @@ ACCESS_LUMP 5 528
 ACCESS_LUMP 5 529
 
 ACCESS_LUMP 5 529
-MALLOC: 140 1 (nil) @ r_things.c:287 -> 78854 ->0x62bf6fd4
+MALLOC: 140 1 (nil) @ r_things.c:287 -> 78854 ->0x6421dfd4
 
 ACCESS_LUMP 5 540
 
@@ -4966,7 +4966,7 @@ ACCESS_LUMP 5 542
 ACCESS_LUMP 5 543
 
 ACCESS_LUMP 5 543
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 78966 ->0x62bf7078
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 78966 ->0x6421e078
 
 ACCESS_LUMP 5 907
 
@@ -4975,7 +4975,7 @@ ACCESS_LUMP 5 907
 ACCESS_LUMP 5 908
 
 ACCESS_LUMP 5 908
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 79022 ->0x62bf7100
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 79022 ->0x6421e100
 
 ACCESS_LUMP 5 909
 
@@ -4984,7 +4984,7 @@ ACCESS_LUMP 5 909
 ACCESS_LUMP 5 910
 
 ACCESS_LUMP 5 910
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 79078 ->0x62bf7150
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 79078 ->0x6421e150
 
 ACCESS_LUMP 5 911
 
@@ -4993,7 +4993,7 @@ ACCESS_LUMP 5 911
 ACCESS_LUMP 5 912
 
 ACCESS_LUMP 5 912
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 79134 ->0x62bf71a0
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 79134 ->0x6421e1a0
 
 ACCESS_LUMP 5 928
 
@@ -5014,7 +5014,7 @@ ACCESS_LUMP 5 931
 ACCESS_LUMP 5 932
 
 ACCESS_LUMP 5 932
-MALLOC: 140 1 (nil) @ r_things.c:287 -> 79274 ->0x62bf71f0
+MALLOC: 140 1 (nil) @ r_things.c:287 -> 79274 ->0x6421e1f0
 
 ACCESS_LUMP 5 941
 
@@ -5031,7 +5031,7 @@ ACCESS_LUMP 5 943
 ACCESS_LUMP 5 944
 
 ACCESS_LUMP 5 944
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 79386 ->0x62bf7294
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 79386 ->0x6421e294
 
 ACCESS_LUMP 5 949
 
@@ -5048,7 +5048,7 @@ ACCESS_LUMP 5 951
 ACCESS_LUMP 5 952
 
 ACCESS_LUMP 5 952
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 79498 ->0x62bf731c
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 79498 ->0x6421e31c
 
 ACCESS_LUMP 5 919
 
@@ -5057,7 +5057,7 @@ ACCESS_LUMP 5 919
 ACCESS_LUMP 5 920
 
 ACCESS_LUMP 5 920
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 79554 ->0x62bf73a4
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 79554 ->0x6421e3a4
 
 ACCESS_LUMP 5 923
 
@@ -5066,7 +5066,7 @@ ACCESS_LUMP 5 923
 ACCESS_LUMP 5 924
 
 ACCESS_LUMP 5 924
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 79610 ->0x62bf73f4
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 79610 ->0x6421e3f4
 
 ACCESS_LUMP 5 921
 
@@ -5075,17 +5075,17 @@ ACCESS_LUMP 5 921
 ACCESS_LUMP 5 922
 
 ACCESS_LUMP 5 922
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 79666 ->0x62bf7444
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 79666 ->0x6421e444
 
 ACCESS_LUMP 5 905
 
 ACCESS_LUMP 5 905
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 79694 ->0x62bf7494
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 79694 ->0x6421e494
 
 ACCESS_LUMP 5 906
 
 ACCESS_LUMP 5 906
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 79722 ->0x62bf74c8
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 79722 ->0x6421e4c8
 
 ACCESS_LUMP 5 945
 
@@ -5102,7 +5102,7 @@ ACCESS_LUMP 5 947
 ACCESS_LUMP 5 948
 
 ACCESS_LUMP 5 948
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 79834 ->0x62bf74fc
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 79834 ->0x6421e4fc
 
 ACCESS_LUMP 5 937
 
@@ -5119,12 +5119,12 @@ ACCESS_LUMP 5 939
 ACCESS_LUMP 5 940
 
 ACCESS_LUMP 5 940
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 79946 ->0x62bf7584
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 79946 ->0x6421e584
 
 ACCESS_LUMP 5 925
 
 ACCESS_LUMP 5 925
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 79974 ->0x62bf760c
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 79974 ->0x6421e60c
 
 ACCESS_LUMP 5 933
 
@@ -5141,7 +5141,7 @@ ACCESS_LUMP 5 935
 ACCESS_LUMP 5 936
 
 ACCESS_LUMP 5 936
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 80086 ->0x62bf7640
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 80086 ->0x6421e640
 
 ACCESS_LUMP 5 926
 
@@ -5150,87 +5150,87 @@ ACCESS_LUMP 5 926
 ACCESS_LUMP 5 927
 
 ACCESS_LUMP 5 927
-MALLOC: 56 1 (nil) @ r_things.c:287 -> 80142 ->0x62bf76c8
+MALLOC: 56 1 (nil) @ r_things.c:287 -> 80142 ->0x6421e6c8
 
 ACCESS_LUMP 5 902
 
 ACCESS_LUMP 5 902
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80170 ->0x62bf7718
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80170 ->0x6421e718
 
 ACCESS_LUMP 5 916
 
 ACCESS_LUMP 5 916
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80198 ->0x62bf774c
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80198 ->0x6421e74c
 
 ACCESS_LUMP 5 904
 
 ACCESS_LUMP 5 904
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80226 ->0x62bf7780
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80226 ->0x6421e780
 
 ACCESS_LUMP 5 915
 
 ACCESS_LUMP 5 915
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80254 ->0x62bf77b4
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80254 ->0x6421e7b4
 
 ACCESS_LUMP 5 903
 
 ACCESS_LUMP 5 903
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80282 ->0x62bf77e8
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80282 ->0x6421e7e8
 
 ACCESS_LUMP 5 917
 
 ACCESS_LUMP 5 917
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80310 ->0x62bf781c
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80310 ->0x6421e81c
 
 ACCESS_LUMP 5 914
 
 ACCESS_LUMP 5 914
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80338 ->0x62bf7850
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80338 ->0x6421e850
 
 ACCESS_LUMP 5 899
 
 ACCESS_LUMP 5 899
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80366 ->0x62bf7884
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80366 ->0x6421e884
 
 ACCESS_LUMP 5 901
 
 ACCESS_LUMP 5 901
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80394 ->0x62bf78b8
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80394 ->0x6421e8b8
 
 ACCESS_LUMP 5 900
 
 ACCESS_LUMP 5 900
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80422 ->0x62bf78ec
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80422 ->0x6421e8ec
 
 ACCESS_LUMP 5 898
 
 ACCESS_LUMP 5 898
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80450 ->0x62bf7920
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80450 ->0x6421e920
 
 ACCESS_LUMP 5 913
 
 ACCESS_LUMP 5 913
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80478 ->0x62bf7954
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80478 ->0x6421e954
 
 ACCESS_LUMP 5 895
 
 ACCESS_LUMP 5 895
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80506 ->0x62bf7988
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80506 ->0x6421e988
 
 ACCESS_LUMP 5 896
 
 ACCESS_LUMP 5 896
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80534 ->0x62bf79bc
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80534 ->0x6421e9bc
 
 ACCESS_LUMP 5 897
 
 ACCESS_LUMP 5 897
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80562 ->0x62bf79f0
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80562 ->0x6421e9f0
 
 ACCESS_LUMP 5 918
 
 ACCESS_LUMP 5 918
-MALLOC: 28 1 (nil) @ r_things.c:287 -> 80590 ->0x62bf7a24
+MALLOC: 28 1 (nil) @ r_things.c:287 -> 80590 ->0x6421ea24
 
 ACCESS_LUMP 5 953
 
@@ -5247,7 +5247,7 @@ ACCESS_LUMP 5 955
 ACCESS_LUMP 5 956
 
 ACCESS_LUMP 5 956
-MALLOC: 112 1 (nil) @ r_things.c:287 -> 80702 ->0x62bf7a58
+MALLOC: 112 1 (nil) @ r_things.c:287 -> 80702 ->0x6421ea58
 I_Init: Setting up machine state.
 D_CheckNetGame: Checking network game status.
 startskill 2  deathmatch: 0  startmap: 1  startepisode: 1
@@ -5822,13 +5822,13 @@ ACCESS_LUMP 0 322
 
 ACCESS_LUMP 3 322
 NRT: 125
-MALLOC: 288 1 0x62be1b7c @ r_data.c:170 -> 80990 ->0x62bf7ae0
+MALLOC: 288 1 0x64208b7c @ r_data.c:170 -> 80990 ->0x6421eae0
 TEXTURE CREATION: 0 / 288
 
 ACCESS_LUMP 3 962
 
 ACCESS_LUMP 3 962
-MALLOC: 7584 1 0x62be1b80 @ r_data.c:170 -> 88574 ->0x62bf7c18
+MALLOC: 7584 1 0x64208b80 @ r_data.c:170 -> 88574 ->0x6421ec18
 TEXTURE CREATION: 1 / 7584
 
 ACCESS_LUMP 3 991
@@ -5840,59 +5840,59 @@ ACCESS_LUMP 3 1091
 ACCESS_LUMP 3 991
 
 ACCESS_LUMP 3 991
-MALLOC: 0 1 0x62be1b84 @ r_data.c:170 -> 88574 ->0x62bf99d0
+MALLOC: 0 1 0x64208b84 @ r_data.c:170 -> 88574 ->0x642209d0
 TEXTURE CREATION: 2 / 0
 
 ACCESS_LUMP 3 1092
-MALLOC: 0 1 0x62be1b88 @ r_data.c:170 -> 88574 ->0x62bf99e8
+MALLOC: 0 1 0x64208b88 @ r_data.c:170 -> 88574 ->0x642209e8
 TEXTURE CREATION: 3 / 0
 
 ACCESS_LUMP 3 1098
-MALLOC: 0 1 0x62be1b8c @ r_data.c:170 -> 88574 ->0x62bf9a00
+MALLOC: 0 1 0x64208b8c @ r_data.c:170 -> 88574 ->0x64220a00
 TEXTURE CREATION: 4 / 0
 
 ACCESS_LUMP 3 1023
-MALLOC: 0 1 0x62be1b90 @ r_data.c:170 -> 88574 ->0x62bf9a18
+MALLOC: 0 1 0x64208b90 @ r_data.c:170 -> 88574 ->0x64220a18
 TEXTURE CREATION: 5 / 0
 
 ACCESS_LUMP 3 1024
-MALLOC: 0 1 0x62be1b94 @ r_data.c:170 -> 88574 ->0x62bf9a30
+MALLOC: 0 1 0x64208b94 @ r_data.c:170 -> 88574 ->0x64220a30
 TEXTURE CREATION: 6 / 0
 
 ACCESS_LUMP 3 1025
-MALLOC: 7936 1 0x62be1b98 @ r_data.c:170 -> 96510 ->0x62bf9a48
+MALLOC: 7936 1 0x64208b98 @ r_data.c:170 -> 96510 ->0x64220a48
 TEXTURE CREATION: 7 / 7936
 
 ACCESS_LUMP 3 1016
 
 ACCESS_LUMP 3 1115
-MALLOC: 7936 1 0x62be1b9c @ r_data.c:170 -> 104446 ->0x62bfb960
+MALLOC: 7936 1 0x64208b9c @ r_data.c:170 -> 104446 ->0x64222960
 TEXTURE CREATION: 8 / 7936
 
 ACCESS_LUMP 3 1015
 
 ACCESS_LUMP 3 1115
-MALLOC: 0 1 0x62be1ba0 @ r_data.c:170 -> 104446 ->0x62bfd878
+MALLOC: 0 1 0x64208ba0 @ r_data.c:170 -> 104446 ->0x64224878
 TEXTURE CREATION: 9 / 0
 
 ACCESS_LUMP 3 1018
-MALLOC: 0 1 0x62be1ba4 @ r_data.c:170 -> 104446 ->0x62bfd890
+MALLOC: 0 1 0x64208ba4 @ r_data.c:170 -> 104446 ->0x64224890
 TEXTURE CREATION: 10 / 0
 
 ACCESS_LUMP 3 1019
-MALLOC: 0 1 0x62be1ba8 @ r_data.c:170 -> 104446 ->0x62bfd8a8
+MALLOC: 0 1 0x64208ba8 @ r_data.c:170 -> 104446 ->0x642248a8
 TEXTURE CREATION: 11 / 0
 
 ACCESS_LUMP 3 1020
-MALLOC: 0 1 0x62be1bac @ r_data.c:170 -> 104446 ->0x62bfd8c0
+MALLOC: 0 1 0x64208bac @ r_data.c:170 -> 104446 ->0x642248c0
 TEXTURE CREATION: 12 / 0
 
 ACCESS_LUMP 3 1022
-MALLOC: 0 1 0x62be1bb0 @ r_data.c:170 -> 104446 ->0x62bfd8d8
+MALLOC: 0 1 0x64208bb0 @ r_data.c:170 -> 104446 ->0x642248d8
 TEXTURE CREATION: 13 / 0
 
 ACCESS_LUMP 3 1021
-MALLOC: 16384 1 0x62be1bb4 @ r_data.c:170 -> 120830 ->0x62bfd8f0
+MALLOC: 16384 1 0x64208bb4 @ r_data.c:170 -> 120830 ->0x642248f0
 TEXTURE CREATION: 14 / 16384
 
 ACCESS_LUMP 3 980
@@ -5906,7 +5906,7 @@ ACCESS_LUMP 3 979
 ACCESS_LUMP 3 981
 
 ACCESS_LUMP 3 979
-MALLOC: 0 1 0x62be1bb8 @ r_data.c:170 -> 120830 ->0x62c01908
+MALLOC: 0 1 0x64208bb8 @ r_data.c:170 -> 120830 ->0x64228908
 TEXTURE CREATION: 15 / 0
 
 ACCESS_LUMP 3 963
@@ -5924,21 +5924,21 @@ ACCESS_LUMP 3 964
 ACCESS_LUMP 3 965
 
 ACCESS_LUMP 3 964
-MALLOC: 0 1 0x62be1bbc @ r_data.c:170 -> 120830 ->0x62c01920
+MALLOC: 0 1 0x64208bbc @ r_data.c:170 -> 120830 ->0x64228920
 TEXTURE CREATION: 16 / 0
 
 ACCESS_LUMP 3 1015
-MALLOC: 0 1 0x62be1bc0 @ r_data.c:170 -> 120830 ->0x62c01938
+MALLOC: 0 1 0x64208bc0 @ r_data.c:170 -> 120830 ->0x64228938
 TEXTURE CREATION: 17 / 0
 
 ACCESS_LUMP 3 1016
-MALLOC: 8192 1 0x62be1bc4 @ r_data.c:170 -> 129022 ->0x62c01950
+MALLOC: 8192 1 0x64208bc4 @ r_data.c:170 -> 129022 ->0x64228950
 TEXTURE CREATION: 18 / 8192
 
 ACCESS_LUMP 3 983
 
 ACCESS_LUMP 3 983
-MALLOC: 16384 1 0x62be1bc8 @ r_data.c:170 -> 145406 ->0x62c03968
+MALLOC: 16384 1 0x64208bc8 @ r_data.c:170 -> 145406 ->0x6422a968
 TEXTURE CREATION: 19 / 16384
 
 ACCESS_LUMP 3 1063
@@ -5962,7 +5962,7 @@ ACCESS_LUMP 3 1055
 ACCESS_LUMP 3 1055
 
 ACCESS_LUMP 3 1055
-MALLOC: 32768 1 0x62be1bcc @ r_data.c:170 -> 178174 ->0x62c07980
+MALLOC: 32768 1 0x64208bcc @ r_data.c:170 -> 178174 ->0x6422e980
 TEXTURE CREATION: 20 / 32768
 
 ACCESS_LUMP 3 1070
@@ -6012,13 +6012,13 @@ ACCESS_LUMP 3 1056
 ACCESS_LUMP 3 1056
 
 ACCESS_LUMP 3 1056
-MALLOC: 4096 1 0x62be1bd0 @ r_data.c:170 -> 182270 ->0x62c0f998
+MALLOC: 4096 1 0x64208bd0 @ r_data.c:170 -> 182270 ->0x64236998
 TEXTURE CREATION: 21 / 4096
 
 ACCESS_LUMP 3 1079
 
 ACCESS_LUMP 3 1079
-MALLOC: 16384 1 0x62be1bd4 @ r_data.c:170 -> 198654 ->0x62c109b0
+MALLOC: 16384 1 0x64208bd4 @ r_data.c:170 -> 198654 ->0x642379b0
 TEXTURE CREATION: 22 / 16384
 
 ACCESS_LUMP 3 1049
@@ -6026,7 +6026,7 @@ ACCESS_LUMP 3 1049
 ACCESS_LUMP 3 1045
 
 ACCESS_LUMP 3 1045
-MALLOC: 16384 1 0x62be1bd8 @ r_data.c:170 -> 215038 ->0x62c149c8
+MALLOC: 16384 1 0x64208bd8 @ r_data.c:170 -> 215038 ->0x6423b9c8
 TEXTURE CREATION: 23 / 16384
 
 ACCESS_LUMP 3 1050
@@ -6034,7 +6034,7 @@ ACCESS_LUMP 3 1050
 ACCESS_LUMP 3 1045
 
 ACCESS_LUMP 3 1045
-MALLOC: 32768 1 0x62be1bdc @ r_data.c:170 -> 247806 ->0x62c189e0
+MALLOC: 32768 1 0x64208bdc @ r_data.c:170 -> 247806 ->0x6423f9e0
 TEXTURE CREATION: 24 / 32768
 
 ACCESS_LUMP 3 1087
@@ -6054,7 +6054,7 @@ ACCESS_LUMP 3 1080
 ACCESS_LUMP 3 1085
 
 ACCESS_LUMP 3 1083
-MALLOC: 16384 1 0x62be1be0 @ r_data.c:170 -> 264190 ->0x62c209f8
+MALLOC: 16384 1 0x64208be0 @ r_data.c:170 -> 264190 ->0x642479f8
 TEXTURE CREATION: 25 / 16384
 
 ACCESS_LUMP 3 1082
@@ -6068,7 +6068,7 @@ ACCESS_LUMP 3 1082
 ACCESS_LUMP 3 1078
 
 ACCESS_LUMP 3 1081
-MALLOC: 16384 1 0x62be1be4 @ r_data.c:170 -> 280574 ->0x62c24a10
+MALLOC: 16384 1 0x64208be4 @ r_data.c:170 -> 280574 ->0x6424ba10
 TEXTURE CREATION: 26 / 16384
 
 ACCESS_LUMP 3 1066
@@ -6090,7 +6090,7 @@ ACCESS_LUMP 3 1069
 ACCESS_LUMP 3 1067
 
 ACCESS_LUMP 3 1068
-MALLOC: 0 1 0x62be1be8 @ r_data.c:170 -> 280574 ->0x62c28a28
+MALLOC: 0 1 0x64208be8 @ r_data.c:170 -> 280574 ->0x6424fa28
 TEXTURE CREATION: 27 / 0
 
 ACCESS_LUMP 3 1070
@@ -6100,7 +6100,7 @@ ACCESS_LUMP 3 1071
 ACCESS_LUMP 3 1072
 
 ACCESS_LUMP 3 1076
-MALLOC: 16384 1 0x62be1bec @ r_data.c:170 -> 296958 ->0x62c28a40
+MALLOC: 16384 1 0x64208bec @ r_data.c:170 -> 296958 ->0x6424fa40
 TEXTURE CREATION: 28 / 16384
 
 ACCESS_LUMP 3 1028
@@ -6122,15 +6122,15 @@ ACCESS_LUMP 3 1056
 ACCESS_LUMP 3 1056
 
 ACCESS_LUMP 3 1056
-MALLOC: 0 1 0x62be1bf0 @ r_data.c:170 -> 296958 ->0x62c2ca58
+MALLOC: 0 1 0x64208bf0 @ r_data.c:170 -> 296958 ->0x64253a58
 TEXTURE CREATION: 29 / 0
 
 ACCESS_LUMP 3 982
-MALLOC: 0 1 0x62be1bf4 @ r_data.c:170 -> 296958 ->0x62c2ca70
+MALLOC: 0 1 0x64208bf4 @ r_data.c:170 -> 296958 ->0x64253a70
 TEXTURE CREATION: 30 / 0
 
 ACCESS_LUMP 3 1093
-MALLOC: 1024 1 0x62be1bf8 @ r_data.c:170 -> 297982 ->0x62c2ca88
+MALLOC: 1024 1 0x64208bf8 @ r_data.c:170 -> 297982 ->0x64253a88
 TEXTURE CREATION: 31 / 1024
 
 ACCESS_LUMP 3 1008
@@ -6148,7 +6148,7 @@ ACCESS_LUMP 3 1008
 ACCESS_LUMP 3 1008
 
 ACCESS_LUMP 3 1008
-MALLOC: 1024 1 0x62be1bfc @ r_data.c:170 -> 299006 ->0x62c2cea0
+MALLOC: 1024 1 0x64208bfc @ r_data.c:170 -> 299006 ->0x64253ea0
 TEXTURE CREATION: 32 / 1024
 
 ACCESS_LUMP 3 1009
@@ -6166,15 +6166,15 @@ ACCESS_LUMP 3 1009
 ACCESS_LUMP 3 1009
 
 ACCESS_LUMP 3 1009
-MALLOC: 0 1 0x62be1c00 @ r_data.c:170 -> 299006 ->0x62c2d2b8
+MALLOC: 0 1 0x64208c00 @ r_data.c:170 -> 299006 ->0x642542b8
 TEXTURE CREATION: 33 / 0
 
 ACCESS_LUMP 3 1062
-MALLOC: 0 1 0x62be1c04 @ r_data.c:170 -> 299006 ->0x62c2d2d0
+MALLOC: 0 1 0x64208c04 @ r_data.c:170 -> 299006 ->0x642542d0
 TEXTURE CREATION: 34 / 0
 
 ACCESS_LUMP 3 1097
-MALLOC: 1024 1 0x62be1c08 @ r_data.c:170 -> 300030 ->0x62c2d2e8
+MALLOC: 1024 1 0x64208c08 @ r_data.c:170 -> 300030 ->0x642542e8
 TEXTURE CREATION: 35 / 1024
 
 ACCESS_LUMP 3 1010
@@ -6192,7 +6192,7 @@ ACCESS_LUMP 3 1010
 ACCESS_LUMP 3 1010
 
 ACCESS_LUMP 3 1010
-MALLOC: 0 1 0x62be1c0c @ r_data.c:170 -> 300030 ->0x62c2d700
+MALLOC: 0 1 0x64208c0c @ r_data.c:170 -> 300030 ->0x64254700
 TEXTURE CREATION: 36 / 0
 
 ACCESS_LUMP 3 1096
@@ -6202,7 +6202,7 @@ ACCESS_LUMP 3 1094
 ACCESS_LUMP 3 1095
 
 ACCESS_LUMP 3 1043
-MALLOC: 0 1 0x62be1c10 @ r_data.c:170 -> 300030 ->0x62c2d718
+MALLOC: 0 1 0x64208c10 @ r_data.c:170 -> 300030 ->0x64254718
 TEXTURE CREATION: 37 / 0
 
 ACCESS_LUMP 3 1059
@@ -6214,13 +6214,13 @@ ACCESS_LUMP 3 1060
 ACCESS_LUMP 3 1060
 
 ACCESS_LUMP 3 1060
-MALLOC: 8192 1 0x62be1c14 @ r_data.c:170 -> 308222 ->0x62c2d730
+MALLOC: 8192 1 0x64208c14 @ r_data.c:170 -> 308222 ->0x64254730
 TEXTURE CREATION: 38 / 8192
 
 ACCESS_LUMP 3 1005
 
 ACCESS_LUMP 3 1005
-MALLOC: 8192 1 0x62be1c18 @ r_data.c:170 -> 316414 ->0x62c2f748
+MALLOC: 8192 1 0x64208c18 @ r_data.c:170 -> 316414 ->0x64256748
 TEXTURE CREATION: 39 / 8192
 
 ACCESS_LUMP 3 1006
@@ -6228,7 +6228,7 @@ ACCESS_LUMP 3 1006
 ACCESS_LUMP 3 1006
 
 ACCESS_LUMP 3 1007
-MALLOC: 32768 1 0x62be1c1c @ r_data.c:170 -> 349182 ->0x62c31760
+MALLOC: 32768 1 0x64208c1c @ r_data.c:170 -> 349182 ->0x64258760
 TEXTURE CREATION: 40 / 32768
 
 ACCESS_LUMP 3 1004
@@ -6254,7 +6254,7 @@ ACCESS_LUMP 3 1003
 ACCESS_LUMP 3 1004
 
 ACCESS_LUMP 3 1004
-MALLOC: 0 1 0x62be1c20 @ r_data.c:170 -> 349182 ->0x62c39778
+MALLOC: 0 1 0x64208c20 @ r_data.c:170 -> 349182 ->0x64260778
 TEXTURE CREATION: 41 / 0
 
 ACCESS_LUMP 3 960
@@ -6264,7 +6264,7 @@ ACCESS_LUMP 3 962
 ACCESS_LUMP 3 961
 
 ACCESS_LUMP 3 960
-MALLOC: 8192 1 0x62be1c24 @ r_data.c:170 -> 357374 ->0x62c39790
+MALLOC: 8192 1 0x64208c24 @ r_data.c:170 -> 357374 ->0x64260790
 TEXTURE CREATION: 42 / 8192
 
 ACCESS_LUMP 3 980
@@ -6274,7 +6274,7 @@ ACCESS_LUMP 3 980
 ACCESS_LUMP 3 1108
 
 ACCESS_LUMP 3 1108
-MALLOC: 4096 1 0x62be1c28 @ r_data.c:170 -> 361470 ->0x62c3b7a8
+MALLOC: 4096 1 0x64208c28 @ r_data.c:170 -> 361470 ->0x642627a8
 TEXTURE CREATION: 43 / 4096
 
 ACCESS_LUMP 3 1104
@@ -6404,7 +6404,7 @@ ACCESS_LUMP 3 1105
 ACCESS_LUMP 3 1105
 
 ACCESS_LUMP 3 1106
-MALLOC: 2048 1 0x62be1c2c @ r_data.c:170 -> 363518 ->0x62c3c7c0
+MALLOC: 2048 1 0x64208c2c @ r_data.c:170 -> 363518 ->0x642637c0
 TEXTURE CREATION: 44 / 2048
 
 ACCESS_LUMP 3 1043
@@ -6436,7 +6436,7 @@ ACCESS_LUMP 3 1106
 ACCESS_LUMP 3 1104
 
 ACCESS_LUMP 3 1106
-MALLOC: 2048 1 0x62be1c30 @ r_data.c:170 -> 365566 ->0x62c3cfd8
+MALLOC: 2048 1 0x64208c30 @ r_data.c:170 -> 365566 ->0x64263fd8
 TEXTURE CREATION: 45 / 2048
 
 ACCESS_LUMP 3 1104
@@ -6502,21 +6502,21 @@ ACCESS_LUMP 3 1106
 ACCESS_LUMP 3 1104
 
 ACCESS_LUMP 3 1106
-MALLOC: 0 1 0x62be1c34 @ r_data.c:170 -> 365566 ->0x62c3d7f0
+MALLOC: 0 1 0x64208c34 @ r_data.c:170 -> 365566 ->0x642647f0
 TEXTURE CREATION: 46 / 0
 
 ACCESS_LUMP 3 1046
-MALLOC: 0 1 0x62be1c38 @ r_data.c:170 -> 365566 ->0x62c3d808
+MALLOC: 0 1 0x64208c38 @ r_data.c:170 -> 365566 ->0x64264808
 TEXTURE CREATION: 47 / 0
 
 ACCESS_LUMP 3 993
-MALLOC: 2048 1 0x62be1c3c @ r_data.c:170 -> 367614 ->0x62c3d820
+MALLOC: 2048 1 0x64208c3c @ r_data.c:170 -> 367614 ->0x64264820
 TEXTURE CREATION: 48 / 2048
 
 ACCESS_LUMP 3 992
 
 ACCESS_LUMP 3 992
-MALLOC: 2048 1 0x62be1c40 @ r_data.c:170 -> 369662 ->0x62c3e038
+MALLOC: 2048 1 0x64208c40 @ r_data.c:170 -> 369662 ->0x64265038
 TEXTURE CREATION: 49 / 2048
 
 ACCESS_LUMP 3 1101
@@ -6584,17 +6584,17 @@ ACCESS_LUMP 3 1103
 ACCESS_LUMP 3 1101
 
 ACCESS_LUMP 3 1103
-MALLOC: 8192 1 0x62be1c44 @ r_data.c:170 -> 377854 ->0x62c3e850
+MALLOC: 8192 1 0x64208c44 @ r_data.c:170 -> 377854 ->0x64265850
 TEXTURE CREATION: 50 / 8192
 
 ACCESS_LUMP 3 984
 
 ACCESS_LUMP 3 984
-MALLOC: 0 1 0x62be1c48 @ r_data.c:170 -> 377854 ->0x62c40868
+MALLOC: 0 1 0x64208c48 @ r_data.c:170 -> 377854 ->0x64267868
 TEXTURE CREATION: 51 / 0
 
 ACCESS_LUMP 3 1107
-MALLOC: 16384 1 0x62be1c4c @ r_data.c:170 -> 394238 ->0x62c40880
+MALLOC: 16384 1 0x64208c4c @ r_data.c:170 -> 394238 ->0x64267880
 TEXTURE CREATION: 52 / 16384
 
 ACCESS_LUMP 3 986
@@ -6632,17 +6632,17 @@ ACCESS_LUMP 3 985
 ACCESS_LUMP 3 985
 
 ACCESS_LUMP 3 986
-MALLOC: 0 1 0x62be1c50 @ r_data.c:170 -> 394238 ->0x62c44898
+MALLOC: 0 1 0x64208c50 @ r_data.c:170 -> 394238 ->0x6426b898
 TEXTURE CREATION: 53 / 0
 
 ACCESS_LUMP 3 1011
-MALLOC: 0 1 0x62be1c54 @ r_data.c:170 -> 394238 ->0x62c448b0
+MALLOC: 0 1 0x64208c54 @ r_data.c:170 -> 394238 ->0x6426b8b0
 TEXTURE CREATION: 54 / 0
 
 ACCESS_LUMP 3 1063
 
 ACCESS_LUMP 3 1064
-MALLOC: 21120 1 0x62be1c58 @ r_data.c:170 -> 415358 ->0x62c448c8
+MALLOC: 21120 1 0x64208c58 @ r_data.c:170 -> 415358 ->0x6426b8c8
 TEXTURE CREATION: 55 / 21120
 
 ACCESS_LUMP 3 1044
@@ -6664,11 +6664,11 @@ ACCESS_LUMP 3 1113
 ACCESS_LUMP 3 1114
 
 ACCESS_LUMP 3 1044
-MALLOC: 0 1 0x62be1c5c @ r_data.c:170 -> 415358 ->0x62c49b60
+MALLOC: 0 1 0x64208c5c @ r_data.c:170 -> 415358 ->0x64270b60
 TEXTURE CREATION: 56 / 0
 
 ACCESS_LUMP 3 1061
-MALLOC: 16384 1 0x62be1c60 @ r_data.c:170 -> 431742 ->0x62c49b78
+MALLOC: 16384 1 0x64208c60 @ r_data.c:170 -> 431742 ->0x64270b78
 TEXTURE CREATION: 57 / 16384
 
 ACCESS_LUMP 3 994
@@ -6678,61 +6678,61 @@ ACCESS_LUMP 3 995
 ACCESS_LUMP 3 994
 
 ACCESS_LUMP 3 995
-MALLOC: 0 1 0x62be1c64 @ r_data.c:170 -> 431742 ->0x62c4db90
+MALLOC: 0 1 0x64208c64 @ r_data.c:170 -> 431742 ->0x64274b90
 TEXTURE CREATION: 58 / 0
 
 ACCESS_LUMP 3 1044
-MALLOC: 0 1 0x62be1c68 @ r_data.c:170 -> 431742 ->0x62c4dba8
+MALLOC: 0 1 0x64208c68 @ r_data.c:170 -> 431742 ->0x64274ba8
 TEXTURE CREATION: 59 / 0
 
 ACCESS_LUMP 3 1124
-MALLOC: 7936 1 0x62be1c6c @ r_data.c:170 -> 439678 ->0x62c4dbc0
+MALLOC: 7936 1 0x64208c6c @ r_data.c:170 -> 439678 ->0x64274bc0
 TEXTURE CREATION: 60 / 7936
 
 ACCESS_LUMP 3 1047
 
 ACCESS_LUMP 3 1115
-MALLOC: 0 1 0x62be1c70 @ r_data.c:170 -> 439678 ->0x62c4fad8
+MALLOC: 0 1 0x64208c70 @ r_data.c:170 -> 439678 ->0x64276ad8
 TEXTURE CREATION: 61 / 0
 
 ACCESS_LUMP 3 1012
-MALLOC: 0 1 0x62be1c74 @ r_data.c:170 -> 439678 ->0x62c4faf0
+MALLOC: 0 1 0x64208c74 @ r_data.c:170 -> 439678 ->0x64276af0
 TEXTURE CREATION: 62 / 0
 
 ACCESS_LUMP 3 1013
-MALLOC: 0 1 0x62be1c78 @ r_data.c:170 -> 439678 ->0x62c4fb08
+MALLOC: 0 1 0x64208c78 @ r_data.c:170 -> 439678 ->0x64276b08
 TEXTURE CREATION: 63 / 0
 
 ACCESS_LUMP 3 1014
-MALLOC: 0 1 0x62be1c7c @ r_data.c:170 -> 439678 ->0x62c4fb20
+MALLOC: 0 1 0x64208c7c @ r_data.c:170 -> 439678 ->0x64276b20
 TEXTURE CREATION: 64 / 0
 
 ACCESS_LUMP 3 1047
-MALLOC: 0 1 0x62be1c80 @ r_data.c:170 -> 439678 ->0x62c4fb38
+MALLOC: 0 1 0x64208c80 @ r_data.c:170 -> 439678 ->0x64276b38
 TEXTURE CREATION: 65 / 0
 
 ACCESS_LUMP 3 1030
 
 ACCESS_LUMP 3 1031
-MALLOC: 0 1 0x62be1c84 @ r_data.c:170 -> 439678 ->0x62c4fb50
+MALLOC: 0 1 0x64208c84 @ r_data.c:170 -> 439678 ->0x64276b50
 TEXTURE CREATION: 66 / 0
 
 ACCESS_LUMP 3 1036
 
 ACCESS_LUMP 3 1037
-MALLOC: 0 1 0x62be1c88 @ r_data.c:170 -> 439678 ->0x62c4fb68
+MALLOC: 0 1 0x64208c88 @ r_data.c:170 -> 439678 ->0x64276b68
 TEXTURE CREATION: 67 / 0
 
 ACCESS_LUMP 3 1026
 
 ACCESS_LUMP 3 1027
-MALLOC: 0 1 0x62be1c8c @ r_data.c:170 -> 439678 ->0x62c4fb80
+MALLOC: 0 1 0x64208c8c @ r_data.c:170 -> 439678 ->0x64276b80
 TEXTURE CREATION: 68 / 0
 
 ACCESS_LUMP 3 1032
 
 ACCESS_LUMP 3 1033
-MALLOC: 0 1 0x62be1c90 @ r_data.c:170 -> 439678 ->0x62c4fb98
+MALLOC: 0 1 0x64208c90 @ r_data.c:170 -> 439678 ->0x64276b98
 TEXTURE CREATION: 69 / 0
 
 ACCESS_LUMP 3 1038
@@ -6742,43 +6742,43 @@ ACCESS_LUMP 3 1039
 ACCESS_LUMP 3 1040
 
 ACCESS_LUMP 3 1042
-MALLOC: 0 1 0x62be1c94 @ r_data.c:170 -> 439678 ->0x62c4fbb0
+MALLOC: 0 1 0x64208c94 @ r_data.c:170 -> 439678 ->0x64276bb0
 TEXTURE CREATION: 70 / 0
 
 ACCESS_LUMP 3 1034
 
 ACCESS_LUMP 3 1035
-MALLOC: 0 1 0x62be1c98 @ r_data.c:170 -> 439678 ->0x62c4fbc8
+MALLOC: 0 1 0x64208c98 @ r_data.c:170 -> 439678 ->0x64276bc8
 TEXTURE CREATION: 71 / 0
 
 ACCESS_LUMP 3 1052
-MALLOC: 0 1 0x62be1c9c @ r_data.c:170 -> 439678 ->0x62c4fbe0
+MALLOC: 0 1 0x64208c9c @ r_data.c:170 -> 439678 ->0x64276be0
 TEXTURE CREATION: 72 / 0
 
 ACCESS_LUMP 3 1051
-MALLOC: 0 1 0x62be1ca0 @ r_data.c:170 -> 439678 ->0x62c4fbf8
+MALLOC: 0 1 0x64208ca0 @ r_data.c:170 -> 439678 ->0x64276bf8
 TEXTURE CREATION: 73 / 0
 
 ACCESS_LUMP 3 1053
-MALLOC: 512 1 0x62be1ca4 @ r_data.c:170 -> 440190 ->0x62c4fc10
+MALLOC: 512 1 0x64208ca4 @ r_data.c:170 -> 440190 ->0x64276c10
 TEXTURE CREATION: 74 / 512
 
 ACCESS_LUMP 3 1054
 
 ACCESS_LUMP 3 1054
-MALLOC: 512 1 0x62be1ca8 @ r_data.c:170 -> 440702 ->0x62c4fe28
+MALLOC: 512 1 0x64208ca8 @ r_data.c:170 -> 440702 ->0x64276e28
 TEXTURE CREATION: 75 / 512
 
 ACCESS_LUMP 3 1057
 
 ACCESS_LUMP 3 1057
-MALLOC: 512 1 0x62be1cac @ r_data.c:170 -> 441214 ->0x62c50040
+MALLOC: 512 1 0x64208cac @ r_data.c:170 -> 441214 ->0x64277040
 TEXTURE CREATION: 76 / 512
 
 ACCESS_LUMP 3 1058
 
 ACCESS_LUMP 3 1055
-MALLOC: 32768 1 0x62be1cb0 @ r_data.c:170 -> 473982 ->0x62c50258
+MALLOC: 32768 1 0x64208cb0 @ r_data.c:170 -> 473982 ->0x64277258
 TEXTURE CREATION: 77 / 32768
 
 ACCESS_LUMP 3 967
@@ -6860,7 +6860,7 @@ ACCESS_LUMP 3 1007
 ACCESS_LUMP 3 1007
 
 ACCESS_LUMP 3 1007
-MALLOC: 16384 1 0x62be1cb4 @ r_data.c:170 -> 490366 ->0x62c58270
+MALLOC: 16384 1 0x64208cb4 @ r_data.c:170 -> 490366 ->0x6427f270
 TEXTURE CREATION: 78 / 16384
 
 ACCESS_LUMP 3 1001
@@ -6870,7 +6870,7 @@ ACCESS_LUMP 3 1001
 ACCESS_LUMP 3 998
 
 ACCESS_LUMP 3 998
-MALLOC: 16384 1 0x62be1cb8 @ r_data.c:170 -> 506750 ->0x62c5c288
+MALLOC: 16384 1 0x64208cb8 @ r_data.c:170 -> 506750 ->0x64283288
 TEXTURE CREATION: 79 / 16384
 
 ACCESS_LUMP 3 1000
@@ -6880,7 +6880,7 @@ ACCESS_LUMP 3 999
 ACCESS_LUMP 3 1000
 
 ACCESS_LUMP 3 999
-MALLOC: 8192 1 0x62be1cbc @ r_data.c:170 -> 514942 ->0x62c602a0
+MALLOC: 8192 1 0x64208cbc @ r_data.c:170 -> 514942 ->0x642872a0
 TEXTURE CREATION: 80 / 8192
 
 ACCESS_LUMP 3 967
@@ -6904,7 +6904,7 @@ ACCESS_LUMP 3 1007
 ACCESS_LUMP 3 1007
 
 ACCESS_LUMP 3 1115
-MALLOC: 8192 1 0x62be1cc0 @ r_data.c:170 -> 523134 ->0x62c622b8
+MALLOC: 8192 1 0x64208cc0 @ r_data.c:170 -> 523134 ->0x642892b8
 TEXTURE CREATION: 81 / 8192
 
 ACCESS_LUMP 3 1048
@@ -6918,13 +6918,13 @@ ACCESS_LUMP 3 1048
 ACCESS_LUMP 3 1048
 
 ACCESS_LUMP 3 1048
-MALLOC: 4096 1 0x62be1cc4 @ r_data.c:170 -> 527230 ->0x62c642d0
+MALLOC: 4096 1 0x64208cc4 @ r_data.c:170 -> 527230 ->0x6428b2d0
 TEXTURE CREATION: 82 / 4096
 
 ACCESS_LUMP 3 1015
 
 ACCESS_LUMP 3 1116
-MALLOC: 8192 1 0x62be1cc8 @ r_data.c:170 -> 535422 ->0x62c652e8
+MALLOC: 8192 1 0x64208cc8 @ r_data.c:170 -> 535422 ->0x6428c2e8
 TEXTURE CREATION: 83 / 8192
 
 ACCESS_LUMP 3 980
@@ -6932,7 +6932,7 @@ ACCESS_LUMP 3 980
 ACCESS_LUMP 3 980
 
 ACCESS_LUMP 3 1120
-MALLOC: 8192 1 0x62be1ccc @ r_data.c:170 -> 543614 ->0x62c67300
+MALLOC: 8192 1 0x64208ccc @ r_data.c:170 -> 543614 ->0x6428e300
 TEXTURE CREATION: 84 / 8192
 
 ACCESS_LUMP 3 980
@@ -6940,25 +6940,25 @@ ACCESS_LUMP 3 980
 ACCESS_LUMP 3 980
 
 ACCESS_LUMP 3 1122
-MALLOC: 3072 1 0x62be1cd0 @ r_data.c:170 -> 546686 ->0x62c69318
+MALLOC: 3072 1 0x64208cd0 @ r_data.c:170 -> 546686 ->0x64290318
 TEXTURE CREATION: 85 / 3072
 
 ACCESS_LUMP 3 1016
 
 ACCESS_LUMP 3 1122
-MALLOC: 4096 1 0x62be1cd4 @ r_data.c:170 -> 550782 ->0x62c69f30
+MALLOC: 4096 1 0x64208cd4 @ r_data.c:170 -> 550782 ->0x64290f30
 TEXTURE CREATION: 86 / 4096
 
 ACCESS_LUMP 3 1015
 
 ACCESS_LUMP 3 1121
-MALLOC: 2304 1 0x62be1cd8 @ r_data.c:170 -> 553086 ->0x62c6af48
+MALLOC: 2304 1 0x64208cd8 @ r_data.c:170 -> 553086 ->0x64291f48
 TEXTURE CREATION: 87 / 2304
 
 ACCESS_LUMP 3 991
 
 ACCESS_LUMP 3 1116
-MALLOC: 8192 1 0x62be1cdc @ r_data.c:170 -> 561278 ->0x62c6b860
+MALLOC: 8192 1 0x64208cdc @ r_data.c:170 -> 561278 ->0x64292860
 TEXTURE CREATION: 88 / 8192
 
 ACCESS_LUMP 3 1079
@@ -6968,7 +6968,7 @@ ACCESS_LUMP 3 1087
 ACCESS_LUMP 3 1079
 
 ACCESS_LUMP 3 1118
-MALLOC: 4096 1 0x62be1ce0 @ r_data.c:170 -> 565374 ->0x62c6d878
+MALLOC: 4096 1 0x64208ce0 @ r_data.c:170 -> 565374 ->0x64294878
 TEXTURE CREATION: 89 / 4096
 
 ACCESS_LUMP 3 965
@@ -6980,7 +6980,7 @@ ACCESS_LUMP 3 1116
 ACCESS_LUMP 3 964
 
 ACCESS_LUMP 3 965
-MALLOC: 2304 1 0x62be1ce4 @ r_data.c:170 -> 567678 ->0x62c6e890
+MALLOC: 2304 1 0x64208ce4 @ r_data.c:170 -> 567678 ->0x64295890
 TEXTURE CREATION: 90 / 2304
 
 ACCESS_LUMP 3 1004
@@ -6988,7 +6988,7 @@ ACCESS_LUMP 3 1004
 ACCESS_LUMP 3 1118
 
 ACCESS_LUMP 3 1007
-MALLOC: 8192 1 0x62be1ce8 @ r_data.c:170 -> 575870 ->0x62c6f1a8
+MALLOC: 8192 1 0x64208ce8 @ r_data.c:170 -> 575870 ->0x642961a8
 TEXTURE CREATION: 91 / 8192
 
 ACCESS_LUMP 3 1002
@@ -6996,7 +6996,7 @@ ACCESS_LUMP 3 1002
 ACCESS_LUMP 3 1002
 
 ACCESS_LUMP 3 1118
-MALLOC: 8192 1 0x62be1cec @ r_data.c:170 -> 584062 ->0x62c711c0
+MALLOC: 8192 1 0x64208cec @ r_data.c:170 -> 584062 ->0x642981c0
 TEXTURE CREATION: 92 / 8192
 
 ACCESS_LUMP 3 1002
@@ -7004,7 +7004,7 @@ ACCESS_LUMP 3 1002
 ACCESS_LUMP 3 1002
 
 ACCESS_LUMP 3 1122
-MALLOC: 8192 1 0x62be1cf0 @ r_data.c:170 -> 592254 ->0x62c731d8
+MALLOC: 8192 1 0x64208cf0 @ r_data.c:170 -> 592254 ->0x6429a1d8
 TEXTURE CREATION: 93 / 8192
 
 ACCESS_LUMP 3 984
@@ -7012,19 +7012,19 @@ ACCESS_LUMP 3 984
 ACCESS_LUMP 3 984
 
 ACCESS_LUMP 3 1122
-MALLOC: 4096 1 0x62be1cf4 @ r_data.c:170 -> 596350 ->0x62c751f0
+MALLOC: 4096 1 0x64208cf4 @ r_data.c:170 -> 596350 ->0x6429c1f0
 TEXTURE CREATION: 94 / 4096
 
 ACCESS_LUMP 3 1064
 
 ACCESS_LUMP 3 1120
-MALLOC: 2176 1 0x62be1cf8 @ r_data.c:170 -> 598526 ->0x62c76208
+MALLOC: 2176 1 0x64208cf8 @ r_data.c:170 -> 598526 ->0x6429d208
 TEXTURE CREATION: 95 / 2176
 
 ACCESS_LUMP 3 1047
 
 ACCESS_LUMP 3 1100
-MALLOC: 4096 1 0x62be1cfc @ r_data.c:170 -> 602622 ->0x62c76aa0
+MALLOC: 4096 1 0x64208cfc @ r_data.c:170 -> 602622 ->0x6429daa0
 TEXTURE CREATION: 96 / 4096
 
 ACCESS_LUMP 3 1036
@@ -7032,7 +7032,7 @@ ACCESS_LUMP 3 1036
 ACCESS_LUMP 3 1037
 
 ACCESS_LUMP 3 1120
-MALLOC: 8192 1 0x62be1d00 @ r_data.c:170 -> 610814 ->0x62c77ab8
+MALLOC: 8192 1 0x64208d00 @ r_data.c:170 -> 610814 ->0x6429eab8
 TEXTURE CREATION: 97 / 8192
 
 ACCESS_LUMP 3 1001
@@ -7040,7 +7040,7 @@ ACCESS_LUMP 3 1001
 ACCESS_LUMP 3 1001
 
 ACCESS_LUMP 3 1116
-MALLOC: 8192 1 0x62be1d04 @ r_data.c:170 -> 619006 ->0x62c79ad0
+MALLOC: 8192 1 0x64208d04 @ r_data.c:170 -> 619006 ->0x642a0ad0
 TEXTURE CREATION: 98 / 8192
 
 ACCESS_LUMP 3 998
@@ -7048,7 +7048,7 @@ ACCESS_LUMP 3 998
 ACCESS_LUMP 3 1001
 
 ACCESS_LUMP 3 1100
-MALLOC: 8192 1 0x62be1d08 @ r_data.c:170 -> 627198 ->0x62c7bae8
+MALLOC: 8192 1 0x64208d08 @ r_data.c:170 -> 627198 ->0x642a2ae8
 TEXTURE CREATION: 99 / 8192
 
 ACCESS_LUMP 3 967
@@ -7072,7 +7072,7 @@ ACCESS_LUMP 3 1007
 ACCESS_LUMP 3 1007
 
 ACCESS_LUMP 3 1116
-MALLOC: 4096 1 0x62be1d0c @ r_data.c:170 -> 631294 ->0x62c7db00
+MALLOC: 4096 1 0x64208d0c @ r_data.c:170 -> 631294 ->0x642a4b00
 TEXTURE CREATION: 100 / 4096
 
 ACCESS_LUMP 3 1032
@@ -7080,13 +7080,13 @@ ACCESS_LUMP 3 1032
 ACCESS_LUMP 3 1033
 
 ACCESS_LUMP 3 1116
-MALLOC: 4096 1 0x62be1d10 @ r_data.c:170 -> 635390 ->0x62c7eb18
+MALLOC: 4096 1 0x64208d10 @ r_data.c:170 -> 635390 ->0x642a5b18
 TEXTURE CREATION: 101 / 4096
 
 ACCESS_LUMP 3 1015
 
 ACCESS_LUMP 3 1117
-MALLOC: 8192 1 0x62be1d14 @ r_data.c:170 -> 643582 ->0x62c7fb30
+MALLOC: 8192 1 0x64208d14 @ r_data.c:170 -> 643582 ->0x642a6b30
 TEXTURE CREATION: 102 / 8192
 
 ACCESS_LUMP 3 1055
@@ -7098,7 +7098,7 @@ ACCESS_LUMP 3 980
 ACCESS_LUMP 3 980
 
 ACCESS_LUMP 3 1121
-MALLOC: 8192 1 0x62be1d18 @ r_data.c:170 -> 651774 ->0x62c81b48
+MALLOC: 8192 1 0x64208d18 @ r_data.c:170 -> 651774 ->0x642a8b48
 TEXTURE CREATION: 103 / 8192
 
 ACCESS_LUMP 3 980
@@ -7106,25 +7106,25 @@ ACCESS_LUMP 3 980
 ACCESS_LUMP 3 980
 
 ACCESS_LUMP 3 1123
-MALLOC: 3072 1 0x62be1d1c @ r_data.c:170 -> 654846 ->0x62c83b60
+MALLOC: 3072 1 0x64208d1c @ r_data.c:170 -> 654846 ->0x642aab60
 TEXTURE CREATION: 104 / 3072
 
 ACCESS_LUMP 3 1016
 
 ACCESS_LUMP 3 1123
-MALLOC: 4096 1 0x62be1d20 @ r_data.c:170 -> 658942 ->0x62c84778
+MALLOC: 4096 1 0x64208d20 @ r_data.c:170 -> 658942 ->0x642ab778
 TEXTURE CREATION: 105 / 4096
 
 ACCESS_LUMP 3 1015
 
 ACCESS_LUMP 3 1120
-MALLOC: 2304 1 0x62be1d24 @ r_data.c:170 -> 661246 ->0x62c85790
+MALLOC: 2304 1 0x64208d24 @ r_data.c:170 -> 661246 ->0x642ac790
 TEXTURE CREATION: 106 / 2304
 
 ACCESS_LUMP 3 991
 
 ACCESS_LUMP 3 1117
-MALLOC: 8192 1 0x62be1d28 @ r_data.c:170 -> 669438 ->0x62c860a8
+MALLOC: 8192 1 0x64208d28 @ r_data.c:170 -> 669438 ->0x642ad0a8
 TEXTURE CREATION: 107 / 8192
 
 ACCESS_LUMP 3 1079
@@ -7134,7 +7134,7 @@ ACCESS_LUMP 3 1087
 ACCESS_LUMP 3 1079
 
 ACCESS_LUMP 3 1119
-MALLOC: 4096 1 0x62be1d2c @ r_data.c:170 -> 673534 ->0x62c880c0
+MALLOC: 4096 1 0x64208d2c @ r_data.c:170 -> 673534 ->0x642af0c0
 TEXTURE CREATION: 108 / 4096
 
 ACCESS_LUMP 3 966
@@ -7146,7 +7146,7 @@ ACCESS_LUMP 3 964
 ACCESS_LUMP 3 963
 
 ACCESS_LUMP 3 1117
-MALLOC: 2304 1 0x62be1d30 @ r_data.c:170 -> 675838 ->0x62c890d8
+MALLOC: 2304 1 0x64208d30 @ r_data.c:170 -> 675838 ->0x642b00d8
 TEXTURE CREATION: 109 / 2304
 
 ACCESS_LUMP 3 1004
@@ -7154,7 +7154,7 @@ ACCESS_LUMP 3 1004
 ACCESS_LUMP 3 1119
 
 ACCESS_LUMP 3 1007
-MALLOC: 8192 1 0x62be1d34 @ r_data.c:170 -> 684030 ->0x62c899f0
+MALLOC: 8192 1 0x64208d34 @ r_data.c:170 -> 684030 ->0x642b09f0
 TEXTURE CREATION: 110 / 8192
 
 ACCESS_LUMP 3 1002
@@ -7162,7 +7162,7 @@ ACCESS_LUMP 3 1002
 ACCESS_LUMP 3 1002
 
 ACCESS_LUMP 3 1119
-MALLOC: 8192 1 0x62be1d38 @ r_data.c:170 -> 692222 ->0x62c8ba08
+MALLOC: 8192 1 0x64208d38 @ r_data.c:170 -> 692222 ->0x642b2a08
 TEXTURE CREATION: 111 / 8192
 
 ACCESS_LUMP 3 1002
@@ -7170,7 +7170,7 @@ ACCESS_LUMP 3 1002
 ACCESS_LUMP 3 1002
 
 ACCESS_LUMP 3 1123
-MALLOC: 8192 1 0x62be1d3c @ r_data.c:170 -> 700414 ->0x62c8da20
+MALLOC: 8192 1 0x64208d3c @ r_data.c:170 -> 700414 ->0x642b4a20
 TEXTURE CREATION: 112 / 8192
 
 ACCESS_LUMP 3 984
@@ -7178,19 +7178,19 @@ ACCESS_LUMP 3 984
 ACCESS_LUMP 3 984
 
 ACCESS_LUMP 3 1123
-MALLOC: 4096 1 0x62be1d40 @ r_data.c:170 -> 704510 ->0x62c8fa38
+MALLOC: 4096 1 0x64208d40 @ r_data.c:170 -> 704510 ->0x642b6a38
 TEXTURE CREATION: 113 / 4096
 
 ACCESS_LUMP 3 1064
 
 ACCESS_LUMP 3 1121
-MALLOC: 2176 1 0x62be1d44 @ r_data.c:170 -> 706686 ->0x62c90a50
+MALLOC: 2176 1 0x64208d44 @ r_data.c:170 -> 706686 ->0x642b7a50
 TEXTURE CREATION: 114 / 2176
 
 ACCESS_LUMP 3 1047
 
 ACCESS_LUMP 3 1099
-MALLOC: 4096 1 0x62be1d48 @ r_data.c:170 -> 710782 ->0x62c912e8
+MALLOC: 4096 1 0x64208d48 @ r_data.c:170 -> 710782 ->0x642b82e8
 TEXTURE CREATION: 115 / 4096
 
 ACCESS_LUMP 3 1036
@@ -7198,7 +7198,7 @@ ACCESS_LUMP 3 1036
 ACCESS_LUMP 3 1037
 
 ACCESS_LUMP 3 1121
-MALLOC: 8192 1 0x62be1d4c @ r_data.c:170 -> 718974 ->0x62c92300
+MALLOC: 8192 1 0x64208d4c @ r_data.c:170 -> 718974 ->0x642b9300
 TEXTURE CREATION: 116 / 8192
 
 ACCESS_LUMP 3 1001
@@ -7206,7 +7206,7 @@ ACCESS_LUMP 3 1001
 ACCESS_LUMP 3 1001
 
 ACCESS_LUMP 3 1117
-MALLOC: 8192 1 0x62be1d50 @ r_data.c:170 -> 727166 ->0x62c94318
+MALLOC: 8192 1 0x64208d50 @ r_data.c:170 -> 727166 ->0x642bb318
 TEXTURE CREATION: 117 / 8192
 
 ACCESS_LUMP 3 1001
@@ -7214,7 +7214,7 @@ ACCESS_LUMP 3 1001
 ACCESS_LUMP 3 1099
 
 ACCESS_LUMP 3 998
-MALLOC: 8192 1 0x62be1d54 @ r_data.c:170 -> 735358 ->0x62c96330
+MALLOC: 8192 1 0x64208d54 @ r_data.c:170 -> 735358 ->0x642bd330
 TEXTURE CREATION: 118 / 8192
 
 ACCESS_LUMP 3 967
@@ -7238,7 +7238,7 @@ ACCESS_LUMP 3 1007
 ACCESS_LUMP 3 1007
 
 ACCESS_LUMP 3 1117
-MALLOC: 4096 1 0x62be1d58 @ r_data.c:170 -> 739454 ->0x62c98348
+MALLOC: 4096 1 0x64208d58 @ r_data.c:170 -> 739454 ->0x642bf348
 TEXTURE CREATION: 119 / 4096
 
 ACCESS_LUMP 3 1032
@@ -7246,25 +7246,25 @@ ACCESS_LUMP 3 1032
 ACCESS_LUMP 3 1033
 
 ACCESS_LUMP 3 1117
-MALLOC: 16384 1 0x62be1d5c @ r_data.c:170 -> 755838 ->0x62c99360
+MALLOC: 16384 1 0x64208d5c @ r_data.c:170 -> 755838 ->0x642c0360
 TEXTURE CREATION: 120 / 16384
 
 ACCESS_LUMP 3 996
 
 ACCESS_LUMP 3 996
-MALLOC: 0 1 0x62be1d60 @ r_data.c:170 -> 755838 ->0x62c9d378
+MALLOC: 0 1 0x64208d60 @ r_data.c:170 -> 755838 ->0x642c4378
 TEXTURE CREATION: 121 / 0
 
 ACCESS_LUMP 3 997
-MALLOC: 0 1 0x62be1d64 @ r_data.c:170 -> 755838 ->0x62c9d390
+MALLOC: 0 1 0x64208d64 @ r_data.c:170 -> 755838 ->0x642c4390
 TEXTURE CREATION: 122 / 0
 
 ACCESS_LUMP 3 996
-MALLOC: 0 1 0x62be1d68 @ r_data.c:170 -> 755838 ->0x62c9d3a8
+MALLOC: 0 1 0x64208d68 @ r_data.c:170 -> 755838 ->0x642c43a8
 TEXTURE CREATION: 123 / 0
 
 ACCESS_LUMP 3 1017
-MALLOC: 0 1 0x62be1d6c @ r_data.c:170 -> 755838 ->0x62c9d3c0
+MALLOC: 0 1 0x64208d6c @ r_data.c:170 -> 755838 ->0x642c43c0
 TEXTURE CREATION: 124 / 0
 
 ACCESS_LUMP 3 997
@@ -7284,20 +7284,20 @@ ACCESS_LUMP 0 4
 ACCESS_LUMP 4 14
 
 ACCESS_LUMP 1 14
-MALLOC: 6922 50 (nil) @ w_wad.c:300 -> 762760 ->0x62c9d3d8
+MALLOC: 6922 50 (nil) @ w_wad.c:300 -> 762760 ->0x642c43d8
 
 ACCESS_LUMP 2 14
 
 ACCESS_LUMP 1 14
-MALLOC: 3312 50 (nil) @ p_setup.c:365 -> 766072 ->0x62c9eefc
+MALLOC: 3312 50 (nil) @ p_setup.c:365 -> 766072 ->0x642c5efc
 
 ACCESS_LUMP 1 8
-MALLOC: 3736 50 (nil) @ p_setup.c:572 -> 769808 ->0x62c9fc04
+MALLOC: 3736 50 (nil) @ p_setup.c:572 -> 769808 ->0x642c6c04
 
 ACCESS_LUMP 3 8
 
 ACCESS_LUMP 1 12
-MALLOC: 6460 50 (nil) @ p_setup.c:320 -> 776268 ->0x62ca0ab4
+MALLOC: 6460 50 (nil) @ p_setup.c:320 -> 776268 ->0x642c7ab4
 
 ACCESS_LUMP 3 12
 
@@ -7642,232 +7642,232 @@ ACCESS_LUMP 0 1140
 ACCESS_LUMP 0 1160
 
 ACCESS_LUMP 1 7
-MALLOC: 12960 50 (nil) @ p_setup.c:260 -> 789228 ->0x62ca2408
+MALLOC: 12960 50 (nil) @ p_setup.c:260 -> 789228 ->0x642c9408
 
 ACCESS_LUMP 3 7
 
 ACCESS_LUMP 1 6
-MALLOC: 26600 50 (nil) @ p_setup.c:180 -> 815828 ->0x62ca56c0
+MALLOC: 26600 50 (nil) @ p_setup.c:180 -> 815828 ->0x642cc6c0
 
 ACCESS_LUMP 3 6
 
 ACCESS_LUMP 1 10
-MALLOC: 1896 50 (nil) @ p_setup.c:291 -> 817724 ->0x62cabec0
+MALLOC: 1896 50 (nil) @ p_setup.c:291 -> 817724 ->0x642d2ec0
 
 ACCESS_LUMP 3 10
 
 ACCESS_LUMP 1 11
 NUMNODES---->236
-MALLOC: 12272 50 (nil) @ p_setup.c:533 -> 829996 ->0x62cac640
+MALLOC: 12272 50 (nil) @ p_setup.c:533 -> 829996 ->0x642d3640
 
 ACCESS_LUMP 3 11
 
 ACCESS_LUMP 1 9
-MALLOC: 23424 50 (nil) @ p_setup.c:139 -> 853420 ->0x62caf648
+MALLOC: 23424 50 (nil) @ p_setup.c:139 -> 853420 ->0x642d6648
 
 ACCESS_LUMP 3 9
 
 ACCESS_LUMP 3 13
-MALLOC: 2568 50 (nil) @ p_setup.c:411 -> 855988 ->0x62cb51e0
+MALLOC: 2568 50 (nil) @ p_setup.c:411 -> 855988 ->0x642dc1e0
 
 ACCESS_LUMP 4 5
 
 ACCESS_LUMP 1 5
-MALLOC: 1380 1 (nil) @ w_wad.c:300 -> 857368 ->0x62cb5c00
+MALLOC: 1380 1 (nil) @ w_wad.c:300 -> 857368 ->0x642dcc00
 
 ACCESS_LUMP 2 5
 
 ACCESS_LUMP 1 5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 857508 ->0x62cb617c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 857508 ->0x642dd17c
 ADD_SPRITE 2 28 PLAY
 
 ACCESS_LUMP 0 178
 
 ACCESS_LUMP 3 178
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 857648 ->0x62cb6220
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 857648 ->0x642dd220
 ADD_SPRITE 2 117 ELEC
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 857788 ->0x62cb62c4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 857788 ->0x642dd2c4
 ADD_SPRITE 2 117 ELEC
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 857928 ->0x62cb6368
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 857928 ->0x642dd368
 ADD_SPRITE 2 94 COLU
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858068 ->0x62cb640c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858068 ->0x642dd40c
 ADD_SPRITE 2 94 COLU
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858208 ->0x62cb64b0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858208 ->0x642dd4b0
 ADD_SPRITE 2 0 TROO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858348 ->0x62cb6554
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858348 ->0x642dd554
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858488 ->0x62cb65f8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858488 ->0x642dd5f8
 ADD_SPRITE 2 56 ARM2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858628 ->0x62cb669c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858628 ->0x642dd69c
 ADD_SPRITE 2 0 TROO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858768 ->0x62cb6740
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858768 ->0x642dd740
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858908 ->0x62cb67e4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 858908 ->0x642dd7e4
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859048 ->0x62cb6888
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859048 ->0x642dd888
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859188 ->0x62cb692c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859188 ->0x642dd92c
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859328 ->0x62cb69d0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859328 ->0x642dd9d0
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859468 ->0x62cb6a74
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859468 ->0x642dda74
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859608 ->0x62cb6b18
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859608 ->0x642ddb18
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859748 ->0x62cb6bbc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859748 ->0x642ddbbc
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859888 ->0x62cb6c60
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 859888 ->0x642ddc60
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860028 ->0x62cb6d04
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860028 ->0x642ddd04
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860168 ->0x62cb6da8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860168 ->0x642ddda8
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860308 ->0x62cb6e4c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860308 ->0x642dde4c
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860448 ->0x62cb6ef0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860448 ->0x642ddef0
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860588 ->0x62cb6f94
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860588 ->0x642ddf94
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860728 ->0x62cb7038
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860728 ->0x642de038
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860868 ->0x62cb70dc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 860868 ->0x642de0dc
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861008 ->0x62cb7180
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861008 ->0x642de180
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861148 ->0x62cb7224
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861148 ->0x642de224
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861288 ->0x62cb72c8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861288 ->0x642de2c8
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861428 ->0x62cb736c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861428 ->0x642de36c
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861568 ->0x62cb7410
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861568 ->0x642de410
 ADD_SPRITE 2 94 COLU
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861708 ->0x62cb74b4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861708 ->0x642de4b4
 ADD_SPRITE 2 94 COLU
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861848 ->0x62cb7558
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861848 ->0x642de558
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861988 ->0x62cb75fc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 861988 ->0x642de5fc
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862128 ->0x62cb76a0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862128 ->0x642de6a0
 ADD_SPRITE 2 94 COLU
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862268 ->0x62cb7744
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862268 ->0x642de744
 ADD_SPRITE 2 94 COLU
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862408 ->0x62cb77e8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862408 ->0x642de7e8
 ADD_SPRITE 2 94 COLU
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862548 ->0x62cb788c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862548 ->0x642de88c
 ADD_SPRITE 2 94 COLU
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862688 ->0x62cb7930
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862688 ->0x642de930
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862828 ->0x62cb79d4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862828 ->0x642de9d4
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862968 ->0x62cb7a78
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 862968 ->0x642dea78
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863108 ->0x62cb7b1c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863108 ->0x642deb1c
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863248 ->0x62cb7bc0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863248 ->0x642debc0
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863388 ->0x62cb7c64
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863388 ->0x642dec64
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863528 ->0x62cb7d08
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863528 ->0x642ded08
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863668 ->0x62cb7dac
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863668 ->0x642dedac
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863808 ->0x62cb7e50
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863808 ->0x642dee50
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863948 ->0x62cb7ef4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 863948 ->0x642deef4
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864088 ->0x62cb7f98
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864088 ->0x642def98
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864228 ->0x62cb803c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864228 ->0x642df03c
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864368 ->0x62cb80e0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864368 ->0x642df0e0
 ADD_SPRITE 2 113 CBRA
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864508 ->0x62cb8184
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864508 ->0x642df184
 ADD_SPRITE 2 113 CBRA
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864648 ->0x62cb8228
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864648 ->0x642df228
 ADD_SPRITE 2 68 STIM
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864788 ->0x62cb82cc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864788 ->0x642df2cc
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864928 ->0x62cb8370
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 864928 ->0x642df370
 ADD_SPRITE 2 85 SBOX
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865068 ->0x62cb8414
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865068 ->0x642df414
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865208 ->0x62cb84b8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865208 ->0x642df4b8
 ADD_SPRITE 2 55 ARM1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865348 ->0x62cb855c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865348 ->0x642df55c
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865488 ->0x62cb8600
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865488 ->0x642df600
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865628 ->0x62cb86a4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865628 ->0x642df6a4
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865768 ->0x62cb8748
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865768 ->0x642df748
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865908 ->0x62cb87ec
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 865908 ->0x642df7ec
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866048 ->0x62cb8890
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866048 ->0x642df890
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866188 ->0x62cb8934
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866188 ->0x642df934
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866328 ->0x62cb89d8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866328 ->0x642df9d8
 ADD_SPRITE 2 85 SBOX
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866468 ->0x62cb8a7c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866468 ->0x642dfa7c
 ADD_SPRITE 2 92 SHOT
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866608 ->0x62cb8b20
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866608 ->0x642dfb20
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866748 ->0x62cb8bc4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866748 ->0x642dfbc4
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866888 ->0x62cb8c68
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 866888 ->0x642dfc68
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867028 ->0x62cb8d0c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867028 ->0x642dfd0c
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867168 ->0x62cb8db0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867168 ->0x642dfdb0
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867308 ->0x62cb8e54
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867308 ->0x642dfe54
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867448 ->0x62cb8ef8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867448 ->0x642dfef8
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867588 ->0x62cb8f9c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867588 ->0x642dff9c
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867728 ->0x62cb9040
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867728 ->0x642e0040
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867868 ->0x62cb90e4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 867868 ->0x642e00e4
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868008 ->0x62cb9188
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868008 ->0x642e0188
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868148 ->0x62cb922c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868148 ->0x642e022c
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868288 ->0x62cb92d0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868288 ->0x642e02d0
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868428 ->0x62cb9374
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868428 ->0x642e0374
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868568 ->0x62cb9418
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868568 ->0x642e0418
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868708 ->0x62cb94bc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868708 ->0x642e04bc
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868848 ->0x62cb9560
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868848 ->0x642e0560
 ADD_SPRITE 2 85 SBOX
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868988 ->0x62cb9604
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 868988 ->0x642e0604
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869128 ->0x62cb96a8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869128 ->0x642e06a8
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869268 ->0x62cb974c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869268 ->0x642e074c
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869408 ->0x62cb97f0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869408 ->0x642e07f0
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869548 ->0x62cb9894
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869548 ->0x642e0894
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869688 ->0x62cb9938
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869688 ->0x642e0938
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869828 ->0x62cb99dc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869828 ->0x642e09dc
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869968 ->0x62cb9a80
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 869968 ->0x642e0a80
 ADD_SPRITE 2 61 BON2
-Free: 0x62cb5c00
+Free: 0x642dcc00
 WARNING: FILE NOT FOUND: texture2
-MALLOC: 36 51 (nil) @ p_lights.c:131 -> 870004 ->0x62cb9b24
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 870032 ->0x62cb9b60
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 870060 ->0x62cb9b94
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 870096 ->0x62cb9bc8
+MALLOC: 36 51 (nil) @ p_lights.c:131 -> 870004 ->0x642e0b24
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 870032 ->0x642e0b60
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 870060 ->0x642e0b94
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 870096 ->0x642e0bc8
 
 ACCESS_LUMP 7 1132
 
@@ -11456,110 +11456,110 @@ ACCESS_LUMP 3 918
 ACCESS_LUMP 8 918
 
 ACCESS_LUMP 3 918
-Free: 0x62c9d3d8
-Free: 0x62c9eefc
-Free: 0x62c9fc04
-Free: 0x62ca0ab4
-Free: 0x62ca2408
-Free: 0x62ca56c0
-Free: 0x62cabec0
-Free: 0x62cac640
-Free: 0x62caf648
-Free: 0x62cb51e0
-Free: 0x62cb617c
-Free: 0x62cb6220
-Free: 0x62cb62c4
-Free: 0x62cb6368
-Free: 0x62cb640c
-Free: 0x62cb64b0
-Free: 0x62cb6554
-Free: 0x62cb65f8
-Free: 0x62cb669c
-Free: 0x62cb6740
-Free: 0x62cb67e4
-Free: 0x62cb6888
-Free: 0x62cb692c
-Free: 0x62cb69d0
-Free: 0x62cb6a74
-Free: 0x62cb6b18
-Free: 0x62cb6bbc
-Free: 0x62cb6c60
-Free: 0x62cb6d04
-Free: 0x62cb6da8
-Free: 0x62cb6e4c
-Free: 0x62cb6ef0
-Free: 0x62cb6f94
-Free: 0x62cb7038
-Free: 0x62cb70dc
-Free: 0x62cb7180
-Free: 0x62cb7224
-Free: 0x62cb72c8
-Free: 0x62cb736c
-Free: 0x62cb7410
-Free: 0x62cb74b4
-Free: 0x62cb7558
-Free: 0x62cb75fc
-Free: 0x62cb76a0
-Free: 0x62cb7744
-Free: 0x62cb77e8
-Free: 0x62cb788c
-Free: 0x62cb7930
-Free: 0x62cb79d4
-Free: 0x62cb7a78
-Free: 0x62cb7b1c
-Free: 0x62cb7bc0
-Free: 0x62cb7c64
-Free: 0x62cb7d08
-Free: 0x62cb7dac
-Free: 0x62cb7e50
-Free: 0x62cb7ef4
-Free: 0x62cb7f98
-Free: 0x62cb803c
-Free: 0x62cb80e0
-Free: 0x62cb8184
-Free: 0x62cb8228
-Free: 0x62cb82cc
-Free: 0x62cb8370
-Free: 0x62cb8414
-Free: 0x62cb84b8
-Free: 0x62cb855c
-Free: 0x62cb8600
-Free: 0x62cb86a4
-Free: 0x62cb8748
-Free: 0x62cb87ec
-Free: 0x62cb8890
-Free: 0x62cb8934
-Free: 0x62cb89d8
-Free: 0x62cb8a7c
-Free: 0x62cb8b20
-Free: 0x62cb8bc4
-Free: 0x62cb8c68
-Free: 0x62cb8d0c
-Free: 0x62cb8db0
-Free: 0x62cb8e54
-Free: 0x62cb8ef8
-Free: 0x62cb8f9c
-Free: 0x62cb9040
-Free: 0x62cb90e4
-Free: 0x62cb9188
-Free: 0x62cb922c
-Free: 0x62cb92d0
-Free: 0x62cb9374
-Free: 0x62cb9418
-Free: 0x62cb94bc
-Free: 0x62cb9560
-Free: 0x62cb9604
-Free: 0x62cb96a8
-Free: 0x62cb974c
-Free: 0x62cb97f0
-Free: 0x62cb9894
-Free: 0x62cb9938
-Free: 0x62cb99dc
-Free: 0x62cb9a80
-Free: 0x62cb9b24
-Free: 0x62cb9b60
-Free: 0x62cb9b94
-Free: 0x62cb9bc8
+Free: 0x642c43d8
+Free: 0x642c5efc
+Free: 0x642c6c04
+Free: 0x642c7ab4
+Free: 0x642c9408
+Free: 0x642cc6c0
+Free: 0x642d2ec0
+Free: 0x642d3640
+Free: 0x642d6648
+Free: 0x642dc1e0
+Free: 0x642dd17c
+Free: 0x642dd220
+Free: 0x642dd2c4
+Free: 0x642dd368
+Free: 0x642dd40c
+Free: 0x642dd4b0
+Free: 0x642dd554
+Free: 0x642dd5f8
+Free: 0x642dd69c
+Free: 0x642dd740
+Free: 0x642dd7e4
+Free: 0x642dd888
+Free: 0x642dd92c
+Free: 0x642dd9d0
+Free: 0x642dda74
+Free: 0x642ddb18
+Free: 0x642ddbbc
+Free: 0x642ddc60
+Free: 0x642ddd04
+Free: 0x642ddda8
+Free: 0x642dde4c
+Free: 0x642ddef0
+Free: 0x642ddf94
+Free: 0x642de038
+Free: 0x642de0dc
+Free: 0x642de180
+Free: 0x642de224
+Free: 0x642de2c8
+Free: 0x642de36c
+Free: 0x642de410
+Free: 0x642de4b4
+Free: 0x642de558
+Free: 0x642de5fc
+Free: 0x642de6a0
+Free: 0x642de744
+Free: 0x642de7e8
+Free: 0x642de88c
+Free: 0x642de930
+Free: 0x642de9d4
+Free: 0x642dea78
+Free: 0x642deb1c
+Free: 0x642debc0
+Free: 0x642dec64
+Free: 0x642ded08
+Free: 0x642dedac
+Free: 0x642dee50
+Free: 0x642deef4
+Free: 0x642def98
+Free: 0x642df03c
+Free: 0x642df0e0
+Free: 0x642df184
+Free: 0x642df228
+Free: 0x642df2cc
+Free: 0x642df370
+Free: 0x642df414
+Free: 0x642df4b8
+Free: 0x642df55c
+Free: 0x642df600
+Free: 0x642df6a4
+Free: 0x642df748
+Free: 0x642df7ec
+Free: 0x642df890
+Free: 0x642df934
+Free: 0x642df9d8
+Free: 0x642dfa7c
+Free: 0x642dfb20
+Free: 0x642dfbc4
+Free: 0x642dfc68
+Free: 0x642dfd0c
+Free: 0x642dfdb0
+Free: 0x642dfe54
+Free: 0x642dfef8
+Free: 0x642dff9c
+Free: 0x642e0040
+Free: 0x642e00e4
+Free: 0x642e0188
+Free: 0x642e022c
+Free: 0x642e02d0
+Free: 0x642e0374
+Free: 0x642e0418
+Free: 0x642e04bc
+Free: 0x642e0560
+Free: 0x642e0604
+Free: 0x642e06a8
+Free: 0x642e074c
+Free: 0x642e07f0
+Free: 0x642e0894
+Free: 0x642e0938
+Free: 0x642e09dc
+Free: 0x642e0a80
+Free: 0x642e0b24
+Free: 0x642e0b60
+Free: 0x642e0b94
+Free: 0x642e0bc8
 LOADING MAP E1M2
 
 ACCESS_LUMP 0 15
@@ -11567,20 +11567,20 @@ ACCESS_LUMP 0 15
 ACCESS_LUMP 4 25
 
 ACCESS_LUMP 1 25
-MALLOC: 11870 50 (nil) @ w_wad.c:300 -> 881966 ->0x62c9d3d8
+MALLOC: 11870 50 (nil) @ w_wad.c:300 -> 881966 ->0x642c43d8
 
 ACCESS_LUMP 2 25
 
 ACCESS_LUMP 1 25
-MALLOC: 5208 50 (nil) @ p_setup.c:365 -> 887174 ->0x62ca0250
+MALLOC: 5208 50 (nil) @ p_setup.c:365 -> 887174 ->0x642c7250
 
 ACCESS_LUMP 1 19
-MALLOC: 7536 50 (nil) @ p_setup.c:572 -> 894710 ->0x62ca16c0
+MALLOC: 7536 50 (nil) @ p_setup.c:572 -> 894710 ->0x642c86c0
 
 ACCESS_LUMP 3 19
 
 ACCESS_LUMP 1 23
-MALLOC: 15200 50 (nil) @ p_setup.c:320 -> 909910 ->0x62ca3448
+MALLOC: 15200 50 (nil) @ p_setup.c:320 -> 909910 ->0x642ca448
 
 ACCESS_LUMP 3 23
 
@@ -12385,43 +12385,43 @@ ACCESS_LUMP 0 1138
 ACCESS_LUMP 0 1136
 
 ACCESS_LUMP 1 18
-MALLOC: 26460 50 (nil) @ p_setup.c:260 -> 936370 ->0x62ca6fc0
+MALLOC: 26460 50 (nil) @ p_setup.c:260 -> 936370 ->0x642cdfc0
 
 ACCESS_LUMP 3 18
 
 ACCESS_LUMP 1 17
-MALLOC: 57848 50 (nil) @ p_setup.c:180 -> 994218 ->0x62cad734
+MALLOC: 57848 50 (nil) @ p_setup.c:180 -> 994218 ->0x642d4734
 
 ACCESS_LUMP 3 17
 
 ACCESS_LUMP 1 21
-MALLOC: 3584 50 (nil) @ p_setup.c:291 -> 997802 ->0x62cbb944
+MALLOC: 3584 50 (nil) @ p_setup.c:291 -> 997802 ->0x642e2944
 
 ACCESS_LUMP 3 21
 
 ACCESS_LUMP 1 22
 NUMNODES---->447
-MALLOC: 23244 50 (nil) @ p_setup.c:533 -> 1021046 ->0x62cbc75c
+MALLOC: 23244 50 (nil) @ p_setup.c:533 -> 1021046 ->0x642e375c
 
 ACCESS_LUMP 3 22
 
 ACCESS_LUMP 1 20
-MALLOC: 46816 50 (nil) @ p_setup.c:139 -> 1067862 ->0x62cc2240
+MALLOC: 46816 50 (nil) @ p_setup.c:139 -> 1067862 ->0x642e9240
 
 ACCESS_LUMP 3 20
 
 ACCESS_LUMP 3 24
-MALLOC: 5288 50 (nil) @ p_setup.c:411 -> 1073150 ->0x62ccd938
+MALLOC: 5288 50 (nil) @ p_setup.c:411 -> 1073150 ->0x642f4938
 
 ACCESS_LUMP 4 16
 
 ACCESS_LUMP 1 16
-MALLOC: 2620 1 (nil) @ w_wad.c:300 -> 1075770 ->0x62ccedf8
+MALLOC: 2620 1 (nil) @ w_wad.c:300 -> 1075770 ->0x642f5df8
 
 ACCESS_LUMP 2 16
 
 ACCESS_LUMP 1 16
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1075910 ->0x62ccf84c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1075910 ->0x642f684c
 ADD_SPRITE 2 28 PLAY
 
 ACCESS_LUMP 3 0
@@ -12429,392 +12429,392 @@ ACCESS_LUMP 3 0
 ACCESS_LUMP 0 178
 
 ACCESS_LUMP 3 178
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076050 ->0x62ccf8f0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076050 ->0x642f68f0
 ADD_SPRITE 2 89 CSAW
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076190 ->0x62ccf994
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076190 ->0x642f6994
 ADD_SPRITE 2 92 SHOT
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076330 ->0x62ccfa38
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076330 ->0x642f6a38
 ADD_SPRITE 2 85 SBOX
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076470 ->0x62ccfadc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076470 ->0x642f6adc
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076610 ->0x62ccfb80
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076610 ->0x642f6b80
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076750 ->0x62ccfc24
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076750 ->0x642f6c24
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076890 ->0x62ccfcc8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1076890 ->0x642f6cc8
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077030 ->0x62ccfd6c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077030 ->0x642f6d6c
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077170 ->0x62ccfe10
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077170 ->0x642f6e10
 ADD_SPRITE 2 55 ARM1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077310 ->0x62ccfeb4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077310 ->0x642f6eb4
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077450 ->0x62ccff58
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077450 ->0x642f6f58
 ADD_SPRITE 2 70 SOUL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077590 ->0x62ccfffc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077590 ->0x642f6ffc
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077730 ->0x62cd00a0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077730 ->0x642f70a0
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077870 ->0x62cd0144
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1077870 ->0x642f7144
 ADD_SPRITE 2 88 MGUN
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078010 ->0x62cd01e8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078010 ->0x642f71e8
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078150 ->0x62cd028c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078150 ->0x642f728c
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078290 ->0x62cd0330
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078290 ->0x642f7330
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078430 ->0x62cd03d4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078430 ->0x642f73d4
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078570 ->0x62cd0478
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078570 ->0x642f7478
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078710 ->0x62cd051c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078710 ->0x642f751c
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078850 ->0x62cd05c0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078850 ->0x642f75c0
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078990 ->0x62cd0664
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1078990 ->0x642f7664
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079130 ->0x62cd0708
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079130 ->0x642f7708
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079270 ->0x62cd07ac
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079270 ->0x642f77ac
 ADD_SPRITE 2 68 STIM
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079410 ->0x62cd0850
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079410 ->0x642f7850
 ADD_SPRITE 2 68 STIM
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079550 ->0x62cd08f4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079550 ->0x642f78f4
 ADD_SPRITE 2 63 RKEY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079690 ->0x62cd0998
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079690 ->0x642f7998
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079830 ->0x62cd0a3c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079830 ->0x642f7a3c
 ADD_SPRITE 2 55 ARM1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079970 ->0x62cd0ae0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1079970 ->0x642f7ae0
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080110 ->0x62cd0b84
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080110 ->0x642f7b84
 ADD_SPRITE 2 0 TROO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080250 ->0x62cd0c28
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080250 ->0x642f7c28
 ADD_SPRITE 2 0 TROO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080390 ->0x62cd0ccc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080390 ->0x642f7ccc
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080530 ->0x62cd0d70
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080530 ->0x642f7d70
 ADD_SPRITE 2 56 ARM2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080670 ->0x62cd0e14
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080670 ->0x642f7e14
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080810 ->0x62cd0eb8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080810 ->0x642f7eb8
 ADD_SPRITE 2 68 STIM
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080950 ->0x62cd0f5c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1080950 ->0x642f7f5c
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081090 ->0x62cd1000
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081090 ->0x642f8000
 ADD_SPRITE 2 85 SBOX
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081230 ->0x62cd10a4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081230 ->0x642f80a4
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081370 ->0x62cd1148
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081370 ->0x642f8148
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081510 ->0x62cd11ec
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081510 ->0x642f81ec
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081650 ->0x62cd1290
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081650 ->0x642f8290
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081790 ->0x62cd1334
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081790 ->0x642f8334
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081930 ->0x62cd13d8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1081930 ->0x642f83d8
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082070 ->0x62cd147c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082070 ->0x642f847c
 ADD_SPRITE 2 0 TROO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082210 ->0x62cd1520
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082210 ->0x642f8520
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082350 ->0x62cd15c4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082350 ->0x642f85c4
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082490 ->0x62cd1668
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082490 ->0x642f8668
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082630 ->0x62cd170c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082630 ->0x642f870c
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082770 ->0x62cd17b0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082770 ->0x642f87b0
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082910 ->0x62cd1854
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1082910 ->0x642f8854
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083050 ->0x62cd18f8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083050 ->0x642f88f8
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083190 ->0x62cd199c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083190 ->0x642f899c
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083330 ->0x62cd1a40
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083330 ->0x642f8a40
 ADD_SPRITE 2 68 STIM
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083470 ->0x62cd1ae4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083470 ->0x642f8ae4
 ADD_SPRITE 2 68 STIM
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083610 ->0x62cd1b88
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083610 ->0x642f8b88
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083750 ->0x62cd1c2c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083750 ->0x642f8c2c
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083890 ->0x62cd1cd0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1083890 ->0x642f8cd0
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084030 ->0x62cd1d74
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084030 ->0x642f8d74
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084170 ->0x62cd1e18
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084170 ->0x642f8e18
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084310 ->0x62cd1ebc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084310 ->0x642f8ebc
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084450 ->0x62cd1f60
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084450 ->0x642f8f60
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084590 ->0x62cd2004
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084590 ->0x642f9004
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084730 ->0x62cd20a8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084730 ->0x642f90a8
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084870 ->0x62cd214c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1084870 ->0x642f914c
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085010 ->0x62cd21f0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085010 ->0x642f91f0
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085150 ->0x62cd2294
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085150 ->0x642f9294
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085290 ->0x62cd2338
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085290 ->0x642f9338
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085430 ->0x62cd23dc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085430 ->0x642f93dc
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085570 ->0x62cd2480
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085570 ->0x642f9480
 ADD_SPRITE 2 94 COLU
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085710 ->0x62cd2524
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085710 ->0x642f9524
 ADD_SPRITE 2 55 ARM1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085850 ->0x62cd25c8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085850 ->0x642f95c8
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085990 ->0x62cd266c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1085990 ->0x642f966c
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086130 ->0x62cd2710
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086130 ->0x642f9710
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086270 ->0x62cd27b4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086270 ->0x642f97b4
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086410 ->0x62cd2858
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086410 ->0x642f9858
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086550 ->0x62cd28fc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086550 ->0x642f98fc
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086690 ->0x62cd29a0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086690 ->0x642f99a0
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086830 ->0x62cd2a44
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086830 ->0x642f9a44
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086970 ->0x62cd2ae8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1086970 ->0x642f9ae8
 ADD_SPRITE 2 117 ELEC
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087110 ->0x62cd2b8c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087110 ->0x642f9b8c
 ADD_SPRITE 2 117 ELEC
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087250 ->0x62cd2c30
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087250 ->0x642f9c30
 ADD_SPRITE 2 68 STIM
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087390 ->0x62cd2cd4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087390 ->0x642f9cd4
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087530 ->0x62cd2d78
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087530 ->0x642f9d78
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087670 ->0x62cd2e1c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087670 ->0x642f9e1c
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087810 ->0x62cd2ec0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087810 ->0x642f9ec0
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087950 ->0x62cd2f64
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1087950 ->0x642f9f64
 ADD_SPRITE 2 86 BPAK
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088090 ->0x62cd3008
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088090 ->0x642fa008
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088230 ->0x62cd30ac
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088230 ->0x642fa0ac
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088370 ->0x62cd3150
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088370 ->0x642fa150
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088510 ->0x62cd31f4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088510 ->0x642fa1f4
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088650 ->0x62cd3298
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088650 ->0x642fa298
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088790 ->0x62cd333c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088790 ->0x642fa33c
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088930 ->0x62cd33e0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1088930 ->0x642fa3e0
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089070 ->0x62cd3484
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089070 ->0x642fa484
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089210 ->0x62cd3528
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089210 ->0x642fa528
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089350 ->0x62cd35cc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089350 ->0x642fa5cc
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089490 ->0x62cd3670
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089490 ->0x642fa670
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089630 ->0x62cd3714
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089630 ->0x642fa714
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089770 ->0x62cd37b8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089770 ->0x642fa7b8
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089910 ->0x62cd385c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1089910 ->0x642fa85c
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090050 ->0x62cd3900
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090050 ->0x642fa900
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090190 ->0x62cd39a4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090190 ->0x642fa9a4
 ADD_SPRITE 2 84 SHEL
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090330 ->0x62cd3a48
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090330 ->0x642faa48
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090470 ->0x62cd3aec
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090470 ->0x642faaec
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090610 ->0x62cd3b90
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090610 ->0x642fab90
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090750 ->0x62cd3c34
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090750 ->0x642fac34
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090890 ->0x62cd3cd8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1090890 ->0x642facd8
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091030 ->0x62cd3d7c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091030 ->0x642fad7c
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091170 ->0x62cd3e20
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091170 ->0x642fae20
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091310 ->0x62cd3ec4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091310 ->0x642faec4
 ADD_SPRITE 2 69 MEDI
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091450 ->0x62cd3f68
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091450 ->0x642faf68
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091590 ->0x62cd400c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091590 ->0x642fb00c
 ADD_SPRITE 2 78 CLIP
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091730 ->0x62cd40b0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091730 ->0x642fb0b0
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091870 ->0x62cd4154
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1091870 ->0x642fb154
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092010 ->0x62cd41f8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092010 ->0x642fb1f8
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092150 ->0x62cd429c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092150 ->0x642fb29c
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092290 ->0x62cd4340
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092290 ->0x642fb340
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092430 ->0x62cd43e4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092430 ->0x642fb3e4
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092570 ->0x62cd4488
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092570 ->0x642fb488
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092710 ->0x62cd452c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092710 ->0x642fb52c
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092850 ->0x62cd45d0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092850 ->0x642fb5d0
 ADD_SPRITE 2 79 AMMO
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092990 ->0x62cd4674
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1092990 ->0x642fb674
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093130 ->0x62cd4718
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093130 ->0x642fb718
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093270 ->0x62cd47bc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093270 ->0x642fb7bc
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093410 ->0x62cd4860
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093410 ->0x642fb860
 ADD_SPRITE 2 61 BON2
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093550 ->0x62cd4904
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093550 ->0x642fb904
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093690 ->0x62cd49a8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093690 ->0x642fb9a8
 ADD_SPRITE 2 60 BON1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093830 ->0x62cd4a4c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093830 ->0x642fba4c
 ADD_SPRITE 2 86 BPAK
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093970 ->0x62cd4af0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1093970 ->0x642fbaf0
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094110 ->0x62cd4b94
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094110 ->0x642fbb94
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094250 ->0x62cd4c38
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094250 ->0x642fbc38
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094390 ->0x62cd4cdc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094390 ->0x642fbcdc
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094530 ->0x62cd4d80
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094530 ->0x642fbd80
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094670 ->0x62cd4e24
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094670 ->0x642fbe24
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094810 ->0x62cd4ec8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094810 ->0x642fbec8
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094950 ->0x62cd4f6c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1094950 ->0x642fbf6c
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095090 ->0x62cd5010
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095090 ->0x642fc010
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095230 ->0x62cd50b4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095230 ->0x642fc0b4
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095370 ->0x62cd5158
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095370 ->0x642fc158
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095510 ->0x62cd51fc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095510 ->0x642fc1fc
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095650 ->0x62cd52a0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095650 ->0x642fc2a0
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095790 ->0x62cd5344
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095790 ->0x642fc344
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095930 ->0x62cd53e8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1095930 ->0x642fc3e8
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096070 ->0x62cd548c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096070 ->0x642fc48c
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096210 ->0x62cd5530
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096210 ->0x642fc530
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096350 ->0x62cd55d4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096350 ->0x642fc5d4
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096490 ->0x62cd5678
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096490 ->0x642fc678
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096630 ->0x62cd571c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096630 ->0x642fc71c
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096770 ->0x62cd57c0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096770 ->0x642fc7c0
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096910 ->0x62cd5864
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1096910 ->0x642fc864
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097050 ->0x62cd5908
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097050 ->0x642fc908
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097190 ->0x62cd59ac
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097190 ->0x642fc9ac
 ADD_SPRITE 2 57 BAR1
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097330 ->0x62cd5a50
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097330 ->0x642fca50
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097470 ->0x62cd5af4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097470 ->0x642fcaf4
 ADD_SPRITE 2 29 POSS
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097610 ->0x62cd5b98
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097610 ->0x642fcb98
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097750 ->0x62cd5c3c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097750 ->0x642fcc3c
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097890 ->0x62cd5ce0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1097890 ->0x642fcce0
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098030 ->0x62cd5d84
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098030 ->0x642fcd84
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098170 ->0x62cd5e28
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098170 ->0x642fce28
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098310 ->0x62cd5ecc
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098310 ->0x642fcecc
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098450 ->0x62cd5f70
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098450 ->0x642fcf70
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098590 ->0x62cd6014
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098590 ->0x642fd014
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098730 ->0x62cd60b8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098730 ->0x642fd0b8
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098870 ->0x62cd615c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1098870 ->0x642fd15c
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099010 ->0x62cd6200
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099010 ->0x642fd200
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099150 ->0x62cd62a4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099150 ->0x642fd2a4
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099290 ->0x62cd6348
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099290 ->0x642fd348
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099430 ->0x62cd63ec
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099430 ->0x642fd3ec
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099570 ->0x62cd6490
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099570 ->0x642fd490
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099710 ->0x62cd6534
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099710 ->0x642fd534
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099850 ->0x62cd65d8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099850 ->0x642fd5d8
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099990 ->0x62cd667c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1099990 ->0x642fd67c
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100130 ->0x62cd6720
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100130 ->0x642fd720
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100270 ->0x62cd67c4
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100270 ->0x642fd7c4
 ADD_SPRITE 2 98 POL5
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100410 ->0x62cd6868
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100410 ->0x642fd868
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100550 ->0x62cd690c
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100550 ->0x642fd90c
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100690 ->0x62cd69b0
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100690 ->0x642fd9b0
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100830 ->0x62cd6a54
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100830 ->0x642fda54
 ADD_SPRITE 2 28 PLAY
-MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100970 ->0x62cd6af8
+MALLOC: 140 50 (nil) @ p_mobj.c:490 -> 1100970 ->0x642fdaf8
 ADD_SPRITE 2 28 PLAY
-Free: 0x62ccedf8
+Free: 0x642f5df8
 WARNING: FILE NOT FOUND: texture2
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1100998 ->0x62cd6b9c
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101026 ->0x62cd6bd0
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101054 ->0x62cd6c04
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101082 ->0x62cd6c38
-MALLOC: 36 51 (nil) @ p_lights.c:131 -> 1101118 ->0x62cd6c6c
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101146 ->0x62cd6ca8
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101174 ->0x62cd6cdc
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101210 ->0x62cd6d10
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101246 ->0x62cd6d4c
-MALLOC: 36 51 (nil) @ p_lights.c:131 -> 1101282 ->0x62cd6d88
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101310 ->0x62cd6dc4
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101338 ->0x62cd6df8
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101366 ->0x62cd6e2c
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101394 ->0x62cd6e60
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101422 ->0x62cd6e94
-MALLOC: 36 51 (nil) @ p_lights.c:131 -> 1101458 ->0x62cd6ec8
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101494 ->0x62cd6f04
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101530 ->0x62cd6f40
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101566 ->0x62cd6f7c
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101602 ->0x62cd6fb8
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101638 ->0x62cd6ff4
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101674 ->0x62cd7030
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101710 ->0x62cd706c
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101738 ->0x62cd70a8
-MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101766 ->0x62cd70dc
-MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101802 ->0x62cd7110
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1100998 ->0x642fdb9c
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101026 ->0x642fdbd0
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101054 ->0x642fdc04
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101082 ->0x642fdc38
+MALLOC: 36 51 (nil) @ p_lights.c:131 -> 1101118 ->0x642fdc6c
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101146 ->0x642fdca8
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101174 ->0x642fdcdc
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101210 ->0x642fdd10
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101246 ->0x642fdd4c
+MALLOC: 36 51 (nil) @ p_lights.c:131 -> 1101282 ->0x642fdd88
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101310 ->0x642fddc4
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101338 ->0x642fddf8
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101366 ->0x642fde2c
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101394 ->0x642fde60
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101422 ->0x642fde94
+MALLOC: 36 51 (nil) @ p_lights.c:131 -> 1101458 ->0x642fdec8
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101494 ->0x642fdf04
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101530 ->0x642fdf40
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101566 ->0x642fdf7c
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101602 ->0x642fdfb8
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101638 ->0x642fdff4
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101674 ->0x642fe030
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101710 ->0x642fe06c
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101738 ->0x642fe0a8
+MALLOC: 28 51 (nil) @ p_lights.c:345 -> 1101766 ->0x642fe0dc
+MALLOC: 36 51 (nil) @ p_lights.c:188 -> 1101802 ->0x642fe110
 
 ACCESS_LUMP 7 1130
 

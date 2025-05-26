@@ -32,6 +32,7 @@
 char *name = "/doom";
 
 void _start() {
+  puts("_start called\n");
   myargc = 1;
   myargv = &name;
 

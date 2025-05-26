@@ -130,6 +130,7 @@ function parseelf {
 
     ph_table=$(eslice $elfbody $e_phoff $((e_phnum * e_phentsize)))
     for ((i=0; i<e_phnum; i++)); do
+        printf "\x1b[1G\x1b[2KReadying body %i%%" $(((i*100)/(e_phnum) + 1))
         ph=$(eslice $ph_table $((i * e_phentsize)) $e_phentsize)
 
         p_type=$(sliceint $ph 0)
@@ -145,14 +146,14 @@ function parseelf {
         case $p_type in
             1) # PT_LOAD
                 # wherever i map must be a multiple of p_align
-                echo "type $p_type offset $p_offset addr $p_vaddr/$p_paddr filesz $p_filesz memsz $p_memsz flags $p_flags align $p_align"
+                printf "\ntype $p_type offset $p_offset addr $p_vaddr/$p_paddr filesz $p_filesz memsz $p_memsz flags $p_flags align $p_align\n"
 
 
-                i=0
+                l=0
                 while read int; do
-                    printf "\x1b[1G\x1b[2KLoading memory %i%%" $(((i*100)/(p_memsz) + 1))
+                    printf "\x1b[1G\x1b[2KLoading memory %i%%" $(((l*100)/(p_filesz) + 1))
 
-                    offs=$((p_vaddr+i))
+                    offs=$((p_vaddr+l))
 
                     local align=$((offs%4))
                     offs=$((offs/4))
@@ -160,21 +161,22 @@ function parseelf {
 
                     MEMORY[offs]=$(((MEMORY[offs] & mask) | (int << (align*8)) ))
 
-                    i=$((i + 1))
+                    l=$((l + 1))
                 done < <(od -t d1 -An -v -w1 --skip-bytes=$((p_offset)) --read-bytes=$p_filesz "$1")
                 printf "\n"
 
-                echo "loaded PT_LOAD into memory"
+                printf "loaded PT_LOAD into memory\n"
             ;;
             1879048195) # PT_RISCV_ATTRIBUTES
                 # load this later
                 :
             ;;
             *)
-            echo "unknown p_type $p_type, ignoring"
+            printf "\nunknown p_type $p_type, ignoring\n"
             ;;
         esac
     done
 
+    printf "elf parsed!\n"
 
 }

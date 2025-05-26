@@ -1,4 +1,3 @@
-# shellcheck shell=ksh
 # these are implementations of the functions in util.sh, without using any external utilities
 
 

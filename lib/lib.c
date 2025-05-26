@@ -300,10 +300,11 @@ char sys_char() {
 
 void exit(int i) {
   asm volatile("li a7, 93;"
+               "li a0, 1;"
                "ecall;"
                :
                :
-               : "a7");
+               : "a7", "a0");
 }
 
 int islower(int c) { return (unsigned)c - 'a' < 26; }
@@ -397,6 +398,11 @@ char *__stpcpy(char *restrict d, const char *restrict s) {
     ;
 
   return d;
+}
+
+char *strcat(char *restrict dest, const char *restrict src) {
+  strcpy(dest + strlen(dest), src);
+  return dest;
 }
 char *strcpy(char *restrict dest, const char *restrict src) {
   __stpcpy(dest, src);
@@ -502,6 +508,7 @@ size_t fwrite(const void *__restrict ptr, size_t size, size_t n,
               FILE *__restrict s) {
   return 0;
 }
+int fputs(const char *restrict s, FILE *restrict stream) { return 0; }
 int fputc(int c, FILE *stream) { return 0; }
 int fflush(FILE *stream) { return 0; }
 FILE *fopen(const char *__restrict filename, const char *__restrict modes) {

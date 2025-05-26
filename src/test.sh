@@ -1,4 +1,3 @@
-#shellcheck shell=ksh
 export LC_ALL=C
 
 MEMSIZE=800000
@@ -34,7 +33,7 @@ parseelf $1 < $1
 # init 0 $dtb_ptr
 
 while true; do
-    step
+    step $1
 done
 
 
