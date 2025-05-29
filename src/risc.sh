@@ -89,7 +89,6 @@ reset() {
     for ((i=0; i<32; i++)); do
         REGS[i]=0
     done
-    REGS[8]=$((MEMSIZE - 10000))
     REGS[2]=$((MEMSIZE - 10000))
 
     for ((i=0; i<$((MEMSIZE/4)); i++)); do
@@ -211,7 +210,7 @@ reset
 
 diasm() {
     printf "%08x" $int | sed 's/../& /g' | awk '{for(i=4;i>0;i--) printf $i}' | xxd -r -p > t
-    riscv32-unknown-linux-gnu-objdump -D -b binary -M no-aliases -m riscv:rv32 t | grep -P '^\s*[0-9a-f]+:\s+[0-9a-f]+\s+' | sed -E 's/^\s*[0-9a-f]+:\s+[0-9a-f]+\s+//'   # echo -en "$int: "
+    /opt/riscv/bin/riscv32-unknown-linux-gnu-objdump -D -b binary -M no-aliases -m riscv:rv32 t | grep -P '^\s*[0-9a-f]+:\s+[0-9a-f]+\s+' | sed -E 's/^\s*[0-9a-f]+:\s+[0-9a-f]+\s+//'   # echo -en "$int: "
 }
 
 function step {
@@ -226,9 +225,9 @@ function step {
     # i should NOT have to do this something is very wrong
     int=$((int & 0xFFFFFFFF))
 
-    # dumpstate
+    dumpstate >> "$1.asm.dump1"
 
-    # printf "%08x" $int
+    # printf "%08x " $int
     # diasm
 
     local rval=0
@@ -358,6 +357,7 @@ function step {
                         ;;
                     *) trap=3;;
                 esac
+                REGS[rd]=$rval
             fi
             ;;
         $((0x23))) # STORE
@@ -553,11 +553,11 @@ function step {
                     ;;
 				esac
             elif ((funct3 == 0)); then
-                # echo "syscall (id:${REGS[17]}) args 1-6: ${REGS[10]} ${REGS[11]} ${REGS[12]} ${REGS[13]} ${REGS[14]} ${REGS[15]}"
+                echo "syscall (id:${REGS[17]}) args 1-6: ${REGS[10]} ${REGS[11]} ${REGS[12]} ${REGS[13]} ${REGS[14]} ${REGS[15]}"
 
                 case ${REGS[17]} in
                     64)
-                        # echo "write called"
+                        echo "write called"
                         len=${REGS[12]}
 
 
@@ -577,13 +577,15 @@ function step {
                         sleep REGS[11]
                         ;;
                     93)
-                        if [[ ${REGS[10]} != 0 ]]; then                          
-                          echo "exit called! exit code ${REGS[10]}"
-                          printf "$1 ⁉️ test ${REGS[3]}: failed\n" >> log
-                        else 
-                          echo "exit called! but im going to ignore it exit code ${REGS[10]}"
-                          printf "$1 ✅ test ${REGS[3]}: passed\n" >> log
-                        fi
+                        echo "exit called! exit code ${REGS[10]}"
+                        exit 0
+                        ;;
+                    94)
+                        printf "$1 ✅ test ${REGS[3]}: passed\n" >> log
+                        exit 0
+                        ;;
+                    95)
+                        printf "$1 ⁉️ test ${REGS[3]}: failed\n" >> log
                         exit 0
                         ;;
                     *)
