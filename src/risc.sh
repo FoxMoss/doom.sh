@@ -1,6 +1,7 @@
 declare -a MEMORY
 declare -a REGS
 REGS=()
+REGS_BACKUP=()
 MEMORY=()
 PC=0
 INTMAX=$((2**31))
@@ -225,8 +226,6 @@ function step {
     # i should NOT have to do this something is very wrong
     int=$((int & 0xFFFFFFFF))
 
-    dumpstate >> "$1.asm.dump1"
-
     # printf "%08x " $int
     # diasm
 
@@ -357,7 +356,6 @@ function step {
                         ;;
                     *) trap=3;;
                 esac
-                REGS[rd]=$rval
             fi
             ;;
         $((0x23))) # STORE
@@ -553,7 +551,7 @@ function step {
                     ;;
 				esac
             elif ((funct3 == 0)); then
-                echo "syscall (id:${REGS[17]}) args 1-6: ${REGS[10]} ${REGS[11]} ${REGS[12]} ${REGS[13]} ${REGS[14]} ${REGS[15]}"
+                echo "syscall PC:${PC} (id:${REGS[17]}) args 1-6: ${REGS[10]} ${REGS[11]} ${REGS[12]} ${REGS[13]} ${REGS[14]} ${REGS[15]}"
 
                 case ${REGS[17]} in
                     64)
@@ -666,9 +664,14 @@ function step {
         exit 1
     fi
 
+    dumpstate >> "$1.asm.dump1"
+
     if ((rdid)); then
-        REGS[rdid]=$rval
+      REGS[rdid]=$((rval & 0xffffffff))
     fi
+
+    dumpstate >> "$1.asm.dump1"
+
 
     PC=$((PC + 4))
     # echo "-end of frame-"
@@ -680,13 +683,12 @@ dumpstate() {
     ir=0
     # printf "fucking pc $PC fucking $(memreadword 1301196) != 29433987"
     printf 'PC: %08x ' $PC
-    if ((pc_offset >=0 )) && ((pc_offset < (MEMSIZE - 3))); then
-        ir=$(memreadword $((pc_offset)))
-        ir=$((ir & 0xffffffff))
-        printf '[0x%08x] ' $ir
-    else
-        printf '[xxxxxxxxxx] '
-    fi
+    ir=$(memreadword $((pc_offset)))
+    ir=$((ir & 0xffffffff))
+
+    local rdid=$(((ir >> 7) & 0x1f))
+
+    printf '[0x%08x] ir:%i ' $ir $rdid
     printf 'Z:%08x ra:%08x sp:%08x gp:%08x tp:%08x t0:%08x t1:%08x t2:%08x s0:%08x s1:%08x a0:%08x a1:%08x a2:%08x a3:%08x a4:%08x a5:%08x ' ${REGS[0]} ${REGS[1]} ${REGS[2]} ${REGS[3]} ${REGS[4]} ${REGS[5]} ${REGS[6]} ${REGS[7]} ${REGS[8]} ${REGS[9]} ${REGS[10]} ${REGS[11]} ${REGS[12]} ${REGS[13]} ${REGS[14]} ${REGS[15]}
     printf 'a6:%08x a7:%08x s2:%08x s3:%08x s4:%08x s5:%08x s6:%08x s7:%08x s8:%08x s9:%08x s10:%08x s11:%08x t3:%08x t4:%08x t5:%08x t6:%08x\n' ${REGS[16]} ${REGS[17]} ${REGS[18]} ${REGS[19]} ${REGS[20]} ${REGS[21]} ${REGS[22]} ${REGS[23]} ${REGS[24]} ${REGS[25]} ${REGS[26]} ${REGS[27]} ${REGS[28]} ${REGS[29]} ${REGS[30]} ${REGS[31]}
     # echo "a0 ${REGS[10]} a2 ${REGS[12]} a5 ${REGS[15]} s0 ${REGS[8]}"

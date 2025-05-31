@@ -1,6 +1,6 @@
 export LC_ALL=C
 
-MEMSIZE=80000
+MEMSIZE=80000000
 
 . src/util-pure.sh
 . src/fmt.sh

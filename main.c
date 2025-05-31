@@ -2,7 +2,8 @@
 // #include "lib/syscalls.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 void _start() {
-  puts("this is from puts()\n");
+  strlen("this is from puts()\n");
   exit(1);
 }
