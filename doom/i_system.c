@@ -80,6 +80,7 @@ int I_GetTime(void) {
   int newtics;
   static int basetime = 0;
 
+  // printf("%i\n", newtics);
   return sys_ticks();
 }
 
@@ -94,8 +95,6 @@ void I_Init(void) {
 //
 // I_Quit
 //
-void I_ShutdownGraphics(void) { exit(0); }
-
 void I_Quit(void) {
   D_QuitNetGame();
   I_ShutdownSound();
@@ -124,11 +123,9 @@ byte *I_AllocLow(int length) {
 extern boolean demorecording;
 
 void I_Error(char *error, ...) {
-  va_list argptr;
 
   // Message first.
-  va_start(argptr, error);
-  va_end(argptr);
+  printf("%s\n", error);
 
   // Shutdown. Here might be other errors.
   if (demorecording)

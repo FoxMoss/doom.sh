@@ -69,6 +69,8 @@
 
 #define SAVEGAMESIZE 0x2c000
 #define SAVESTRINGSIZE 24
+#undef stderr
+#define stderr 0
 
 boolean G_CheckDemoStatus(void);
 void G_ReadDemoTiccmd(ticcmd_t *cmd);
@@ -1060,7 +1062,6 @@ void G_LoadGame(char *name) {
 #define VERSIONSIZE 16
 
 void G_DoLoadGame(void) {
-#ifdef FILESYSTEM
   int length;
   int i;
   int a, b, c;
@@ -1110,8 +1111,6 @@ void G_DoLoadGame(void) {
 
   // draw the pattern into the back screen
   R_FillBackScreen();
-#endif
-  return;
 }
 
 //
@@ -1398,7 +1397,7 @@ void G_DoPlayDemo(void) {
   gameaction = ga_nothing;
   demobuffer = demo_p = W_CacheLumpName(defdemoname, PU_STATIC);
   if (*demo_p++ != VERSION) {
-    printf("Demo is from a different game version!\n");
+    fprintf(stderr, "Demo is from a different game version!\n");
     gameaction = ga_nothing;
     return;
   }

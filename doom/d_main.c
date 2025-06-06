@@ -33,7 +33,6 @@
 #ifdef NORMALUNIX
 #include <fcntl.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
@@ -41,10 +40,10 @@
 
 #include "doomdef.h"
 #include "doomstat.h"
+#include <stdlib.h>
 
 #include "dstrings.h"
 #include "sounds.h"
-#include "strings.h"
 
 #include "s_sound.h"
 #include "v_video.h"
@@ -74,6 +73,10 @@
 
 #include "d_main.h"
 
+#undef stderr
+#define stderr 0
+#undef stdout
+#define stdout 0
 //
 // D-DoomLoop()
 // Not a globally visible function,

@@ -1,7 +1,6 @@
 
 #include "DrawFunctions.h"
 
-#include "../lib/syscalls.h"
 #include "math.c"
 #include <fcntl.h>
 #include <math.h>
@@ -21,6 +20,7 @@ void CNFGGetDimensions(short *x, short *y) {
 
 void CNFGSetupFullscreen(const char *window_name, int screen_no) {}
 
+char sys_char();
 void CNFGSetup(const char *window_name, int w, int h) {
   // width = w;
   // height = h;
@@ -35,7 +35,7 @@ void CNFGHandleInput() {
     key = '\0';
   }
 
-  key = sys_char();
+  char key = sys_char();
   if (key != 0) {
     HandleKey(key, 0);
   }

@@ -28,13 +28,14 @@
 
 #include "d_main.h"
 #include "m_argv.h"
+#include <stdio.h>
 
-char *name = "/doom";
+char *prog = "./doom";
 
 void _start() {
-  puts("_start called\n");
+  printf("printf works! %i\n", 1);
   myargc = 1;
-  myargv = &name;
+  myargv = &prog;
 
   D_DoomMain();
 }

@@ -32,6 +32,7 @@
 #include "i_system.h"
 #include "i_video.h"
 #include "m_menu.h"
+#include <stdio.h>
 
 #define NCMD_EXIT 0x80000000
 #define NCMD_RETRANSMIT 0x40000000
@@ -314,6 +315,7 @@ void GetPackets(void) {
       while (nettics[netnode] < realend) {
         dest = &netcmds[netconsole][nettics[netnode] % BACKUPTICS];
         nettics[netnode]++;
+        printf("going!\n");
         *dest = *src;
         src++;
       }
@@ -374,8 +376,8 @@ void NetUpdate(void) {
     if (nodeingame[i]) {
       netbuffer->starttic = realstart = resendto[i];
       netbuffer->numtics = maketic - realstart;
-      if (netbuffer->numtics > BACKUPTICS)
-        I_Error("NetUpdate: netbuffer->numtics > BACKUPTICS");
+      // if (netbuffer->numtics > BACKUPTICS)
+      //   I_Error("NetUpdate: netbuffer->numtics > BACKUPTICS");
 
       resendto[i] = maketic - doomcom->extratics;
 
@@ -580,11 +582,13 @@ void TryRunTics(void) {
 
   lowtic = MAXINT;
   numplaying = 0;
+  printf("num nodes = %i\n", doomcom->numnodes);
   for (i = 0; i < doomcom->numnodes; i++) {
     if (nodeingame[i]) {
       numplaying++;
       if (nettics[i] < lowtic)
         lowtic = nettics[i];
+      printf("nettics %i\n", nettics[i]);
     }
   }
   availabletics = lowtic - gametic / ticdup;

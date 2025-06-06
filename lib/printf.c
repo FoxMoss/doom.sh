@@ -1,68 +1,4 @@
 
-
-/**
- * Output a character to a custom device like UART, used by the printf()
- * function This function is declared here only. You have to write your custom
- * implementation somewhere
- * \param character Character to output
- */
-#include "syscalls.h"
-#include <stdarg.h>
-#include <stddef.h>
-
-/**
- * Tiny printf implementation
- * You have to implement _putchar if you use printf()
- * To avoid conflicts with the regular printf() API it is overridden by macro
- * defines and internal underscore-appended functions like printf_() are used
- * \param format A string that specifies the format of the output
- * \return The number of characters that are written into the array, not
- * counting the terminating null character
- */
-
-/**
- * Tiny sprintf implementation
- * Due to security reasons (buffer overflow) YOU SHOULD CONSIDER USING
- * (V)SNPRINTF INSTEAD!
- * \param buffer A pointer to the buffer where to store the formatted string.
- * MUST be big enough to store the output!
- * \param format A string that specifies the format of the output
- * \return The number of characters that are WRITTEN into the buffer, not
- * counting the terminating null character
- */
-/**
- * Tiny snprintf/vsnprintf implementation
- * \param buffer A pointer to the buffer where to store the formatted string
- * \param count The maximum number of characters to store in the buffer,
- * including a terminating null character
- * \param format A string that specifies the format of the output
- * \param va A value identifying a variable arguments list
- * \return The number of characters that COULD have been written into the
- * buffer, not counting the terminating null character. A value equal or larger
- * than count indicates truncation. Only when the returned value is non-negative
- * and less than count, the string has been completely written.
- */
-/**
- * Tiny vprintf implementation
- * \param format A string that specifies the format of the output
- * \param va A value identifying a variable arguments list
- * \return The number of characters that are WRITTEN into the buffer, not
- * counting the terminating null character
- */
-/**
- * printf with output function
- * You may use this as dynamic alternative to printf() with its fixed _putchar()
- * output
- * \param out An output function which takes one character and an argument
- * pointer
- * \param arg An argument pointer for user data passed to output function
- * \param format A string that specifies the format of the output
- * \return The number of characters that are sent to the output function, not
- * counting the terminating null character
- */
-int fctprintf(void (*out)(char character, void *arg), void *arg,
-              const char *format, ...);
-
 ///////////////////////////////////////////////////////////////////////////////
 // \author (c) Marco Paland (info@paland.com)
 //             2014-2019, PALANDesign Hannover, Germany
@@ -96,54 +32,187 @@ int fctprintf(void (*out)(char character, void *arg), void *arg,
 //
 ///////////////////////////////////////////////////////////////////////////////
 
+#include "syscalls.h"
 #include <stdbool.h>
 #include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-// define this globally (e.g. gcc -DPRINTF_INCLUDE_CONFIG_H ...) to include the
-// printf_config.h header file
+///////////////////////////////////////////////////////////////////////////////
+// \author (c) Marco Paland (info@paland.com)
+//             2014-2019, PALANDesign Hannover, Germany
+//
+// \license The MIT License (MIT)
+//
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+//
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
+//
+// \brief Tiny printf, sprintf and snprintf implementation, optimized for speed
+// on
+//        embedded systems with a very limited resources.
+//        Use this instead of bloated standard/newlib printf.
+//        These routines are thread safe and reentrant.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+#ifndef _printfH_
+#define _printfH_
+
+#include <stdarg.h>
+#include <stddef.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/**
+ * Output a character to a custom device like UART, used by the printf()
+ * function This function is declared here only. You have to write your custom
+ * implementation somewhere
+ * \param character Character to output
+ */
+void _putchar(char character);
+
+/**
+ * Tiny printf implementation
+ * You have to implement _putchar if you use printf()
+ * To avoid conflicts with the regular printf() API it is overridden by macro
+ * defines and internal underscore-appended functions like printf() are used
+ * \param format A string that specifies the format of the output
+ * \return The number of characters that are written into the array, not
+ * counting the terminating null character
+ */
+int printf(const char *format, ...);
+
+/**
+ * Tiny sprintf implementation
+ * Due to security reasons (buffer overflow) YOU SHOULD CONSIDER USING
+ * (V)SNPRINTF INSTEAD!
+ * \param buffer A pointer to the buffer where to store the formatted string.
+ * MUST be big enough to store the output!
+ * \param format A string that specifies the format of the output
+ * \return The number of characters that are WRITTEN into the buffer, not
+ * counting the terminating null character
+ */
+#define sprintf sprintf
+int sprintf(char *buffer, const char *format, ...);
+
+/**
+ * Tiny snprintf/vsnprintf implementation
+ * \param buffer A pointer to the buffer where to store the formatted string
+ * \param count The maximum number of characters to store in the buffer,
+ * including a terminating null character
+ * \param format A string that specifies the format of the output
+ * \param va A value identifying a variable arguments list
+ * \return The number of characters that COULD have been written into the
+ * buffer, not counting the terminating null character. A value equal or larger
+ * than count indicates truncation. Only when the returned value is non-negative
+ * and less than count, the string has been completely written.
+ */
+#define snprintf snprintf
+#define vsnprintf vsnprintf
+int snprintf(char *buffer, size_t count, const char *format, ...);
+int vsnprintf(char *buffer, size_t count, const char *format, va_list va);
+
+/**
+ * Tiny vprintf implementation
+ * \param format A string that specifies the format of the output
+ * \param va A value identifying a variable arguments list
+ * \return The number of characters that are WRITTEN into the buffer, not
+ * counting the terminating null character
+ */
+#define vprintf vprintf
+int vprintf(const char *format, va_list va);
+
+/**
+ * printf with output function
+ * You may use this as dynamic alternative to printf() with its fixed _putchar()
+ * output
+ * \param out An output function which takes one character and an argument
+ * pointer
+ * \param arg An argument pointer for user data passed to output function
+ * \param format A string that specifies the format of the output
+ * \return The number of characters that are sent to the output function, not
+ * counting the terminating null character
+ */
+int fctprintf(void (*out)(char character, void *arg), void *arg,
+              const char *format, ...);
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif // _printfH_
+// define this globally (e.g. gcc -DprintfINCLUDE_CONFIG_H ...) to include the
+// printfconfig.h header file
 // default: undefined
-#ifdef PRINTF_INCLUDE_CONFIG_H
-#include "printf_config.h"
+#ifdef printfINCLUDE_CONFIG_H
+#include "printfconfig.h"
 #endif
 
 // 'ntoa' conversion buffer size, this must be big enough to hold one converted
 // numeric number including padded zeros (dynamically created on stack)
 // default: 32 byte
-#ifndef PRINTF_NTOA_BUFFER_SIZE
-#define PRINTF_NTOA_BUFFER_SIZE 32U
+#ifndef printfNTOA_BUFFER_SIZE
+#define printfNTOA_BUFFER_SIZE 32U
 #endif
 
 // 'ftoa' conversion buffer size, this must be big enough to hold one converted
 // float number including padded zeros (dynamically created on stack)
 // default: 32 byte
-#ifndef PRINTF_FTOA_BUFFER_SIZE
-#define PRINTF_FTOA_BUFFER_SIZE 32U
+#ifndef printfFTOA_BUFFER_SIZE
+#define printfFTOA_BUFFER_SIZE 32U
 #endif
 
 // support for the floating point type (%f)
 // default: activated
+#ifndef printfDISABLE_SUPPORT_FLOAT
+#endif
 
 // support for exponential floating point notation (%e/%g)
 // default: activated
+#ifndef printfDISABLE_SUPPORT_EXPONENTIAL
+#define printfSUPPORT_EXPONENTIAL
+#endif
 
 // define the default floating point precision
 // default: 6 digits
-#ifndef PRINTF_DEFAULT_FLOAT_PRECISION
-#define PRINTF_DEFAULT_FLOAT_PRECISION 6U
+#ifndef printfDEFAULT_FLOAT_PRECISION
+#define printfDEFAULT_FLOAT_PRECISION 6U
 #endif
 
 // define the largest float suitable to print with %f
 // default: 1e9
-#ifndef PRINTF_MAX_FLOAT
-#define PRINTF_MAX_FLOAT 1e9
+#ifndef printfMAX_FLOAT
+#define printfMAX_FLOAT 1e9
 #endif
 
 // support for the long long types (%llu or %p)
 // default: activated
+#ifndef printfDISABLE_SUPPORT_LONG_LONG
+#endif
 
 // support for the ptrdiff_t type (%t)
 // ptrdiff_t is normally defined in <stddef.h> as long or long long type
 // default: activated
+#ifndef printfDISABLE_SUPPORT_PTRDIFF_T
+#define printfSUPPORT_PTRDIFF_T
+#endif
 
 ///////////////////////////////////////////////////////////////////////////////
 
@@ -162,7 +231,7 @@ int fctprintf(void (*out)(char character, void *arg), void *arg,
 #define FLAGS_ADAPT_EXP (1U << 11U)
 
 // import float.h for DBL_MAX
-#if defined(PRINTF_SUPPORT_FLOAT)
+#if defined(printfSUPPORT_FLOAT)
 #include <float.h>
 #endif
 
@@ -200,7 +269,7 @@ static inline void _out_char(char character, void *buffer, size_t idx,
   (void)idx;
   (void)maxlen;
   if (character) {
-    sys_write(&character, 1);
+    putchar(character);
   }
 }
 
@@ -278,11 +347,11 @@ static size_t _ntoa_format(out_fct_type out, char *buffer, size_t idx,
         (negative || (flags & (FLAGS_PLUS | FLAGS_SPACE)))) {
       width--;
     }
-    while ((len < prec) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    while ((len < prec) && (len < printfNTOA_BUFFER_SIZE)) {
       buf[len++] = '0';
     }
     while ((flags & FLAGS_ZEROPAD) && (len < width) &&
-           (len < PRINTF_NTOA_BUFFER_SIZE)) {
+           (len < printfNTOA_BUFFER_SIZE)) {
       buf[len++] = '0';
     }
   }
@@ -297,20 +366,20 @@ static size_t _ntoa_format(out_fct_type out, char *buffer, size_t idx,
       }
     }
     if ((base == 16U) && !(flags & FLAGS_UPPERCASE) &&
-        (len < PRINTF_NTOA_BUFFER_SIZE)) {
+        (len < printfNTOA_BUFFER_SIZE)) {
       buf[len++] = 'x';
     } else if ((base == 16U) && (flags & FLAGS_UPPERCASE) &&
-               (len < PRINTF_NTOA_BUFFER_SIZE)) {
+               (len < printfNTOA_BUFFER_SIZE)) {
       buf[len++] = 'X';
-    } else if ((base == 2U) && (len < PRINTF_NTOA_BUFFER_SIZE)) {
+    } else if ((base == 2U) && (len < printfNTOA_BUFFER_SIZE)) {
       buf[len++] = 'b';
     }
-    if (len < PRINTF_NTOA_BUFFER_SIZE) {
+    if (len < printfNTOA_BUFFER_SIZE) {
       buf[len++] = '0';
     }
   }
 
-  if (len < PRINTF_NTOA_BUFFER_SIZE) {
+  if (len < printfNTOA_BUFFER_SIZE) {
     if (negative) {
       buf[len++] = '-';
     } else if (flags & FLAGS_PLUS) {
@@ -328,7 +397,7 @@ static size_t _ntoa_long(out_fct_type out, char *buffer, size_t idx,
                          size_t maxlen, unsigned long value, bool negative,
                          unsigned long base, unsigned int prec,
                          unsigned int width, unsigned int flags) {
-  char buf[PRINTF_NTOA_BUFFER_SIZE];
+  char buf[printfNTOA_BUFFER_SIZE];
   size_t len = 0U;
 
   // no hash for 0 values
@@ -344,7 +413,7 @@ static size_t _ntoa_long(out_fct_type out, char *buffer, size_t idx,
                        ? '0' + digit
                        : (flags & FLAGS_UPPERCASE ? 'A' : 'a') + digit - 10;
       value /= base;
-    } while (value && (len < PRINTF_NTOA_BUFFER_SIZE));
+    } while (value && (len < printfNTOA_BUFFER_SIZE));
   }
 
   return _ntoa_format(out, buffer, idx, maxlen, buf, len, negative,
@@ -352,13 +421,13 @@ static size_t _ntoa_long(out_fct_type out, char *buffer, size_t idx,
 }
 
 // internal itoa for 'long long' type
-#if defined(PRINTF_SUPPORT_LONG_LONG)
+#if defined(printfSUPPORT_LONG_LONG)
 static size_t _ntoa_long_long(out_fct_type out, char *buffer, size_t idx,
                               size_t maxlen, unsigned long long value,
                               bool negative, unsigned long long base,
                               unsigned int prec, unsigned int width,
                               unsigned int flags) {
-  char buf[PRINTF_NTOA_BUFFER_SIZE];
+  char buf[printfNTOA_BUFFER_SIZE];
   size_t len = 0U;
 
   // no hash for 0 values
@@ -374,19 +443,19 @@ static size_t _ntoa_long_long(out_fct_type out, char *buffer, size_t idx,
                        ? '0' + digit
                        : (flags & FLAGS_UPPERCASE ? 'A' : 'a') + digit - 10;
       value /= base;
-    } while (value && (len < PRINTF_NTOA_BUFFER_SIZE));
+    } while (value && (len < printfNTOA_BUFFER_SIZE));
   }
 
   return _ntoa_format(out, buffer, idx, maxlen, buf, len, negative,
                       (unsigned int)base, prec, width, flags);
 }
-#endif // PRINTF_SUPPORT_LONG_LONG
+#endif // printfSUPPORT_LONG_LONG
 
-#if defined(PRINTF_SUPPORT_FLOAT)
+#if defined(printfSUPPORT_FLOAT)
 
-#if defined(PRINTF_SUPPORT_EXPONENTIAL)
+#if defined(printfSUPPORT_EXPONENTIAL)
 // forward declaration so that _ftoa can switch to exp notation for values >
-// PRINTF_MAX_FLOAT
+// printfMAX_FLOAT
 static size_t _etoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
                     double value, unsigned int prec, unsigned int width,
                     unsigned int flags);
@@ -396,7 +465,7 @@ static size_t _etoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
 static size_t _ftoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
                     double value, unsigned int prec, unsigned int width,
                     unsigned int flags) {
-  char buf[PRINTF_FTOA_BUFFER_SIZE];
+  char buf[printfFTOA_BUFFER_SIZE];
   size_t len = 0U;
   double diff = 0.0;
 
@@ -418,8 +487,8 @@ static size_t _ftoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
   // test for very large values
   // standard printf behavior is to print EVERY whole number digit -- which
   // could be 100s of characters overflowing your buffers == bad
-  if ((value > PRINTF_MAX_FLOAT) || (value < -PRINTF_MAX_FLOAT)) {
-#if defined(PRINTF_SUPPORT_EXPONENTIAL)
+  if ((value > printfMAX_FLOAT) || (value < -printfMAX_FLOAT)) {
+#if defined(printfSUPPORT_EXPONENTIAL)
     return _etoa(out, buffer, idx, maxlen, value, prec, width, flags);
 #else
     return 0U;
@@ -435,10 +504,10 @@ static size_t _ftoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
 
   // set default precision, if not set explicitly
   if (!(flags & FLAGS_PRECISION)) {
-    prec = PRINTF_DEFAULT_FLOAT_PRECISION;
+    prec = printfDEFAULT_FLOAT_PRECISION;
   }
   // limit precision to 9, cause a prec >= 10 can lead to overflow errors
-  while ((len < PRINTF_FTOA_BUFFER_SIZE) && (prec > 9U)) {
+  while ((len < printfFTOA_BUFFER_SIZE) && (prec > 9U)) {
     buf[len++] = '0';
     prec--;
   }
@@ -471,7 +540,7 @@ static size_t _ftoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
   } else {
     unsigned int count = prec;
     // now do fractional part, as an unsigned number
-    while (len < PRINTF_FTOA_BUFFER_SIZE) {
+    while (len < printfFTOA_BUFFER_SIZE) {
       --count;
       buf[len++] = (char)(48U + (frac % 10U));
       if (!(frac /= 10U)) {
@@ -479,17 +548,17 @@ static size_t _ftoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
       }
     }
     // add extra 0s
-    while ((len < PRINTF_FTOA_BUFFER_SIZE) && (count-- > 0U)) {
+    while ((len < printfFTOA_BUFFER_SIZE) && (count-- > 0U)) {
       buf[len++] = '0';
     }
-    if (len < PRINTF_FTOA_BUFFER_SIZE) {
+    if (len < printfFTOA_BUFFER_SIZE) {
       // add decimal
       buf[len++] = '.';
     }
   }
 
   // do whole part, number is reversed
-  while (len < PRINTF_FTOA_BUFFER_SIZE) {
+  while (len < printfFTOA_BUFFER_SIZE) {
     buf[len++] = (char)(48 + (whole % 10));
     if (!(whole /= 10)) {
       break;
@@ -501,12 +570,12 @@ static size_t _ftoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
     if (width && (negative || (flags & (FLAGS_PLUS | FLAGS_SPACE)))) {
       width--;
     }
-    while ((len < width) && (len < PRINTF_FTOA_BUFFER_SIZE)) {
+    while ((len < width) && (len < printfFTOA_BUFFER_SIZE)) {
       buf[len++] = '0';
     }
   }
 
-  if (len < PRINTF_FTOA_BUFFER_SIZE) {
+  if (len < printfFTOA_BUFFER_SIZE) {
     if (negative) {
       buf[len++] = '-';
     } else if (flags & FLAGS_PLUS) {
@@ -519,7 +588,7 @@ static size_t _ftoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
   return _out_rev(out, buffer, idx, maxlen, buf, len, width, flags);
 }
 
-#if defined(PRINTF_SUPPORT_EXPONENTIAL)
+#if defined(printfSUPPORT_EXPONENTIAL)
 // internal ftoa variant for exponential floating-point type, contributed by
 // Martijn Jasperse <m.jasperse@gmail.com>
 static size_t _etoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
@@ -538,7 +607,7 @@ static size_t _etoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
 
   // default precision
   if (!(flags & FLAGS_PRECISION)) {
-    prec = PRINTF_DEFAULT_FLOAT_PRECISION;
+    prec = printfDEFAULT_FLOAT_PRECISION;
   }
 
   // determine the decimal exponent
@@ -635,8 +704,8 @@ static size_t _etoa(out_fct_type out, char *buffer, size_t idx, size_t maxlen,
   }
   return idx;
 }
-#endif // PRINTF_SUPPORT_EXPONENTIAL
-#endif // PRINTF_SUPPORT_FLOAT
+#endif // printfSUPPORT_EXPONENTIAL
+#endif // printfSUPPORT_FLOAT
 
 // internal vsnprintf
 static int _vsnprintf(out_fct_type out, char *buffer, const size_t maxlen,
@@ -743,7 +812,7 @@ static int _vsnprintf(out_fct_type out, char *buffer, const size_t maxlen,
         format++;
       }
       break;
-#if defined(PRINTF_SUPPORT_PTRDIFF_T)
+#if defined(printfSUPPORT_PTRDIFF_T)
     case 't':
       flags |=
           (sizeof(ptrdiff_t) == sizeof(long) ? FLAGS_LONG : FLAGS_LONG_LONG);
@@ -803,7 +872,7 @@ static int _vsnprintf(out_fct_type out, char *buffer, const size_t maxlen,
       if ((*format == 'i') || (*format == 'd')) {
         // signed
         if (flags & FLAGS_LONG_LONG) {
-#if defined(PRINTF_SUPPORT_LONG_LONG)
+#if defined(printfSUPPORT_LONG_LONG)
           const long long value = va_arg(va, long long);
           idx = _ntoa_long_long(
               out, buffer, idx, maxlen,
@@ -826,7 +895,7 @@ static int _vsnprintf(out_fct_type out, char *buffer, const size_t maxlen,
       } else {
         // unsigned
         if (flags & FLAGS_LONG_LONG) {
-#if defined(PRINTF_SUPPORT_LONG_LONG)
+#if defined(printfSUPPORT_LONG_LONG)
           idx = _ntoa_long_long(out, buffer, idx, maxlen,
                                 va_arg(va, unsigned long long), false, base,
                                 precision, width, flags);
@@ -847,7 +916,7 @@ static int _vsnprintf(out_fct_type out, char *buffer, const size_t maxlen,
       format++;
       break;
     }
-#if defined(PRINTF_SUPPORT_FLOAT)
+#if defined(printfSUPPORT_FLOAT)
     case 'f':
     case 'F':
       if (*format == 'F')
@@ -856,7 +925,7 @@ static int _vsnprintf(out_fct_type out, char *buffer, const size_t maxlen,
                   width, flags);
       format++;
       break;
-#if defined(PRINTF_SUPPORT_EXPONENTIAL)
+#if defined(printfSUPPORT_EXPONENTIAL)
     case 'e':
     case 'E':
     case 'g':
@@ -869,8 +938,8 @@ static int _vsnprintf(out_fct_type out, char *buffer, const size_t maxlen,
                   width, flags);
       format++;
       break;
-#endif // PRINTF_SUPPORT_EXPONENTIAL
-#endif // PRINTF_SUPPORT_FLOAT
+#endif // printfSUPPORT_EXPONENTIAL
+#endif // printfSUPPORT_FLOAT
     case 'c': {
       unsigned int l = 1U;
       // pre padding
@@ -920,7 +989,7 @@ static int _vsnprintf(out_fct_type out, char *buffer, const size_t maxlen,
     case 'p': {
       width = sizeof(void *) * 2U;
       flags |= FLAGS_ZEROPAD | FLAGS_UPPERCASE;
-#if defined(PRINTF_SUPPORT_LONG_LONG)
+#if defined(printfSUPPORT_LONG_LONG)
       const bool is_ll = sizeof(uintptr_t) == sizeof(long long);
       if (is_ll) {
         idx = _ntoa_long_long(out, buffer, idx, maxlen,
@@ -931,7 +1000,7 @@ static int _vsnprintf(out_fct_type out, char *buffer, const size_t maxlen,
         idx = _ntoa_long(out, buffer, idx, maxlen,
                          (unsigned long)((uintptr_t)va_arg(va, void *)), false,
                          16U, precision, width, flags);
-#if defined(PRINTF_SUPPORT_LONG_LONG)
+#if defined(printfSUPPORT_LONG_LONG)
       }
 #endif
       format++;

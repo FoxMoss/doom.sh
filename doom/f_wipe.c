@@ -26,6 +26,7 @@
 
 #include "i_video.h"
 #include "m_random.h"
+#include "stubs.h"
 #include "v_video.h"
 #include "z_zone.h"
 
@@ -183,10 +184,6 @@ int wipe_exitMelt(int width, int height, int ticks) {
 }
 
 #endif
-
-void I_ReadScreen(byte *scr) {
-  memcpy(scr, screens[0], SCREENWIDTH * SCREENHEIGHT);
-}
 
 int wipe_StartScreen(int x, int y, int width, int height) {
   wipe_scr_start = screens[2];

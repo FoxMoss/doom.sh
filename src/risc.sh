@@ -92,11 +92,11 @@ reset() {
     done
     REGS[2]=$((MEMSIZE - 10000))
 
-    for ((i=0; i<$((MEMSIZE/4)); i++)); do
-        MEMORY[i]=0
-        printf "\x1b[1G\x1b[2KReseting memory %i%%" $(((i*100)/(MEMSIZE/4) + 1))
-    done
-    printf "\n"
+    # for ((i=0; i<$((MEMSIZE/4)); i++)); do
+    #     MEMORY[i]=0
+    #     printf "\x1b[1G\x1b[2KReseting memory %i%%" $(((i*100)/(MEMSIZE/4) + 1))
+    # done
+    # printf "\n"
 
     # echo "initialized $MEMSIZE bytes to 0"
 }
@@ -130,6 +130,10 @@ function memreadbyte {
     local align=$((offs%4))
     offs=$((offs/4))
 
+    if [ -z "${MEMORY[offs]}" ]; then
+      MEMORY[offs]=0
+    fi
+
     echo $(((MEMORY[offs] >> (align*8)) & 0xFF))
 }
 
@@ -152,6 +156,10 @@ function memreadword {
 
     if ((offs%4 == 0)); then
         # aligned read
+        if [ -z "${MEMORY[offs/4]}" ]; then
+          MEMORY[$((offs/4))]=0
+        fi
+
         echo "$((MEMORY[offs/4] & 0xFFFFFFFF))"
     else
         b1=$(memreadbyte $offs)
@@ -228,6 +236,8 @@ function step {
 
     # printf "%08x " $int
     # diasm
+    dumpstate >> "$1.asm.dump1"
+
 
     local rval=0
     local rdid=$(((int >> 7) & 0x1f))
@@ -324,39 +334,32 @@ function step {
             rsval=$((rs1val + imm + RAM_IMAGE_OFFSET))
             rsval=$((rsval & 0xFFFFFFFF)) # convert to unsigned uint32
             # memreadword $rsval
-            if ((rsval > MEMSIZE - 4)); then
-                # undo the offset
-                rsval=$((rsval+RAM_IMAGE_OFFSET))
-                rsval=$((rsval & 0xFFFFFFFF)) # uint32 it again. logic here is FUCKED! this needs to be fixed
-                rval=$(handle_control_load $rsval)
-            else
-                funct3=$(((int >> 12) & 0x7))
-                case $funct3 in
-                    $((0x0)))
-                        # load byte with sign extension
-                        rval=$(memreadbyte $rsval)
-                        if ((rval > 0x7f)); then rval=$((rval | 0xffffffffffffff00)); fi
-                        ;;
-                    $((0x1)))
-                        # load halfword with sign extension
-                        rval=$(memreadhalfword $rsval)
-                        if ((rval > 0x7fff)); then rval=$((rval | 0xffffffffffff0000)); fi
-                        ;;
-                    $((0x2)))
-                        # load word
-                        rval=$(memreadword $rsval)
-                        ;;
-                    $((0x4)))
-                        # load byte
-                        rval=$(memreadbyte $rsval)
-                        ;;
-                    $((0x5)))
-                        # load halfword
-                        rval=$(memreadhalfword $rsval)
-                        ;;
-                    *) trap=3;;
-                esac
-            fi
+            funct3=$(((int >> 12) & 0x7))
+            case $funct3 in
+                $((0x0)))
+                    # load byte with sign extension
+                    rval=$(memreadbyte $rsval)
+                    if ((rval > 0x7f)); then rval=$((rval | 0xffffffffffffff00)); fi
+                    ;;
+                $((0x1)))
+                    # load halfword with sign extension
+                    rval=$(memreadhalfword $rsval)
+                    if ((rval > 0x7fff)); then rval=$((rval | 0xffffffffffff0000)); fi
+                    ;;
+                $((0x2)))
+                    # load word
+                    rval=$(memreadword $rsval)
+                    ;;
+                $((0x4)))
+                    # load byte
+                    rval=$(memreadbyte $rsval)
+                    ;;
+                $((0x5)))
+                    # load halfword
+                    rval=$(memreadhalfword $rsval)
+                    ;;
+                *) trap=3;;
+            esac
             ;;
         $((0x23))) # STORE
             rs1=$(((int >> 15) & 0x1f))
@@ -370,26 +373,19 @@ function step {
             rsval=$((rsval & 0xFFFFFFFF)) # convert to unsigned uint32
             rdid=0
             # echo "SW rsval: $(phex $rsval) write $rs2val"
-            if ((rsval > MEMSIZE - 4)); then
-                rsval=$((rsval+RAM_IMAGE_OFFSET))
-                rsval=$((rsval & 0xFFFFFFFF)) # uint32 it again.
-
-                handle_control_store $rsval $rs2val
-            else
-                funct3=$(((int >> 12) & 0x7))
-                case $funct3 in
-                    $((0x0))) # store byte
-                        memwritebyte $rsval $rs2val
-                    ;;
-                    $((0x1))) # store halfword
-                        memwritehalfword $rsval $rs2val
-                    ;;
-                    $((0x2))) # store word
-                        memwriteword $rsval $rs2val
-                    ;;
-                    *) trap=3;;
-                esac
-            fi
+            funct3=$(((int >> 12) & 0x7))
+            case $funct3 in
+                $((0x0))) # store byte
+                    memwritebyte $rsval $rs2val
+                ;;
+                $((0x1))) # store halfword
+                    memwritehalfword $rsval $rs2val
+                ;;
+                $((0x2))) # store word
+                    memwriteword $rsval $rs2val
+                ;;
+                *) trap=3;;
+            esac
             ;;
         $((0x13))|$((0x33))) # OP/OP-IMM
             imm=$((int >> 20))
@@ -602,12 +598,7 @@ function step {
             rs2val=$((REGS[(int >> 20) & 0x1f]))
             irmid=$(((int >> 27) & 0x1f))
             rs1val=$((rs1val-RAM_IMAGE_OFFSET))
-            if ((rs1val > (MEMSIZE - 4))); then
-                echo "trap 8 lol $rs1val"
-                trap=8
-                rval=$((rs1val + RAM_IMAGE_OFFSET))
-            else
-                rval=$(memreadword "$rs1val")
+            rval=$(memreadword "$rs1val")
       #           switch( irmid )
 				# {
 				# 	case 2: //LR.W (0b00010)
@@ -630,28 +621,27 @@ function step {
 				# 	default: trap = (2+1); dowrite = 0; break; //Not supported.
 				# }
 				# if( dowrite ) MINIRV32_STORE4( rs1, rs2 );
-                dowrite=1
-                case "$irmid" in
-                    2) # LR.W
+            dowrite=1
+            case "$irmid" in
+                2) # LR.W
+                dowrite=0
+                EXTRAFLAGS=$(((EXTRAFLAGS & 0x07) | (rs1val << 3)))
+                ;;
+                3) # SC.W
+                    rval=$(( (EXTRAFLAGS>>3) != (rs1val & 0x1fffffff) ))
+                    dowrite=$((!rval))
+                ;;
+                1);; # AMOSWAP.W is ignored by the ref impl for some reason. not sure why?
+                0) rs2val=$((rs2val += rval));; # AMOADD.W
+                8) rs2val=$((rs2val | rval));; # AMOOR.W
+                *)
+                    trap=3
+                    echo "unimplemented atomic $irmid"
                     dowrite=0
-                    EXTRAFLAGS=$(((EXTRAFLAGS & 0x07) | (rs1val << 3)))
-                    ;;
-                    3) # SC.W
-                        rval=$(( (EXTRAFLAGS>>3) != (rs1val & 0x1fffffff) ))
-                        dowrite=$((!rval))
-                    ;;
-                    1);; # AMOSWAP.W is ignored by the ref impl for some reason. not sure why?
-                    0) rs2val=$((rs2val += rval));; # AMOADD.W
-                    8) rs2val=$((rs2val | rval));; # AMOOR.W
-                    *)
-                        trap=3
-                        echo "unimplemented atomic $irmid"
-                        dowrite=0
-                    ;;
-                esac
+                ;;
+            esac
 
-                if ((dowrite)); then memwriteword "$rs1val" "$rs2val"; fi
-            fi
+            if ((dowrite)); then memwriteword "$rs1val" "$rs2val"; fi
         ;;
         *)
         echo "unknown opcode $opcode"
@@ -664,13 +654,10 @@ function step {
         exit 1
     fi
 
-    dumpstate >> "$1.asm.dump1"
 
     if ((rdid)); then
       REGS[rdid]=$((rval & 0xffffffff))
     fi
-
-    dumpstate >> "$1.asm.dump1"
 
 
     PC=$((PC + 4))
@@ -688,7 +675,7 @@ dumpstate() {
 
     local rdid=$(((ir >> 7) & 0x1f))
 
-    printf '[0x%08x] ir:%i ' $ir $rdid
+    printf '[0x%08x] ' $ir
     printf 'Z:%08x ra:%08x sp:%08x gp:%08x tp:%08x t0:%08x t1:%08x t2:%08x s0:%08x s1:%08x a0:%08x a1:%08x a2:%08x a3:%08x a4:%08x a5:%08x ' ${REGS[0]} ${REGS[1]} ${REGS[2]} ${REGS[3]} ${REGS[4]} ${REGS[5]} ${REGS[6]} ${REGS[7]} ${REGS[8]} ${REGS[9]} ${REGS[10]} ${REGS[11]} ${REGS[12]} ${REGS[13]} ${REGS[14]} ${REGS[15]}
     printf 'a6:%08x a7:%08x s2:%08x s3:%08x s4:%08x s5:%08x s6:%08x s7:%08x s8:%08x s9:%08x s10:%08x s11:%08x t3:%08x t4:%08x t5:%08x t6:%08x\n' ${REGS[16]} ${REGS[17]} ${REGS[18]} ${REGS[19]} ${REGS[20]} ${REGS[21]} ${REGS[22]} ${REGS[23]} ${REGS[24]} ${REGS[25]} ${REGS[26]} ${REGS[27]} ${REGS[28]} ${REGS[29]} ${REGS[30]} ${REGS[31]}
     # echo "a0 ${REGS[10]} a2 ${REGS[12]} a5 ${REGS[15]} s0 ${REGS[8]}"

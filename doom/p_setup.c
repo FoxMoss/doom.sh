@@ -44,6 +44,11 @@
 
 #include "doomstat.h"
 
+#undef stderr
+#define stderr 0
+#undef stdout
+#define stdout 0
+
 void P_SpawnMapThing(mapthing_t *mthing);
 
 //
@@ -720,7 +725,7 @@ void P_SetupLevel(int episode, int map, int playermask, skill_t skill) {
       P_LoadVertexes (lumpnum+ML_VERTEXES);
   */
 
-  printf("LOADING FROM MAP: %s\n", lumpname);
+  fprintf(stderr, "LOADING FROM MAP: %s\n", lumpname);
   int mapid = 0;
   while (bakemaps[mapid]) {
     if (strcmp(bakemaps[mapid], lumpname) == 0)

@@ -4,6 +4,7 @@
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 #define ALIGN (sizeof(size_t))
@@ -271,10 +272,17 @@ void *memcpy(void *restrict dest, const void *restrict src, size_t n) {
 }
 
 int puts(const char *s) {
-  sys_write(s, strlen(s));
+  size_t len = strlen(s);
+  sys_write(s, len);
+  putchar('\n');
   return 0;
 }
-int putchar(int c) { sys_write((char *)&c, 1); }
+int putchar(int c) {
+  static char *data_hack = "\0\0";
+  data_hack[0] = c;
+  sys_write(data_hack, 1);
+  return 1;
+}
 
 int sys_ticks() {
   int ticks;
@@ -474,7 +482,6 @@ int atoi(const char *s) {
     if (__builtin_mul_overflow(parsed, place, &parsed)) {
       overflow = true;
     }
-    printf("%c: %i\n", *end_ptr, parsed);
 
     if (!will_overflow_add(parsed, accumulator)) {
       buffer_accumulator += parsed;
@@ -518,3 +525,4 @@ int fclose(FILE *stream) {}
 
 #include "_divsi3.c"
 #include "printf.c"
+#include "tinalloc.c"

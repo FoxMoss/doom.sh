@@ -12,4 +12,3 @@ static inline void sys_write(const char *str, size_t len) {
 }
 
 int sys_ticks();
-char sys_char();

@@ -56,6 +56,12 @@
 // Animating textures and planes
 // There is another anim_t used in wi_stuff, unrelated.
 //
+//
+#undef stderr
+#define stderr 0
+#undef stdout
+#define stdout 0
+
 typedef struct {
   boolean istexture;
   int picnum;
@@ -291,7 +297,7 @@ fixed_t P_FindNextHighestFloor(sector_t *sec, int currentheight) {
 
     // Check for overflow. Exit.
     if (h >= MAX_ADJOINING_SECTORS) {
-      printf("Sector with more than 20 adjoining sectors\n");
+      fprintf(stderr, "Sector with more than 20 adjoining sectors\n");
       break;
     }
   }

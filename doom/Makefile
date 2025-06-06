@@ -66,22 +66,23 @@ FILES=				\
 
 OBJECTS = $(patsubst %.c,obj/%.o,$(FILES))
 BAKED = support/baked_texture_data.o support/baked_map_data.o
+DEFINE = -DNORMALUNIX -DLINUX -DMAXPLAYERS=1 -DRANGECHECK -DDISABLE_NETWORK -DSET_MEMORY_DEBUG=0
 
 
-all: $(OBJECTS) $(BAKED) $(LIB) obj/lib.o support/rawwad_use.o
-	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc i_main.c $^  -o emdoom -T flatfile-rv32id.lds -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -Os -DE1M1ONLY
+all: $(OBJECTS) $(BAKED) support/rawwad_use.o $(LIB) obj/lib.o
+	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc i_main.c $^  -o emdoom -T flatfile-rv32id.lds -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -Os $(DEFINE)
 
 obj/lib.o: $(wildcard ../lib/*.c)
-	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -c -o $@ ../lib/lib.c -Os -DE1M1ONLY
+	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -c -o $@ ../lib/lib.c -Os $(DEFINE)
 
 support/rawwad_use.o : support/rawwad_use.c
-	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -c -o $@ $^ -Os -DE1M1ONLY
+	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -c -o $@ $^ -Os $(DEFINE)
 
 support/baked_map_data.o : support/baked_map_data.c
-	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -c -o $@ $^ -Os -DE1M1ONLY
+	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -c -o $@ $^ -Os $(DEFINE)
 
 support/baked_texture_data.o : support/baked_texture_data.c
-	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -c -o $@ $^ -Os -DE1M1ONLY
+	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -c -o $@ $^ -Os $(DEFINE)
 
 obj/%.o: ./%.c
-	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc -c -o $@ $< -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -DDISABLE_NETWORK -Os -DE1M1ONLY
+	/opt/riscv/bin/riscv32-unknown-linux-gnu-gcc -c -o $@ $< -nostdlib -Wl,--gc-sections -Wno-error -Wno-incompatible-pointer-types -Wno-int-conversion -Wno-implicit-int -march=rv32ima -nostartfiles -mabi=ilp32 -DDISABLE_NETWORK -Os $(DEFINE)

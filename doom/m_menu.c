@@ -27,6 +27,7 @@
 
 #include <ctype.h>
 #include <fcntl.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <sys/stat.h>
 #include <sys/types.h>
@@ -60,6 +61,11 @@
 #include "sounds.h"
 
 #include "m_menu.h"
+
+#undef stderr
+#define stderr 0
+#undef stdout
+#define stdout 0
 
 extern patch_t *hu_font[HU_FONTSIZE];
 extern boolean message_dontfuckwithme;
@@ -365,6 +371,13 @@ void M_ReadSaveStrings(void) {
   char name[256];
 
   for (i = 0; i < load_end; i++) {
+    if (M_CheckParm("-cdrom"))
+      sprintf(name, "c:\\doomdata\\" SAVEGAMENAME "%d.dsg", i);
+    else
+      sprintf(name, SAVEGAMENAME "%d.dsg", i);
+
+    strcpy(&savegamestrings[i][0], EMPTYSTRING);
+    LoadMenu[i].status = 0;
   }
 }
 
@@ -690,7 +703,7 @@ void M_Episode(int choice) {
 
   // Yet another hack...
   if ((gamemode == registered) && (choice > 2)) {
-    printf("M_Episode: 4th episode requires UltimateDOOM\n");
+    fprintf(stderr, "M_Episode: 4th episode requires UltimateDOOM\n");
     choice = 0;
   }
 
@@ -835,7 +848,7 @@ void M_ChangeDetail(int choice) {
   detailLevel = 1 - detailLevel;
 
   // FIXME - does not work. Remove anyway?
-  printf("M_ChangeDetail: low detail mode n.a.\n");
+  fprintf(stderr, "M_ChangeDetail: low detail mode n.a.\n");
 
   return;
 

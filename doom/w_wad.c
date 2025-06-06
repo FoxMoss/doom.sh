@@ -26,6 +26,7 @@
 
 // Added elsewhere
 
+#include <stdio.h>
 #ifdef GENERATE_BAKED
 #include "support/rawwad.h"
 #else
@@ -52,9 +53,6 @@
 #pragma implementation "w_wad.h"
 #endif
 #include "w_wad.h"
-
-#include <ctype.h>
-#include <string.h>
 
 int filelength(int handle) { return sizeof(rawwad); }
 
