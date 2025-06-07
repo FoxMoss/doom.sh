@@ -23,6 +23,9 @@
 //
 //-----------------------------------------------------------------------------
 
+#include "r_defs.h"
+#include <byteswap.h>
+#include <stddef.h>
 #include <stdio.h>
 static const char rcsid[] = "$Id: v_video.c,v 1.5 1997/02/03 22:45:13 b1 Exp $";
 
@@ -196,9 +199,11 @@ void V_DrawPatch(int x, int y, int scrn, patch_t *patch) {
   byte *dest;
   byte *source;
   int w;
+  patch_t real_patch;
 
-  y -= SHORT(patch->topoffset);
-  x -= SHORT(patch->leftoffset);
+  // *(patch_t *)patch_data = patch;
+  y -= (patch->topoffset);
+  x -= (patch->leftoffset);
 #if defined(RANGECHECK)
   if (x < 0 || x + SHORT(patch->width) > SCREENWIDTH || y < 0 ||
       y + SHORT(patch->height) > SCREENHEIGHT || (unsigned)scrn > 4) {
@@ -217,10 +222,14 @@ void V_DrawPatch(int x, int y, int scrn, patch_t *patch) {
 
   w = SHORT(patch->width);
 
-  for (; col < w; x++, col++, desttop++) {
-    column = (column_t *)((byte *)patch + LONG(patch->columnofs[col]));
+  for (; col < w; x += 5, col += 5, desttop += 5) {
+    column = cast_as_column((byte *)patch + patch->columnofs[col]);
+    printf("col %i w %i\n", col, w);
+    printf("%i: %i, %i\n", patch->columnofs[col], column->topdelta,
+           column->length);
 
     // step through the posts in a column
+    size_t steps = 0;
     while (column->topdelta != 0xff) {
       source = (byte *)column + 3;
       dest = desttop + column->topdelta * SCREENWIDTH;

@@ -644,6 +644,7 @@ void M_MusicVol(int choice) {
 // M_DrawMainMenu
 //
 void M_DrawMainMenu(void) {
+  printf("main menue\n");
   V_DrawPatchDirect(94, 2, 0, W_CacheLumpName("M_DOOM", PU_CACHE));
 }
 

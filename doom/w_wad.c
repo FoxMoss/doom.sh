@@ -33,6 +33,7 @@
 #include "support/rawwad_use.h"
 #endif
 
+#include "r_defs.h"
 #ifdef NORMALUNIX
 #include <alloca.h>
 #include <ctype.h>
@@ -266,6 +267,21 @@ const void *W_CacheLumpNum(int lump, int tag) {
   if ((unsigned)lump >= numlumps)
     I_Error("W_CacheLumpNum: %i >= numlumps", lump);
 
+  // patch_t patch = {};
+  // char *patch_data = (char *)&rawwad[lumpinfo[lump].position];
+  // patch.width = patch_data[0] + patch_data[1] * 256;
+  // patch.height = patch_data[2] + patch_data[3] * 256;
+  // patch.leftoffset = patch_data[4] + patch_data[5] * 256;
+  // patch.topoffset = patch_data[6] + patch_data[7] * 256;
+  // patch.columnofs[0] = patch_data[8] + patch_data[9] * 256;
+  // patch.columnofs[1] = patch_data[12] + patch_data[13] * 256;
+  // patch.columnofs[2] = patch_data[16] + patch_data[17] * 256;
+  // patch.columnofs[3] = patch_data[20] + patch_data[21] * 256;
+  // patch.columnofs[4] = patch_data[24] + patch_data[25] * 256;
+  // patch.columnofs[5] = patch_data[28] + patch_data[29] * 256;
+  // patch.columnofs[6] = patch_data[32] + patch_data[33] * 256;
+  // patch.columnofs[7] = patch_data[36] + patch_data[37] * 256;
+  //
   return &rawwad[lumpinfo[lump].position];
 
   /*	if (!lumpcache[lump])
@@ -306,5 +322,6 @@ void *W_CacheLumpNum_Old(int lump, int tag) {
 // W_CacheLumpName
 //
 void *W_CacheLumpName(char *name, int tag) {
+  printf("loaded lump %s\n", name);
   return W_CacheLumpNum(W_GetNumForName(name), tag);
 }

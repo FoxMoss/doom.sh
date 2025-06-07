@@ -27,6 +27,8 @@
 // static const char rcsid[] = "$Id: d_main.c,v 1.8 1997/02/03 22:45:09 b1 Exp
 // $";
 
+#include "r_defs.h"
+#include <string.h>
 #define BGCOLOR 7
 #define FGCOLOR 8
 
@@ -379,8 +381,13 @@ void D_PageTicker(void) {
 //
 // D_PageDrawer
 //
+void V_DrawPatchZero(int x, int y, int scrn, patch_t *patch);
 void D_PageDrawer(void) {
-  V_DrawPatch(0, 0, 0, W_CacheLumpName(pagename, PU_CACHE));
+  printf("drew page\n");
+  patch_t patch;
+  char *patch_data = (char *)W_CacheLumpName(pagename, PU_CACHE);
+
+  V_DrawPatch(0, 0, 0, (patch_t *)patch_data);
 }
 
 //
