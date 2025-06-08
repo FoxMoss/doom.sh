@@ -507,6 +507,14 @@ int atoi(const char *s) {
   }
   return accumulator * sign;
 }
+int strncmp(const char *_l, const char *_r, size_t n) {
+  const unsigned char *l = (void *)_l, *r = (void *)_r;
+  if (!n--)
+    return 0;
+  for (; *l && *r && n && *l == *r; l++, r++, n--)
+    ;
+  return *l - *r;
+}
 
 int fprintf(FILE *__restrict __stream, const char *__restrict __format, ...) {
   return 0; // no filesystem

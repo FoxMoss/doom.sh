@@ -301,4 +301,34 @@ fixed_t FixedDiv(fixed_t a, fixed_t b) {
   return FixedDiv2(a, b);
 }
 
-fixed_t FixedDiv2(fixed_t a, fixed_t b) { return fp_div(a, b); }
+fixed_t FixedDiv2(fixed_t a, fixed_t b) {
+  if (b == 0) {
+    // divide by zero → saturate, or handle error as you like
+    return (a >= 0) ? INT32_MAX : INT32_MIN;
+  }
+
+  // --- 1) handle sign ---
+  int neg = ((a ^ b) < 0);
+  uint32_t ua = (a < 0) ? (uint32_t)(-a) : (uint32_t)a;
+  uint32_t ub = (b < 0) ? (uint32_t)(-b) : (uint32_t)b;
+
+  // --- 2) integer quotient and remainder ---
+  uint32_t Q = ua / ub;
+  uint32_t R = ua % ub;
+
+  // --- 3) build 16-bit fractional part by long division ---
+  uint32_t frac = 0;
+  for (int bit = 15; bit >= 0; --bit) {
+    R <<= 1;
+    if (R >= ub) {
+      R -= ub;
+      frac |= (1u << bit);
+    }
+  }
+
+  // --- 4) combine integer and fractional parts ---
+  //    (Q<<16) | frac = floor((a<<16)/b) for non-negatives
+  uint32_t result = (Q << 16) | frac;
+
+  return neg ? -(fixed_t)result : (fixed_t)result;
+}
