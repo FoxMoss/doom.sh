@@ -64,7 +64,7 @@ typedef struct {
   fixed_t x;
   fixed_t y;
 
-} vertex_t;
+} __attribute__((packed)) vertex_t;
 
 // Forward of LineDefs, for Sectors.
 struct line_s;
@@ -80,7 +80,7 @@ typedef struct {
   fixed_t x;
   fixed_t y;
   fixed_t z;
-} degenmobj_t;
+} __attribute__((packed)) degenmobj_t;
 
 //
 // The SECTORS record, at runtime.
@@ -120,7 +120,7 @@ typedef struct {
 
   short linecount;
 
-} sector_t;
+} __attribute__((packed)) sector_t;
 
 //
 // The SideDef.
@@ -141,7 +141,7 @@ typedef struct {
   short toptexture;
   short bottomtexture;
   short midtexture;
-} side_t;
+} __attribute__((packed)) side_t;
 
 //
 // Move clipping aid for LineDefs.
@@ -188,7 +188,7 @@ typedef struct line_s {
 
   // thinker_t for reversable actions
   // void*	specialdata;
-} line_t;
+} __attribute__((packed)) line_t;
 
 //
 // A SubSector.
@@ -202,7 +202,7 @@ typedef struct subsector_s {
   short numlines;
   short firstline;
 
-} subsector_t;
+} __attribute__((packed)) subsector_t;
 
 //
 // The LineSeg.
@@ -224,7 +224,7 @@ typedef struct {
   sector_t *frontsector;
   sector_t *backsector;
 
-} seg_t;
+} __attribute__((packed)) seg_t;
 
 //
 // BSP node.
@@ -242,19 +242,17 @@ typedef struct {
   // If NF_SUBSECTOR its a subsector.
   unsigned short children[2];
 
-} node_t;
+} __attribute__((packed)) node_t;
 
 // posts are runs of non masked source pixels
 typedef struct {
   byte topdelta; // -1 is the last post in a column
   byte length;   // length data bytes follows
-} post_t;
+} __attribute__((packed)) post_t;
 
 // column_t is a list of 0 or more post_t, (byte)-1 terminated
 typedef post_t column_t;
 static column_t *cast_as_column(byte *ptr) {
-  printf("%i size %02x, %02x, %02x, %02x\n", sizeof(column_t), ptr[0], ptr[1],
-         ptr[2], ptr[3]);
   column_t col;
   col.topdelta = ptr[0];
   col.length = ptr[1];
@@ -305,7 +303,7 @@ typedef struct drawseg_s {
   short *sprbottomclip;
   short *maskedtexturecol;
 
-} drawseg_t;
+} __attribute__((packed)) drawseg_t;
 
 // Patches.
 // A patch holds one or more columns.
@@ -357,7 +355,7 @@ typedef struct vissprite_s {
 
   int mobjflags;
 
-} vissprite_t;
+} __attribute__((packed)) vissprite_t;
 
 //
 // Sprites are patches with a special naming convention
@@ -386,7 +384,7 @@ typedef struct {
   // Flip bit (1 = flip) to use for view angles 0-7.
   byte flip[8];
 
-} spriteframe_t;
+} __attribute__((packed)) spriteframe_t;
 
 //
 // A sprite definition:
@@ -396,7 +394,7 @@ typedef struct {
   int numframes;
   spriteframe_t *spriteframes;
 
-} spritedef_t;
+} __attribute__((packed)) spritedef_t;
 
 //
 // Now what is a visplane, anyway?
@@ -420,7 +418,7 @@ typedef struct {
   byte bottom[SCREENWIDTH];
   byte pad4;
 
-} visplane_t;
+} __attribute__((packed)) visplane_t;
 
 #endif
 //-----------------------------------------------------------------------------

@@ -192,7 +192,7 @@ int W_CheckNumForName(char *name) {
   lump_p = lumpinfo + numlumps;
 
   while (lump_p-- != lumpinfo) {
-    if (*(int *)lump_p->name == v1 && *(int *)&lump_p->name[4] == v2) {
+    if (strncmp(name, lump_p->name, 8) == 0) {
 #ifdef GENERATE_BAKED
       printf("\nACCESS_LUMP 0 %d\n", lump_p - lumpinfo);
 #endif

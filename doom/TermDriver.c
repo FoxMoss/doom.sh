@@ -35,8 +35,9 @@ void CNFGHandleInput() {
     key = '\0';
   }
 
-  char key = sys_char();
+  key = sys_char();
   if (key != 0) {
+    printf("key down %i\n", key);
     HandleKey(key, 0);
   }
   // TODO: create some semblance of working in terminal

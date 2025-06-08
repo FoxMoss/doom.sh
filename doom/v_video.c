@@ -222,11 +222,8 @@ void V_DrawPatch(int x, int y, int scrn, patch_t *patch) {
 
   w = SHORT(patch->width);
 
-  for (; col < w; x += 5, col += 5, desttop += 5) {
+  for (; col < w; x += 1, col += 1, desttop += 1) {
     column = cast_as_column((byte *)patch + patch->columnofs[col]);
-    printf("col %i w %i\n", col, w);
-    printf("%i: %i, %i\n", patch->columnofs[col], column->topdelta,
-           column->length);
 
     // step through the posts in a column
     size_t steps = 0;
