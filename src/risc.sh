@@ -1,7 +1,6 @@
 declare -a MEMORY
 declare -a REGS
 REGS=()
-REGS_BACKUP=()
 MEMORY=()
 PC=0
 INTMAX=$((2**31))
@@ -236,7 +235,7 @@ function step {
 
     # printf "%08x " $int
     # diasm
-    dumpstate >> "$1.asm.dump1"
+    dumpstate
 
 
     local rval=0
@@ -547,13 +546,9 @@ function step {
                     ;;
 				esac
             elif ((funct3 == 0)); then
-                echo "syscall PC:${PC} (id:${REGS[17]}) args 1-6: ${REGS[10]} ${REGS[11]} ${REGS[12]} ${REGS[13]} ${REGS[14]} ${REGS[15]}"
-
-                case ${REGS[17]} in
+                 case ${REGS[17]} in
                     64)
-                        echo "write called"
                         len=${REGS[12]}
-
 
                         # dodump
                         for ((i=0; i<len; i++)); do
