@@ -1,18 +1,25 @@
-// #include "doom/doomtype.h"
-// #include "lib/syscalls.h"
-#include <stdbool.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 
-char sys_char();
-void _start() {
-  while (true) {
-    char key = sys_char();
-    if (key == 0)
-      continue;
-    printf("this is from puts(%c)\n", key);
+int _start() {
+  char source[] =
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+
+  char destination[201];
+
+  size_t numBytes = strlen(source) + 1;
+
+  memcpy(destination, source, numBytes);
+
+  if (strcmp(source, destination) == 0) {
+    printf("Memory copied successfully!\n");
+  } else {
+    printf("Memory copy failed.\n");
   }
-  printf("hi!\n");
-  exit(1);
+
+  printf("Destination: %s\n", destination);
+
+  return 0;
 }

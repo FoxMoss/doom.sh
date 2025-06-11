@@ -235,7 +235,7 @@ function step {
 
     # printf "%08x " $int
     # diasm
-    dumpstate
+    # dumpstate
 
 
     local rval=0
@@ -564,6 +564,16 @@ function step {
                         ;;
                     67)
                         sleep REGS[11]
+                        ;;
+                    68) # memcpy
+                        dest=${REGS[11]}
+                        src=${REGS[12]}
+                        len=${REGS[13]}
+                        for ((i=0; i<len; i++)); do
+                          memwritebyte $((dest+i)) $(memreadbyte $((src+i)))
+                        done
+
+
                         ;;
                     93)
                         echo "exit called! exit code ${REGS[10]}"

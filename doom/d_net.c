@@ -637,18 +637,18 @@ void TryRunTics(void) {
     NetUpdate();
     lowtic = MAXINT;
 
-    for (i = 0; i < doomcom->numnodes; i++)
-      if (nodeingame[i] && nettics[i] < lowtic)
-        lowtic = nettics[i];
-
-    if (lowtic < gametic / ticdup)
-      I_Error("TryRunTics: lowtic < gametic");
-
-    // don't stay in here forever -- give the menu a chance to work
-    if (I_GetTime() / ticdup - entertic >= 20) {
-      M_Ticker();
-      return;
-    }
+    // for (i = 0; i < doomcom->numnodes; i++)
+    //   if (nodeingame[i] && nettics[i] < lowtic)
+    //     lowtic = nettics[i];
+    //
+    // if (lowtic < gametic / ticdup)
+    //   I_Error("TryRunTics: lowtic < gametic");
+    //
+    // // don't stay in here forever -- give the menu a chance to work
+    // if (I_GetTime() / ticdup - entertic >= 20) {
+    M_Ticker();
+    return;
+    // }
   }
 
   // run the count * ticdup dics
