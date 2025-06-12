@@ -575,6 +575,100 @@ function step {
 
 
                         ;;
+                    69) # draw patch
+
+  # for (; col < w; x += 1, col += 1, desttop += 1) {
+  #   column = cast_as_column((byte *)patch + patch->columnofs[col]);
+  #
+  #   // step through the posts in a column
+  #     while (column->topdelta != 0xff) {
+  #     source = (byte *)column + 3;
+  #     dest = desttop + column->topdelta * SCREENWIDTH;
+  #     count = column->length;
+  #
+  #     while (count--) {
+  #       *dest = *source++;
+  #       dest += SCREENWIDTH;
+  #     }
+  #     column = (column_t *)((byte *)column + column->length + 4);
+  #   }
+  # }
+                        column=${REGS[11]}
+                        screenwidth=${REGS[12]}
+                        desttop=${REGS[13]}
+
+                        while true; do
+                          topdelta=$(memreadbyte $((column)))
+                          if [[ $((topdelta)) -eq 255 ]]; then
+                            break
+                          fi
+
+                          source=$((column+3))
+                          dest=$((dest+topdelta*screenwidth))
+                          count=$(memreadbyte $((column + 1)))
+                          while true; do 
+                            count=$((count-1))
+                            if [[ count -eq 0 ]]; then
+                              break
+                            fi
+
+                            memwritebyte $((dest)) $((source))
+                            source=$((source + 1))
+                            dest=$((dest + screenwidth))
+                          done
+                          column=$((column + $(memreadbyte $((column + 1))) + 4))
+                        done
+
+
+                      ;;
+                    70)
+
+  # while (lump_p-- != lumpinfo) {
+  #   if (strncmp(name, lump_p->name, 8) == 0) {
+  #     return lump_p - lumpinfo;
+  #   }
+  # }
+                        lump_p=${REGS[11]}
+                        lump_info=${REGS[12]}
+                        lump_length=${REGS[13]}
+                        name=${REGS[14]}
+                        numlumps=${REGS[15]}
+
+                        namestr=""
+                        for (( i=0; i<8; i++ )); do
+                          byte=$(memreadbyte $((name + i)))
+                          namestr+=$(printf "\\$(printf '%c' "$byte")")  # Convert byte to character
+                        done
+
+
+                        REGS[11]=$((numlumps+1))
+                        while true; do
+
+                          current_name=""
+                          for (( i=0; i<8; i++ )); do
+                            byte=$(memreadbyte $((lump_p + i)))
+                            if [[ "$byte" -eq "0" ]]; then
+                              break
+                            fi
+                            current_name+=$(printf "\\$(printf '%c' "$byte")")
+                          done
+
+                          if [[ "$namestr" == "$current_name" ]]; then
+                            index=$(((lump_p - lump_info)/lump_length))
+                            REGS[11]=$index
+                            break
+                          fi
+
+                          if [[ $lump_p -eq $lump_info ]]; then
+                            break
+                          fi
+
+                          lump_p=$((lump_p - lump_length)) 
+                          
+                        done
+                        ;;
+                      92) # savestate for rv32emu (do nothing)
+                        ;;
                     93)
                         echo "exit called! exit code ${REGS[10]}"
                         exit 0

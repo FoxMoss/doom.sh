@@ -26,6 +26,7 @@
 
 // Added elsewhere
 
+#include <stddef.h>
 #include <stdio.h>
 #ifdef GENERATE_BAKED
 #include "support/rawwad.h"
@@ -166,6 +167,8 @@ int W_NumLumps(void) { return numlumps; }
 // Returns -1 if name not found.
 //
 
+size_t sys_findlump(void *lump_p, void *lump_info, size_t lump_length,
+                    void *name, size_t numlumps);
 int W_CheckNumForName(char *name) {
   union {
     char s[9];
@@ -191,14 +194,10 @@ int W_CheckNumForName(char *name) {
   // scan backwards so patch lump files take precedence
   lump_p = lumpinfo + numlumps;
 
-  while (lump_p-- != lumpinfo) {
-    if (strncmp(name, lump_p->name, 8) == 0) {
-#ifdef GENERATE_BAKED
-      printf("\nACCESS_LUMP 0 %d\n", lump_p - lumpinfo);
-#endif
-      return lump_p - lumpinfo;
-    }
-  }
+  size_t ret =
+      sys_findlump(lump_p, &(lumpinfo[0]), sizeof(lumpinfo_t), name, numlumps);
+  if (ret <= numlumps)
+    return ret;
 
   printf("WARNING: FILE NOT FOUND: %s\n", name);
 

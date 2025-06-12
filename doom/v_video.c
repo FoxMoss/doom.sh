@@ -190,6 +190,7 @@ void V_CopyRect(int srcx, int srcy, int srcscrn, int width, int height,
 // V_DrawPatch
 // Masks a column based masked pic to the screen.
 //
+void sys_drawpatch(void *column, size_t screenwidth, void *desttop);
 void V_DrawPatch(int x, int y, int scrn, patch_t *patch) {
 
   int count;
@@ -224,20 +225,7 @@ void V_DrawPatch(int x, int y, int scrn, patch_t *patch) {
 
   for (; col < w; x += 1, col += 1, desttop += 1) {
     column = cast_as_column((byte *)patch + patch->columnofs[col]);
-
-    // step through the posts in a column
-    size_t steps = 0;
-    while (column->topdelta != 0xff) {
-      source = (byte *)column + 3;
-      dest = desttop + column->topdelta * SCREENWIDTH;
-      count = column->length;
-
-      while (count--) {
-        *dest = *source++;
-        dest += SCREENWIDTH;
-      }
-      column = (column_t *)((byte *)column + column->length + 4);
-    }
+    sys_drawpatch(column, SCREENWIDTH, desttop);
   }
 }
 

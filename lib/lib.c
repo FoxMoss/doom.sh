@@ -171,6 +171,13 @@ void exit(int i) {
                :
                : "a7", "a0");
 }
+void sys_savestate() {
+  asm volatile("li a7, 92;"
+               "ecall;"
+               :
+               :
+               : "a7");
+}
 
 int islower(int c) { return (unsigned)c - 'a' < 26; }
 int toupper(int c) {
@@ -387,6 +394,40 @@ FILE *fopen(const char *__restrict filename, const char *__restrict modes) {
   return NULL;
 }
 int fclose(FILE *stream) {}
+
+void sys_drawpatch(void *column, size_t screenwidth, void *desttop) {
+  asm volatile("li a7, 69;"
+               "mv a1, %[column];"
+               "mv a2, %[screenwidth];"
+               "mv a3, %[desttop];"
+               "ecall;"
+               :
+               : [column] "r"(column), [screenwidth] "r"(screenwidth),
+                 [desttop] "r"(desttop)
+               : "a7", "a1", "a2", "a3");
+}
+// lump_p=${REGS[11]}
+// lump_info=${REGS[12]}
+// lump_length=${REGS[13]}
+// name=${REGS[14]}
+size_t sys_findlump(void *lump_p, void *lump_info, size_t lump_length,
+                    void *name, size_t numlumps) {
+  size_t lump_index;
+  asm volatile("li a7, 70;"
+               "mv a1, %[lump_p];"
+               "mv a2, %[lump_info];"
+               "mv a3, %[lump_length];"
+               "mv a4, %[name];"
+               "mv a5, %[numlumps];"
+               "ecall;"
+               "mv %[lump_index], a1;"
+               : [lump_index] "=r"(lump_index)
+               : [lump_p] "r"(lump_p), [lump_info] "r"(lump_info),
+                 [lump_length] "r"(lump_length), [name] "r"(name),
+                 [numlumps] "r"(numlumps)
+               : "a7", "a1", "a2", "a3", "a4", "a5");
+  return lump_index;
+}
 
 #include "_divsi3.c"
 #include "printf.c"

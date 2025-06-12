@@ -56,7 +56,9 @@ uint32_t get_index(short x, short y) {
   return bounded_x + bounded_y * WIDTH;
 }
 
+void sys_savestate();
 void CNFGUpdateScreenWithBitmap(unsigned long *data, int w, int h) {
+  sys_savestate();
   size_t max_pixel_size = strlen("\x1b[38;2;255;255;255m█\x1b[0m");
   size_t max_buffer_size = max_pixel_size * (w / 5) * (h / 10);
   char write_buffer[max_pixel_size * w * h];
