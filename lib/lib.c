@@ -128,6 +128,15 @@ void *memcpy(void *restrict dest, const void *restrict src, size_t n) {
   return dest;
 }
 
+void sys_write(const char *str, size_t len) {
+  asm volatile("li a7, 64;"
+               "mv a1, %[str];"
+               "mv a2, %[len];"
+               "ecall;"
+               :
+               : [str] "r"(str), [len] "r"(len)
+               : "a7", "a1", "a2");
+}
 int puts(const char *s) {
   size_t len = strlen(s);
   sys_write(s, len);
@@ -161,6 +170,15 @@ char sys_char() {
                :
                : "a7", "a1");
   return c;
+}
+
+void sys_printint(int i) {
+  asm volatile("li a7, 71;"
+               "mv a1, %[i];"
+               "ecall;"
+               :
+               : [i] "r"(i)
+               : "a7", "a0");
 }
 
 void exit(int i) {

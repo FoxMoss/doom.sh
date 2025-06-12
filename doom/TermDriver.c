@@ -57,11 +57,10 @@ uint32_t get_index(short x, short y) {
 }
 
 void sys_savestate();
+void sys_printint(int i);
+void sys_write(const char *str, size_t len);
 void CNFGUpdateScreenWithBitmap(unsigned long *data, int w, int h) {
   sys_savestate();
-  size_t max_pixel_size = strlen("\x1b[38;2;255;255;255m█\x1b[0m");
-  size_t max_buffer_size = max_pixel_size * (w / 5) * (h / 10);
-  char write_buffer[max_pixel_size * w * h];
   size_t cursor = 0;
   for (int y = 0; y < h; y += 10) {
     for (int x = 0; x < w; x += 5) {
@@ -69,14 +68,17 @@ void CNFGUpdateScreenWithBitmap(unsigned long *data, int w, int h) {
       unsigned char red = base_color & 0xFF; // red and blue channels swapped!!
       unsigned char grn = (base_color >> 8) & 0xFF;
       unsigned char blu = (base_color >> 16) & 0xFF;
-      cursor +=
-          snprintf((char *)&write_buffer + cursor, max_buffer_size - cursor,
-                   "\x1b[38;2;%i;%i;%im█\x1b[0m", blu, grn, red);
+      // [38;2;47;55;31m█
+      sys_write("\x1b[38;2;", 7);
+      sys_printint(blu);
+      sys_write(";", 1);
+      sys_printint(grn);
+      sys_write(";", 1);
+      sys_printint(red);
+      sys_write("m█\x1b[0m", 8) ;
     }
-    cursor += snprintf((char *)&write_buffer + cursor, max_buffer_size - cursor,
-                       "\n");
+    sys_write("\n", 1);
   }
-  puts(write_buffer);
 }
 
 static uint32_t saved_color = 0;

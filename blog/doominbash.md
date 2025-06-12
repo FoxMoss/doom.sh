@@ -1,5 +1,5 @@
-# I put Doom in Bash
-## heres how.
+# I wrote Doom in pure Bash
+## Heres how!
 
 So let's first establish a baseline, what does it 
 mean to put *doom in bash*? I will be using GNU 
@@ -224,13 +224,15 @@ only have to reimplement my custom ecalls. I chose
 the last option, it seemed like the path of least
 resistance at the time. 
 
-My new base is rv32emu and I take some time to
-replicate my previous work. I won't go over it
-because it's mostly smooth sailing, as I had
-already implemented everything I needed in bash. 
-I adjusted the stacks to be the same, and I 
-add rv32ima.sh's dump format to rv32ima which
-looks something like this:
+My new base is rv32emu. rv32emu is a pure C
+implementation of a RISC-V CPU with support for
+ELFS, and a couple of other cool features I had to
+disable for compatibility sake. I take some time
+to replicate my previous work. It's mostly smooth
+sailing, as I had already implemented everything I
+needed in bash. I adjusted the stacks to be the
+same, and I add rv32ima.sh's dump format to
+rv32ima which looks something like this:
 ```
 PC: 80024d3c  [0xfd9ff06f] Z:00000000 ra:80024c54
  sp:2633af10  gp:00000000 tp:00000000 t0:804605e0
@@ -337,11 +339,76 @@ improper alignment. Dereferencing such a pointer
 can cause a SIGSEGV signal on a machine that
 doesn’t, in general, allow unaligned pointers.
 
+[5]
 
+But we can side step those issues, since we are
+the CPU if they so arise. Which at the current
+moment they haven't.
 
+After this I had a few bugs that must've appeared
+while trying to make buildable, so I revert the
+doom portion of the codebase. From there I just
+replicate each change I make onto the original X11
+compatible codebase and my own. With a little
+rewrite of the fixed division code. Doom now works
+on a RISC-V emulator.
 
+So that's it we're done? Just run it on the bash
+RISC-V emulator, what are we waiting for? 
+
+## Waiting, just a lot of waiting.
+
+At this point my workflow changes a bit. I have
+a couple terminal windows open at all times. One that's
+providing dumped state for every instruction run,
+and another just running Doom without logs. Bash
+while slow, doesn't need much memory or CPU, so
+it's trivial to spin up 5, 10, or even 20
+concurrent instances of bash, but we only need 2.
+Then I have a third window, with the `objdump` of
+my Doom executable checking the program counter
+against the location in the executable. If I
+notice a certain function is being run a 
+significant amount of times, I take that logic and
+reimplement it in bash where it will hopefully be
+slightly faster. This work of course gets
+replicated across to the C implementation except I 
+have to now convert my bash back into C. Currently
+I have three reimplementation `memcpy`, and two
+calls for code drawing and finding lumps. I have
+one last tool under my belt that might be one of
+the biggest, save states. 
+
+Since the C implementation, should be 1:1 with the
+bash version. I can dump the entire memory into a
+file and save the registers. From there all I need
+to do is convert that data into bash and I have
+save states working! This has the added bonus of
+making the program able to run completely in bash
+without needing to read from any files. Which is
+how I can bundle everything up as a singe
+distributable bash file.
+
+## So that's it?
+
+Yeah pretty much. I learned a lot about bash in
+making this project, and though it's not going to
+change someone's life I was able to use some
+skills I had picked up just for odd projects. I
+also learned a good deal about the RISC-V
+instruction set. For each epiphany I had
+throughout this entire process I had spent an
+unreal amount of time slowly putting down
+printfs and making educated guesses. It'll be
+weird to be finally free of this project as it's
+consumed a good portion of the last month of my
+life. Setting up tests to go over night, waking up
+in the middle of the night and checking if it was
+a success, then the next morning making
+improvements.
 ## References
 [1](https://projectf.io/posts/riscv-cheat-sheet/#rv32-abi-registers)
 [2](https://github.com/cnlohr/embeddedDOOM)
 [3](https://github.com/mpaland/printf)
 [4](https://github.com/sysprog21/rv32emu)
+[5](https://www.gnu.org/software/c-intro-and-ref/manual/html_node/Packed-Structures.html)

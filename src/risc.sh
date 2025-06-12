@@ -621,7 +621,7 @@ function step {
 
 
                       ;;
-                    70)
+                    70) # find lump
 
   # while (lump_p-- != lumpinfo) {
   #   if (strncmp(name, lump_p->name, 8) == 0) {
@@ -667,7 +667,11 @@ function step {
                           
                         done
                         ;;
-                      92) # savestate for rv32emu (do nothing)
+                    71) # print int
+                        printf "%i" $((REGS[11]))
+                        ;;
+
+                    92) # savestate for rv32emu (do nothing)
                         ;;
                     93)
                         echo "exit called! exit code ${REGS[10]}"
