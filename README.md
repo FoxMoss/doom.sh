@@ -1,12 +1,10 @@
-# rv32ima.sh
-A risc-v emulator running in pure shell script
+# Doom.sh
 
-heavily based on [mini-rv32ima](https://github.com/cnlohr/mini-rv32ima)
-### what
-Bash and posix shells are fully turing complete! Typically the shell is used to call external commands, but even if you limit yourself to just builtins, (`echo`, `printf`, `read`, `return`) it's still possible to emulate a full RISC-V cpu running at a decent clock speed!
+Doom running entirely in pure bash.
 
-### why
-I love bash! see [minecraft.sh](https://github.com/velzie/minecraft.sh) or [asm.sh](https://github.com/velzie/asm.sh) or [kiki](https://github.com/velzie/kiki) or [my bash SSG](https://github.com/velzie/bashtro). it's funny and an interesting challenge
+## Acompanying Repos
+[terminaldoom](https://github.com/FoxMoss/terminaldoom) is a copy of the doom source with changes to match the RISCV equivelent.
+[rv32emu-doom](https://github.com/FoxMoss/rv32emu-doom) is the reference implentation I used to verify accuracy of the bash implentation.
 
-### can it run linux?
-almost! still working on it
+## Credit
+Hudge credit to velzie for starting the bash riscv emulator! And chlonr for making the reference implentation that the bash emulator was based on, aswell as starting embeded doom which this project uses a modifyed copy.

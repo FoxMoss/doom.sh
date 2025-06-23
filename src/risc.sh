@@ -559,8 +559,8 @@ function step {
                         REGS[11]=$((SECONDS*70))
                         ;;
                     66)
-                        IFS= read -r -t 0.001 -n 1 -s holder;
-                        REGS[11]=$(printf "%d" "'$holder")
+                        IFS= read -r -n 1 -s holder;
+                        REGS[11]=$(od -An -t u1 -N 1 <<< "${holder}")
                         ;;
                     67)
                         sleep REGS[11]
@@ -637,6 +637,10 @@ function step {
                         namestr=""
                         for (( i=0; i<8; i++ )); do
                           byte=$(memreadbyte $((name + i)))
+                          if [[ "$byte" -eq "0" ]]; then
+                            break
+                          fi
+
                           namestr+=$(printf "\\$(printf '%c' "$byte")")  # Convert byte to character
                         done
 

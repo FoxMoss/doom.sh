@@ -1,8 +1,25 @@
 # I wrote Doom in pure Bash
 ## Heres how!
 
-So let's first establish a baseline, what does it 
-mean to put *doom in bash*? I will be using GNU 
+I ported Doom(1993) to run with no external
+dependencies, in pure bash. It runs about on the
+timescale of arround a frame every couple of
+hours, but the important bit is that it does
+infact run! Bash as a program language is slower
+then you would like to belive. The challenge from
+writing a program in Bash is not trying to make it
+technically able to run, it's living long enough
+to see your fledgly script grow old enough to bear
+fruit.
+
+If you would like to just see if you can run the
+program yourself, you can download the file here.
+Though be warned it takes a while.
+
+TODO: link file
+
+So let's first establish a baseline. What does it 
+mean to run *pure bash*? I will be using GNU 
 bash, version 5.1.16. And for programs inside of
 bash, if it is in [GNU Coreutils] which is:
 ```
@@ -24,21 +41,22 @@ whoami yes
 Then the program is "pure bash".
 
 And for Doom, I will be using a modified version 
-of the original 1993 game. This is no pregnancy
+of the original source code. This is no pregnancy
 test, we can run real Doom.
 
 ## Where it started
 
 One of my friends was the catalyst. Velzie was
 originally in the process of trying to run Linux
-in bash via a RISC-V emulator. I saw this and saw
-a fun weekend project that I could quickly do,
-post on the internet and farm some fake internet
-points. I had heard pretty explicitly that the
-program may encounter some bugs but I felt I was
-ready to take that task on. Linux at that time was
-basically already up and running, how much more
-work could it possible be?
+in bash via a RISC-V emulator. You might someday
+see that blog post, but today we're sticking to
+Doom. I saw this and saw a fun weekend project
+that I could quickly do, post on the internet and
+farm some fake internet points. I had heard pretty
+explicitly that the program may encounter some
+bugs but I felt I was ready to take that task on.
+Linux at that time was basically already up and
+running, how much more work could it possible be?
 
 ## Much more work as it turns out...
 
@@ -78,6 +96,13 @@ void sys_write(const char *str, size_t len) {
 }
 void _start() { sys_write("Hello world!\n", 14); }
 ```
+The registers in RISC-V are mostly a number
+prefixed with a letter. So this code just loads 64
+`a7` then moves the values of `str` and `len` into
+`a1` and `a2` respectively. Then the CPU, or in
+this case bash, can just read these registers
+directly.
+
 Aaaand it just printed garbage to the console. The
 pointer it was sending as a1 seemed arbitrary.
 After staring at the raw assembly for a good long
@@ -116,8 +141,8 @@ we can write a very traditional hello world now!
 
 I started with trying to compile this chlohnr's 
 doom fork[2] already built for embedded systems.
-Despite this I had a long way from the project
-compiling. I stated combing through the linking
+Despite this, I was a long way from the project
+compiling. I started combing through the linking
 errors and polyfilling functionality where I
 could. For printf I pulled in an implementation
 for embedded hardware[3] and hooked it up to my
@@ -132,7 +157,7 @@ REGS[11]=$(printf "%d" "'$holder")
 ```
 
 So by a technicality it builds to a working
-executable, whats just stopping me from just
+executable. What's stopping me from just
 running it? So begins the debugging, and
 optimizations...
 
@@ -154,7 +179,7 @@ done
 Which is slow because basically anything written
 in mostly bash is slow especially for loops. To
 write a singe byte I need to preform an expensive
-slicing operation, this simply can't do.
+slicing operation, this simply won't do.
 Additionally we need to set a whole range of
 values to zero, and if the range is mostly zero
 why would the CPU ever want to read from there? So
@@ -173,17 +198,15 @@ improves performance, making this one snippet
 preform on the timescale of minutes instead of
 days. 
 
-If you've been paying attention, which in all 
-likelihood you haven't. You may have noticed that
-my new implementation neglects to reset certain
-bytes. Previously I have mentioned that resetting
-the CPU memory takes a significant amount of time
-enough to need a progress bar. I was also running
-into a third issue, my program would keep
-reading out of bounds so I would continually up 
-the memory. So to kill three birds with one stone,
-I added three lines of code to the byte reading
-function:
+You may have noticed that my new implementation
+neglects to reset certain bytes. Previously I have
+mentioned that resetting the CPU memory takes a
+significant amount of time enough to need a
+progress bar. I was also running into a third
+issue, my program would keep reading out of bounds
+so I would continually up the memory. So to kill
+three birds with one stone, I added three lines of
+code to the byte reading function:
 ```bash
 function memreadbyte {
     local offs=$1
@@ -208,8 +231,8 @@ working doom.
 So I try it, and it is just crawling, I don't 
 even get to the render loop. I have no proof
 either the bash emulator works or my port of doom.
-I hate long feedback cycles I like to know
-immediately when something starts to fail, I don't
+I hate long feedback cycles. I like to know
+immediately when something starts to fail. I don't
 want to be debugging both halves of the codebase 
 at once. Velzie's also really uncertain in the
 validity of their RISC-V emulation, so they
@@ -273,7 +296,7 @@ store them in a C file. So when the embedded
 version would load the data, it wouldn't need to
 convert the WAD directly into structs, the host
 had already done that for you. If you've spent
-enough time with C, this should ringing alarm
+enough time with C, this should be ringing alarm
 bells already. Lets take the example that everyone
 else gives:
 ```c
@@ -331,7 +354,7 @@ A: &b-&a=4
 B: &b-&a=1
 ```
 This of course could cause issues as GNU states:
-> Use of __attribute__((packed)) often results in
+> Use of \__attribute__((packed)) often results in
 fields that don’t have the normal alignment for
 their types. Taking the address of such a field
 can result in an invalid pointer because of its
@@ -346,7 +369,7 @@ the CPU if they so arise. Which at the current
 moment they haven't.
 
 After this I had a few bugs that must've appeared
-while trying to make buildable, so I revert the
+while trying to make it buildable, so I revert the
 doom portion of the codebase. From there I just
 replicate each change I make onto the original X11
 compatible codebase and my own. With a little
@@ -391,6 +414,8 @@ distributable bash file.
 
 ## So that's it?
 
+TODO: put screenshots of the program running
+
 Yeah pretty much. I learned a lot about bash in
 making this project, and though it's not going to
 change someone's life I was able to use some
@@ -406,6 +431,7 @@ life. Setting up tests to go over night, waking up
 in the middle of the night and checking if it was
 a success, then the next morning making
 improvements.
+
 ## References
 [1](https://projectf.io/posts/riscv-cheat-sheet/#rv32-abi-registers)
 [2](https://github.com/cnlohr/embeddedDOOM)
